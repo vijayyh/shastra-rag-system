@@ -1,42 +1,133 @@
 import os
+import pandas as pd
+
 from langchain_community.document_loaders import PyPDFLoader
-from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain.schema import Document
 
 DATA_DIR = "data"
 VECTORSTORE_DIR = "vectorstore"
 
 
+def load_pdf(file_path):
+    loader = PyPDFLoader(file_path)
+    return loader.load()
+
+
+def load_csv(file_path):
+    docs = []
+
+    encodings = ["utf-8", "utf-16", "latin-1", "ISO-8859-1"]
+
+    df = None
+    for enc in encodings:
+        try:
+            df = pd.read_csv(file_path, encoding=enc, on_bad_lines="skip")
+            print(f"✅ Loaded CSV with encoding: {enc} -> {file_path}")
+            break
+        except UnicodeDecodeError:
+            continue
+
+    if df is None:
+        print(f"❌ Failed to read CSV: {file_path}")
+        return docs
+
+    df = df.fillna("")
+
+    for idx, row in df.iterrows():
+        text = " | ".join(
+            f"{str(col)}: {str(val)}"
+            for col, val in row.items()
+            if str(val).strip() != ""
+        )
+
+        if text.strip():
+            docs.append(
+                Document(
+                    page_content=text,
+                    metadata={
+                        "source": file_path,
+                        "row": idx
+                    }
+                )
+            )
+
+    return docs
+
+
+
+def load_excel(file_path):
+    docs = []
+    xls = pd.ExcelFile(file_path)
+
+    for sheet in xls.sheet_names:
+        df = pd.read_excel(file_path, sheet_name=sheet)
+        df = df.fillna("")
+
+        for idx, row in df.iterrows():
+            text = " | ".join(
+                f"{str(col)}: {str(val)}"
+                for col, val in row.items()
+                if str(val).strip() != ""
+            )
+
+            if text.strip():
+                docs.append(
+                    Document(
+                        page_content=text,
+                        metadata={
+                            "source": file_path,
+                            "sheet": sheet,
+                            "row": idx
+                        }
+                    )
+                )
+    return docs
+
+
 def load_documents():
     documents = []
+
     for file in os.listdir(DATA_DIR):
+        file_path = os.path.join(DATA_DIR, file)
+
         if file.lower().endswith(".pdf"):
-            loader = PyPDFLoader(os.path.join(DATA_DIR, file))
-            documents.extend(loader.load())
+            documents.extend(load_pdf(file_path))
+
+        elif file.lower().endswith(".csv"):
+            documents.extend(load_csv(file_path))
+
+        elif file.lower().endswith((".xls", ".xlsx")):
+            documents.extend(load_excel(file_path))
+
     return documents
 
 
 def main():
+    print("📂 Loading documents...")
     documents = load_documents()
 
     if not documents:
-        print("❌ No PDF files found inside data/ folder")
+        print("❌ No documents found")
         return
 
-    text_splitter = RecursiveCharacterTextSplitter(
+    print(f"✅ Loaded {len(documents)} documents")
+
+    splitter = RecursiveCharacterTextSplitter(
         chunk_size=1000,
         chunk_overlap=200
     )
 
-    chunks = text_splitter.split_documents(documents)
+    chunks = splitter.split_documents(documents)
 
     embeddings = HuggingFaceEmbeddings(
         model_name="sentence-transformers/all-MiniLM-L6-v2"
     )
 
-    vector_db = FAISS.from_documents(chunks, embeddings)
-    vector_db.save_local(VECTORSTORE_DIR)
+    db = FAISS.from_documents(chunks, embeddings)
+    db.save_local(VECTORSTORE_DIR)
 
     print("✅ Vector database created successfully")
 

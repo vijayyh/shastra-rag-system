@@ -7,6 +7,12 @@ A Retrieval-Augmented Generation (RAG) chatbot designed to answer questions base
 - **Document Ingestion**: Loads PDF documents from a `data/` directory.
 - **Vector Store**: Uses FAISS and HuggingFace embeddings (`all-MiniLM-L6-v2`) for efficient similarity search.
 - **LLM Integration**: Custom integration with Groq API using `llama-3.1-8b-instant`.
+- **Query Expansion**: Improves retrieval accuracy by expanding short or ambiguous queries using the LLM.
+- **Conversational Memory**: Remembers the last 5 turns of the conversation to answer follow-up questions.
+- **Multi-Persona Chatbot**: Adopts different personas based on the user's query (e.g., "mindmap", "teacher").
+- **Source Citation**: Cites the sources used to generate the answer.
+- **Logging**: Logs user queries, retrieved sources, and errors to `chatbot.log`.
+- **Error Handling**: Handles errors gracefully during retrieval and LLM generation.
 - **Interactive Chat**: Console-based interface for querying the document context.
 
 ## Prerequisites
@@ -48,5 +54,11 @@ Start the interactive chatbot:
 ```bash
 python chatbot.py
 ```
+
+The chatbot will greet you and provide some example prompts. You can ask normal questions, or try one of the special "personas":
+
+- **Normal Query**: "What is Dharma?"
+- **Mindmap Query**: "Give me a mind map of the main concepts in the Bhagavad Gita"
+- **Teacher Query**: "Teach me about the concept of Atman, starting from the basics"
 
 Type your questions when prompted. Type `exit` to quit.

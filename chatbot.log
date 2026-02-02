@@ -1,0 +1,519 @@
+2026-01-06 22:13:17 - Use pytorch device_name: cpu
+2026-01-06 22:13:17 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-01-06 22:13:21 - Loading faiss with AVX512 support.
+2026-01-06 22:13:21 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-01-06 22:13:21 - Loading faiss with AVX2 support.
+2026-01-06 22:13:21 - Successfully loaded faiss with AVX2 support.
+2026-01-06 22:13:35 - User query: iji
+2026-01-06 22:13:35 - Retrieved sources: Agni in Vedas.csv, Education_on_Sanatana_Dharma.csv, Danavastu_(\u0926\u0947\u092f\u092e\u094d).csv, Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-01-06 22:13:35 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-06 22:13:52 - User query: what is soul
+2026-01-06 22:13:52 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Agni in Vedas.csv
+2026-01-06 22:13:52 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-06 22:14:07 - User query: what is a soul explain it like a teacher
+2026-01-06 22:14:07 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf
+2026-01-06 22:14:09 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-07 17:29:42 - Use pytorch device_name: cpu
+2026-01-07 17:29:42 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-01-07 17:29:45 - Loading faiss with AVX512 support.
+2026-01-07 17:29:45 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-01-07 17:29:45 - Loading faiss with AVX2 support.
+2026-01-07 17:29:45 - Successfully loaded faiss with AVX2 support.
+2026-01-07 17:30:00 - User query: what is the gate exam?
+2026-01-07 17:30:00 - Retrieved sources: Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, Atithi_Satkara_(\u0905\u0924\u093f\u0925\u093f\u0938\u0924\u094d\u0915\u093e\u0930\u0903).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv
+2026-01-07 17:30:00 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-07 17:30:30 - User query: how was arjuna feeling on the battlefield
+2026-01-07 17:30:30 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Arjuna Vishada Yoga.csv, Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv
+2026-01-07 17:30:31 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-07 17:31:13 - User query: then what did he do then?
+2026-01-07 17:31:13 - Retrieved sources: Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-01-07 17:31:13 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-07 17:31:38 - User query: and then? what happeneneed
+2026-01-07 17:31:38 - Retrieved sources: Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv, Atithi_Satkara_by_Kapotadampati_(\u0915\u092a\u094b\u0924\u0926\u092e\u094d\u092a\u0924\u0940).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-01-07 17:31:38 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-07 18:52:56 - User query: explain dharma?
+2026-01-07 18:52:56 - Retrieved sources: Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv, Arjuna Vishada Yoga.csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv
+2026-01-07 18:52:57 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-07 18:57:52 - User query: what is a Bhraman?
+2026-01-07 18:57:52 - Retrieved sources: Bhashya.csv, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Arjuna Vishada Yoga.csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv
+2026-01-07 18:57:53 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-07 18:58:06 - User query: What is a Brahman?
+2026-01-07 18:58:06 - Retrieved sources: Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Brahman_(\u092c\u094d\u0930\u0939\u094d\u092e\u0928\u094d).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Brahmana_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u092e\u094d).csv
+2026-01-07 18:58:07 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-07 19:01:07 - User query: who is krsna?
+2026-01-07 19:01:07 - Retrieved sources: Agni in Vedas.csv, Agnyadhana_(\u0905\u0917\u094d\u0928\u094d\u092f\u093e\u0927\u093e\u0928\u092e\u094d).csv, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, Airavata_(\u0910\u0930\u093e\u0935\u0924\u0903).csv, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Dana_Kala_Nirnaya_(\u0926\u093e\u0928\u0915\u093e\u0932\u0928\u093f\u0930\u094d\u0923\u092f\u0903).csv, Agnihotra_(\u0905\u0917\u094d\u0928\u093f\u0939\u094b\u0924\u094d\u0930\u092e\u094d).csv
+2026-01-07 19:01:08 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-07 19:01:14 - User query: who is Krishna?
+2026-01-07 19:01:14 - Retrieved sources: Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv
+2026-01-07 19:01:14 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-07 19:01:35 - User query: What is Brahmana?
+2026-01-07 19:01:35 - Retrieved sources: Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Education_on_Sanatana_Dharma.csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Brahman_(\u092c\u094d\u0930\u0939\u094d\u092e\u0928\u094d).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Brahmana_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u092e\u094d).csv
+2026-01-07 19:01:36 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-07 19:03:07 - User query: who is naredra modi
+2026-01-07 19:03:07 - Retrieved sources: Jambavan_(\u091c\u093e\u092e\u094d\u092c\u0935\u093e\u0928\u094d).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Acceptor_(\u092a\u094d\u0930\u0924\u093f\u0917\u094d\u0930\u0939\u0940\u0924\u093e).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-01-07 19:03:07 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-07 19:04:01 - User query: mindmap for dharma
+2026-01-07 19:04:01 - Retrieved sources: Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-01-07 19:04:01 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-07 19:04:39 - User query: what is a soul
+2026-01-07 19:04:39 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf
+2026-01-07 19:04:40 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 12:50:12 - Use pytorch device_name: cpu
+2026-01-11 12:50:12 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-01-11 12:50:16 - Loading faiss with AVX512 support.
+2026-01-11 12:50:16 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-01-11 12:50:16 - Loading faiss with AVX2 support.
+2026-01-11 12:50:16 - Successfully loaded faiss with AVX2 support.
+2026-01-11 12:50:43 - User query: teach me about the concept of atman
+2026-01-11 12:50:43 - Retrieved sources: Aranyaka_(\u0906\u0930\u0923\u094d\u092f\u0915\u092e\u094d).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, Chandogya_Upanishad_(\u091b\u093e\u0928\u094d\u0926\u094b\u0917\u094d\u092f\u094b\u092a\u0928\u093f\u0937\u0924\u0926\u094d).csv, Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Brahman_(\u092c\u094d\u0930\u0939\u094d\u092e\u0928\u094d).csv
+2026-01-11 12:50:45 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 12:51:48 - User query: teach me about lonavala water park
+2026-01-11 12:51:48 - Retrieved sources: Agnyadhana_(\u0905\u0917\u094d\u0928\u094d\u092f\u093e\u0927\u093e\u0928\u092e\u094d).csv, Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Danavastu_(\u0926\u0947\u092f\u092e\u094d).csv, Dadhichi_(\u0926\u0927\u0940\u091a\u093f\u0903).csv
+2026-01-11 12:51:49 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 13:08:00 - Use pytorch device_name: cpu
+2026-01-11 13:08:00 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-01-11 13:08:04 - Loading faiss with AVX512 support.
+2026-01-11 13:08:04 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-01-11 13:08:04 - Loading faiss with AVX2 support.
+2026-01-11 13:08:04 - Successfully loaded faiss with AVX2 support.
+2026-01-11 13:08:13 - User query: teach me about atman
+2026-01-11 13:08:13 - Retrieved sources: Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Brahman_(\u092c\u094d\u0930\u0939\u094d\u092e\u0928\u094d).csv, Chandogya_Upanishad_(\u091b\u093e\u0928\u094d\u0926\u094b\u0917\u094d\u092f\u094b\u092a\u0928\u093f\u0937\u0924\u0926\u094d).csv
+2026-01-11 13:08:15 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 13:08:42 - User query: Teach me about the concept of Atman
+2026-01-11 13:08:42 - Retrieved sources: Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, Chandogya_Upanishad_(\u091b\u093e\u0928\u094d\u0926\u094b\u0917\u094d\u092f\u094b\u092a\u0928\u093f\u0937\u0924\u0926\u094d).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Brahman_(\u092c\u094d\u0930\u0939\u094d\u092e\u0928\u094d).csv, Aranyaka_(\u0906\u0930\u0923\u094d\u092f\u0915\u092e\u094d).csv, Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv
+2026-01-11 13:08:44 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 13:16:49 - Use pytorch device_name: cpu
+2026-01-11 13:16:49 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-01-11 13:16:52 - Loading faiss with AVX512 support.
+2026-01-11 13:16:52 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-01-11 13:16:52 - Loading faiss with AVX2 support.
+2026-01-11 13:16:52 - Successfully loaded faiss with AVX2 support.
+2026-01-11 13:17:08 - User query: teach me about the concept of Atman
+2026-01-11 13:17:08 - Retrieved sources: Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Chandogya_Upanishad_(\u091b\u093e\u0928\u094d\u0926\u094b\u0917\u094d\u092f\u094b\u092a\u0928\u093f\u0937\u0924\u0926\u094d).csv, Aranyaka_(\u0906\u0930\u0923\u094d\u092f\u0915\u092e\u094d).csv, Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, Brahman_(\u092c\u094d\u0930\u0939\u094d\u092e\u0928\u094d).csv, Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv
+2026-01-11 13:17:09 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 13:17:32 - User query: teach me about bhraman using bullet points
+2026-01-11 13:17:32 - Retrieved sources: Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Bhashya.csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv
+2026-01-11 13:17:34 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 13:19:40 - Use pytorch device_name: cpu
+2026-01-11 13:19:40 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-01-11 13:19:45 - Loading faiss with AVX512 support.
+2026-01-11 13:19:45 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-01-11 13:19:45 - Loading faiss with AVX2 support.
+2026-01-11 13:19:45 - Successfully loaded faiss with AVX2 support.
+2026-01-11 13:19:56 - User query: teach me about atman
+2026-01-11 13:19:56 - Retrieved sources: Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, Chandogya_Upanishad_(\u091b\u093e\u0928\u094d\u0926\u094b\u0917\u094d\u092f\u094b\u092a\u0928\u093f\u0937\u0924\u0926\u094d).csv, Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Brahman_(\u092c\u094d\u0930\u0939\u094d\u092e\u0928\u094d).csv
+2026-01-11 13:19:57 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-24 19:45:56 - Use pytorch device_name: cpu
+2026-01-24 19:45:56 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-01-24 19:45:59 - Loading faiss with AVX512 support.
+2026-01-24 19:45:59 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-01-24 19:45:59 - Loading faiss with AVX2 support.
+2026-01-24 19:45:59 - Successfully loaded faiss with AVX2 support.
+2026-01-24 19:46:09 - User query: who is shri Krishna?
+2026-01-24 19:46:09 - Retrieved sources: Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv
+2026-01-24 19:46:10 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-24 19:46:55 - User query: what is he trying to teach arjuna and how many times he mentioned that he is the Only god?
+2026-01-24 19:46:55 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv, Arjuna Vishada Yoga.csv
+2026-01-24 19:46:57 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-24 19:52:51 - User query: what is meant by omnipotence
+2026-01-24 19:52:51 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf
+2026-01-24 19:52:52 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-24 19:57:13 - User query: who is kansa?
+2026-01-24 19:57:13 - Retrieved sources: Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv, Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv, Angirasa_(\u0905\u0919\u094d\u0917\u093f\u0930\u0938\u0903).csv, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv
+2026-01-24 19:57:13 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 13:27:08 - Use pytorch device_name: cpu
+2026-01-26 13:27:08 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-01-26 13:27:11 - Loading faiss with AVX512 support.
+2026-01-26 13:27:11 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-01-26 13:27:11 - Loading faiss with AVX2 support.
+2026-01-26 13:27:12 - Successfully loaded faiss with AVX2 support.
+2026-01-26 13:27:23 - User query: explain dharma
+2026-01-26 13:27:23 - Retrieved sources: Donor_(\u0926\u093e\u0924\u093e).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Arjuna Vishada Yoga.csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv
+2026-01-26 13:27:24 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 13:27:36 - User query: explain dharma pointwise
+2026-01-26 13:27:36 - Retrieved sources: Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Arjuna Vishada Yoga.csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv
+2026-01-26 13:27:38 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 14:22:44 - Use pytorch device_name: cpu
+2026-01-26 14:22:44 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-01-26 14:22:48 - Loading faiss with AVX512 support.
+2026-01-26 14:22:48 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-01-26 14:22:48 - Loading faiss with AVX2 support.
+2026-01-26 14:22:48 - Successfully loaded faiss with AVX2 support.
+2026-01-26 14:22:56 - Use pytorch device_name: cpu
+2026-01-26 14:22:56 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-01-26 14:23:00 - Loading faiss with AVX512 support.
+2026-01-26 14:23:00 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-01-26 14:23:00 - Loading faiss with AVX2 support.
+2026-01-26 14:23:00 - Successfully loaded faiss with AVX2 support.
+2026-01-26 14:23:33 - User query: dharma means?
+2026-01-26 14:23:33 - Query expansion triggered for query: 'dharma means?'
+2026-01-26 14:23:34 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 14:23:34 - Expanded queries: ['Dharma definition', 'Meaning of Dharma in Hinduism', 'What is Dharma in Sanskrit', 'Dharma concept explanation', 'Etymology of Dharma word']
+2026-01-26 14:23:34 - Retrieved sources: Arjuna Vishada Yoga.csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv
+2026-01-26 14:23:35 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 14:23:53 - User query: dharma means only in two lines
+2026-01-26 14:23:53 - Retrieved sources: Arjuna Vishada Yoga.csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv
+2026-01-26 14:23:54 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 14:24:13 - User query: is chunking better for retrival
+2026-01-26 14:24:13 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Atithi_Satkara_(\u0905\u0924\u093f\u0925\u093f\u0938\u0924\u094d\u0915\u093e\u0930\u0903).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Anadhyayana_(\u0905\u0928\u0927\u094d\u092f\u092f\u0928\u092e\u094d).csv, Education_on_Sanatana_Dharma.csv
+2026-01-26 14:24:13 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:06:11 - User query: Dharma
+2026-01-26 15:06:11 - Query expansion triggered for query: 'Dharma'
+2026-01-26 15:06:11 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:06:11 - Expanded queries: ['Yoga Dharma', 'Dharma in Hinduism', 'Buddhist Dharma', 'Dharma concept', 'Dharma definition']
+2026-01-26 15:06:11 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Arjuna Vishada Yoga.csv, Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Donor_(\u0926\u093e\u0924\u093e).csv, Education_on_Sanatana_Dharma.csv
+2026-01-26 15:06:20 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:06:58 - User query: Bhramana Dharma
+2026-01-26 15:06:58 - Query expansion triggered for query: 'Bhramana Dharma'
+2026-01-26 15:06:59 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:06:59 - Expanded queries: ['Bhramana Dharma equivalent terms', 'Dharmic path', 'Brahmanic philosophy', 'Hindu asceticism', 'Vedic way of life', 'Indian spiritual practices']
+2026-01-26 15:06:59 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Arjuna Vishada Yoga.csv, Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv, Bhashya.csv, Atithi_Satkara_(\u0905\u0924\u093f\u0925\u093f\u0938\u0924\u094d\u0915\u093e\u0930\u0903).csv, Donor_(\u0926\u093e\u0924\u093e).csv, Brahman_(\u092c\u094d\u0930\u0939\u094d\u092e\u0928\u094d).csv, Education_on_Sanatana_Dharma.csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv
+2026-01-26 15:06:59 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-01-26 15:06:59 - LLM error for query 'Bhramana Dharma': Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-8b-instant` in organization `org_01kcvy8aeyf0s817600y5caknd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 9199, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-01-26 15:07:23 - Use pytorch device_name: cpu
+2026-01-26 15:07:23 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-01-26 15:07:27 - Loading faiss with AVX512 support.
+2026-01-26 15:07:27 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-01-26 15:07:27 - Loading faiss with AVX2 support.
+2026-01-26 15:07:27 - Successfully loaded faiss with AVX2 support.
+2026-01-26 15:07:33 - User query: who is son of kunti
+2026-01-26 15:07:33 - Retrieved sources: Bhumavidya_(\u092d\u0942\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Atri_(\u0905\u0924\u094d\u0930\u093f\u0903).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Arjuna Vishada Yoga.csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx
+2026-01-26 15:07:34 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:08:01 - User query: who is Karna in mahabharata
+2026-01-26 15:08:01 - Retrieved sources: Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Atri_(\u0905\u0924\u094d\u0930\u093f\u0903).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Airavata_(\u0910\u0930\u093e\u0935\u0924\u0903).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv
+2026-01-26 15:08:01 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:08:41 - User query: what do you learn from the mahabharat
+2026-01-26 15:08:41 - Retrieved sources: Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Airavata_(\u0910\u0930\u093e\u0935\u0924\u0903).csv, Aranyaka_(\u0906\u0930\u0923\u094d\u092f\u0915\u092e\u094d).csv, bhagavad_gita_from_GitaSociety.pdf, Arjuna Vishada Yoga.csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv
+2026-01-26 15:08:42 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:09:00 - User query: concept of bhramacharya
+2026-01-26 15:09:00 - Query expansion triggered for query: 'concept of bhramacharya'
+2026-01-26 15:09:00 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:09:00 - Expanded queries: ['Bhramacharya meaning in english', 'Definition of Bhramacharya', 'Bhramacharya lifestyle', 'Bhramacharya principles', 'Concept of celibacy in Hinduism', 'Bhramacharya ashram', 'Hindu concept of detachment']
+2026-01-26 15:09:00 - Retrieved sources: Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Bhashya.csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Bahupurushavada_(\u092c\u0939\u0941\u092a\u0941\u0930\u0941\u0937\u0935\u093e\u0926\u0903).csv, Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Agni in Vedas.csv, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv, Education_on_Sanatana_Dharma.csv, Ashrama_Dharma_(\u0906\u0936\u094d\u0930\u092e\u0927\u0930\u094d\u092e\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv
+2026-01-26 15:09:00 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-01-26 15:09:00 - LLM error for query 'concept of bhramacharya': Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-8b-instant` in organization `org_01kcvy8aeyf0s817600y5caknd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 8243, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-01-26 15:09:10 - User query: who is shree krishna
+2026-01-26 15:09:10 - Retrieved sources: Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, bhagavad_gita_from_GitaSociety.pdf, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv
+2026-01-26 15:09:11 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:10:23 - User query: who is Balram
+2026-01-26 15:10:23 - Query expansion triggered for query: 'who is Balram'
+2026-01-26 15:10:23 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:10:23 - Expanded queries: ['Balram Taduri', 'Balram Halwai', 'Balram character', 'Balram in literature', 'Balram Taduri novel']
+2026-01-26 15:10:23 - Retrieved sources: Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Education_on_Sanatana_Dharma.csv, Danavastu_(\u0926\u0947\u092f\u092e\u094d).csv, Acceptor_(\u092a\u094d\u0930\u0924\u093f\u0917\u094d\u0930\u0939\u0940\u0924\u093e).csv, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Agni in Vedas.csv, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv, Brahman_(\u092c\u094d\u0930\u0939\u094d\u092e\u0928\u094d).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv, Ashrama_Dharma_(\u0906\u0936\u094d\u0930\u092e\u0927\u0930\u094d\u092e\u0903).csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv
+2026-01-26 15:10:23 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:10:47 - User query: whats Agnayadhana
+2026-01-26 15:10:47 - Query expansion triggered for query: 'whats Agnayadhana'
+2026-01-26 15:10:48 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:10:48 - Expanded queries: ['Agnayadhana', 'Agnayadhana meaning', 'Agnayadhana in Hinduism', 'Agnayadhana ritual', 'Agnayadhana significance', 'Agnayadhana ceremony', 'Agnayadhana definition']
+2026-01-26 15:10:48 - Retrieved sources: Agnihotra_(\u0905\u0917\u094d\u0928\u093f\u0939\u094b\u0924\u094d\u0930\u092e\u094d).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Agnyadhana_(\u0905\u0917\u094d\u0928\u094d\u092f\u093e\u0927\u093e\u0928\u092e\u094d).csv, Aupasana_(\u0914\u092a\u093e\u0938\u0928\u0903).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Agni in Vedas.csv, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv
+2026-01-26 15:10:48 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-01-26 15:10:48 - Retrying request to /openai/v1/chat/completions in 14.000000 seconds
+2026-01-26 15:11:02 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:11:50 - User query: which ritual uses setting up fire known as agni 
+2026-01-26 15:11:50 - Retrieved sources: Agni in Vedas.csv, Agnyadhana_(\u0905\u0917\u094d\u0928\u094d\u092f\u093e\u0927\u093e\u0928\u092e\u094d).csv, Agnihotra_(\u0905\u0917\u094d\u0928\u093f\u0939\u094b\u0924\u094d\u0930\u092e\u094d).csv, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv
+2026-01-26 15:11:50 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:34:10 - User query: What is the duty of a householder?
+2026-01-26 15:34:10 - Retrieved sources: Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Education_on_Sanatana_Dharma.csv, Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Atithi_Satkara_(\u0905\u0924\u093f\u0925\u093f\u0938\u0924\u094d\u0915\u093e\u0930\u0903).csv
+2026-01-26 15:34:10 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:34:10 - User query: 
+2026-01-26 15:34:10 - Query expansion triggered for query: ''
+2026-01-26 15:34:11 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:34:11 - Expanded queries: ['Since the user query is empty, I will provide some general alternative queries that could be related to a vector database.', 'Find vectors similar to a given vector', 'Find nearest neighbors in a vector database', 'Vector similarity search algorithm', 'Optimize vector database query performance', 'Vector database data preprocessing techniques', 'Vector database query optimization strategies']
+2026-01-26 15:34:11 - Retrieved sources: Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Jambavan_(\u091c\u093e\u092e\u094d\u092c\u0935\u093e\u0928\u094d).csv, Bhumavidya_(\u092d\u0942\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Angirasa_(\u0905\u0919\u094d\u0917\u093f\u0930\u0938\u0903).csv, Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Agni in Vedas.csv, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv, Education_on_Sanatana_Dharma.csv, Dana_Kala_Nirnaya_(\u0926\u093e\u0928\u0915\u093e\u0932\u0928\u093f\u0930\u094d\u0923\u092f\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Brahman_(\u092c\u094d\u0930\u0939\u094d\u092e\u0928\u094d).csv, Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, Annadana_by_Unchavrtti_Brahmana_(\u0909\u091e\u094d\u091b\u0935\u0943\u0924\u094d\u0924\u093f\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0903).csv, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv
+2026-01-26 15:34:11 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-01-26 15:34:11 - LLM error for query '': Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-8b-instant` in organization `org_01kcvy8aeyf0s817600y5caknd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 8046, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-01-26 15:34:19 - User query: Raj Dharma vs Grihastha Dharma
+2026-01-26 15:34:19 - Retrieved sources: Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Education_on_Sanatana_Dharma.csv
+2026-01-26 15:34:19 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:34:29 - User query: Who is Akshay Kumar?
+2026-01-26 15:34:29 - Retrieved sources: Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Agnihotra_(\u0905\u0917\u094d\u0928\u093f\u0939\u094b\u0924\u094d\u0930\u092e\u094d).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Atri_(\u0905\u0924\u094d\u0930\u093f\u0903).csv, Agnyadhana_(\u0905\u0917\u094d\u0928\u094d\u092f\u093e\u0927\u093e\u0928\u092e\u094d).csv
+2026-01-26 15:34:30 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:36:16 - User query: what is shashtra
+2026-01-26 15:36:16 - Query expansion triggered for query: 'what is shashtra'
+2026-01-26 15:36:16 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:36:16 - Expanded queries: ['what is shashtra in hindu mythology', 'definition of shashtra', 'shashtra meaning in sanskrit', 'types of shashtra in ancient india', 'shashtra in indian culture']
+2026-01-26 15:36:16 - Retrieved sources: Aupasana_(\u0914\u092a\u093e\u0938\u0928\u0903).csv, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Education_on_Sanatana_Dharma.csv, Atithi_Satkara_(\u0905\u0924\u093f\u0925\u093f\u0938\u0924\u094d\u0915\u093e\u0930\u0903).csv, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, Acceptor_(\u092a\u094d\u0930\u0924\u093f\u0917\u094d\u0930\u0939\u0940\u0924\u093e).csv, Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Agni in Vedas.csv, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv, Dana_Kala_Nirnaya_(\u0926\u093e\u0928\u0915\u093e\u0932\u0928\u093f\u0930\u094d\u0923\u092f\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Dadhichi_(\u0926\u0927\u0940\u091a\u093f\u0903).csv, Aranyaka_(\u0906\u0930\u0923\u094d\u092f\u0915\u092e\u094d).csv, Agnihotra_(\u0905\u0917\u094d\u0928\u093f\u0939\u094b\u0924\u094d\u0930\u092e\u094d).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Airavata_(\u0910\u0930\u093e\u0935\u0924\u0903).csv, Brahmana_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u092e\u094d).csv, Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv
+2026-01-26 15:36:16 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-01-26 15:36:16 - LLM error for query 'what is shashtra': Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-8b-instant` in organization `org_01kcvy8aeyf0s817600y5caknd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6902, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-01-26 15:36:46 - Use pytorch device_name: cpu
+2026-01-26 15:36:46 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-01-26 15:36:50 - Loading faiss with AVX512 support.
+2026-01-26 15:36:50 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-01-26 15:36:50 - Loading faiss with AVX2 support.
+2026-01-26 15:36:50 - Successfully loaded faiss with AVX2 support.
+2026-01-26 15:36:59 - User query: mindmap for bhagvad gita
+2026-01-26 15:36:59 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv
+2026-01-26 15:37:00 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:37:23 - User query: how many slokas are there in bhagvad gita
+2026-01-26 15:37:23 - Retrieved sources: Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv
+2026-01-26 15:37:23 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:37:34 - User query: who is krishna
+2026-01-26 15:37:34 - Query expansion triggered for query: 'who is krishna'
+2026-01-26 15:37:35 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:37:35 - Expanded queries: ['Who is Lord Krishna', 'Krishna mythology', 'Krishna Hindu god', 'Krishna biography', 'Krishna characteristics', 'Krishna in Mahabharata', 'Krishna deity', 'Krishna significance', 'Krishna stories']
+2026-01-26 15:37:35 - Retrieved sources: Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Arjuna Vishada Yoga.csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv
+2026-01-26 15:37:36 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:37:48 - User query: what is his ultimate form
+2026-01-26 15:37:48 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv
+2026-01-26 15:37:48 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:39:50 - User query: definee the scope of dharma
+2026-01-26 15:39:50 - Retrieved sources: Education_on_Sanatana_Dharma.csv, Arjuna Vishada Yoga.csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv
+2026-01-26 15:39:51 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:40:06 - User query: explain each dharma in detail
+2026-01-26 15:40:06 - Retrieved sources: Arjuna Vishada Yoga.csv, Education_on_Sanatana_Dharma.csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv
+2026-01-26 15:40:07 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:40:48 - User query: what is a svadharma
+2026-01-26 15:40:48 - Retrieved sources: Agnihotra_(\u0905\u0917\u094d\u0928\u093f\u0939\u094b\u0924\u094d\u0930\u092e\u094d).csv, Devalaya Vyavasthana.csv, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv
+2026-01-26 15:40:49 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:41:02 - User query: swadharma means?
+2026-01-26 15:41:02 - Query expansion triggered for query: 'swadharma means?'
+2026-01-26 15:41:02 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:41:02 - Expanded queries: ['What is swadharma in Hinduism?', 'Definition of swadharma', 'Meaning of swadharma in Sanskrit', 'Swadharma explanation', 'Swadharma in the Mahabharata', 'Etymology of swadharma']
+2026-01-26 15:41:02 - Retrieved sources: Angirasa_(\u0905\u0919\u094d\u0917\u093f\u0930\u0938\u0903).csv, Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Agnihotra_(\u0905\u0917\u094d\u0928\u093f\u0939\u094b\u0924\u094d\u0930\u092e\u094d).csv, Bhumavidya_(\u092d\u0942\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Airavata_(\u0910\u0930\u093e\u0935\u0924\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Aranyaka_(\u0906\u0930\u0923\u094d\u092f\u0915\u092e\u094d).csv, Agnyadhana_(\u0905\u0917\u094d\u0928\u094d\u092f\u093e\u0927\u093e\u0928\u092e\u094d).csv, Arjuna Vishada Yoga.csv, Devalaya Vyavasthana.csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Danavastu_(\u0926\u0947\u092f\u092e\u094d).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv
+2026-01-26 15:41:02 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-01-26 15:41:02 - LLM error for query 'swadharma means?': Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-8b-instant` in organization `org_01kcvy8aeyf0s817600y5caknd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6669, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-01-26 15:41:16 - User query: svadharma means?
+2026-01-26 15:41:16 - Query expansion triggered for query: 'svadharma means?'
+2026-01-26 15:41:16 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:41:16 - Expanded queries: ['What does svadharma mean in Hinduism?', 'Definition of svadharma', 'Svadharma in Hindu philosophy', 'Meaning of svadharma in Sanskrit', 'Svadharma concept in ancient India']
+2026-01-26 15:41:16 - Retrieved sources: Education_on_Sanatana_Dharma.csv, Agnihotra_(\u0905\u0917\u094d\u0928\u093f\u0939\u094b\u0924\u094d\u0930\u092e\u094d).csv, Devalaya Vyavasthana.csv, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Angirasa_(\u0905\u0919\u094d\u0917\u093f\u0930\u0938\u0903).csv, Airavata_(\u0910\u0930\u093e\u0935\u0924\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv
+2026-01-26 15:41:17 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:43:37 - User query: who is krissshna
+2026-01-26 15:43:37 - Query expansion triggered for query: 'who is krissshna'
+2026-01-26 15:43:37 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:43:37 - Expanded queries: ['who is krishna', 'krishna biography', 'krishna mythology', 'krishna god', 'krishna meaning', 'krishna wikipedia', 'krishna facts', 'krishna stories', 'krishna character', 'krishna symbol', 'krishna significance']
+2026-01-26 15:43:37 - Retrieved sources: Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Arjuna Vishada Yoga.csv, Acceptor_(\u092a\u094d\u0930\u0924\u093f\u0917\u094d\u0930\u0939\u0940\u0924\u093e).csv, Devalaya Vyavasthana.csv, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Airavata_(\u0910\u0930\u093e\u0935\u0924\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv, Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv
+2026-01-26 15:43:38 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:43:51 - User query: kansama
+2026-01-26 15:43:51 - Query expansion triggered for query: 'kansama'
+2026-01-26 15:43:51 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 15:43:51 - Expanded queries: ['Kansama village', 'Kansama people', 'Kansama language', 'Kansama culture', 'Kansama tribe', 'Kansama history', 'Kansama location', 'Kansama map']
+2026-01-26 15:43:51 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Bhuta_Yajna_(\u092d\u0942\u0924\u092f\u091c\u094d\u091e\u0903).csv, Jambavan_(\u091c\u093e\u092e\u094d\u092c\u0935\u093e\u0928\u094d).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Atithi_Satkara_(\u0905\u0924\u093f\u0925\u093f\u0938\u0924\u094d\u0915\u093e\u0930\u0903).csv, Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, Airavata_(\u0910\u0930\u093e\u0935\u0924\u0903).csv, Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, Education_on_Sanatana_Dharma.csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Acceptor_(\u092a\u094d\u0930\u0924\u093f\u0917\u094d\u0930\u0939\u0940\u0924\u093e).csv, Devalaya Vyavasthana.csv, Dana_Kala_Nirnaya_(\u0926\u093e\u0928\u0915\u093e\u0932\u0928\u093f\u0930\u094d\u0923\u092f\u0903).csv, Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv, Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Bahupurushavada_(\u092c\u0939\u0941\u092a\u0941\u0930\u0941\u0937\u0935\u093e\u0926\u0903).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv
+2026-01-26 15:43:52 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-01-26 15:43:52 - LLM error for query 'kansama': Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-8b-instant` in organization `org_01kcvy8aeyf0s817600y5caknd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6262, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-01-26 16:47:17 - User query: who is arjun in mahabharat
+2026-01-26 16:47:17 - Retrieved sources: Arjuna Vishada Yoga.csv, bhagavad_gita_from_GitaSociety.pdf, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Airavata_(\u0910\u0930\u093e\u0935\u0924\u0903).csv
+2026-01-26 16:47:18 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 16:47:28 - User query: who is arjun in detail
+2026-01-26 16:47:28 - Retrieved sources: Arjuna Vishada Yoga.csv, bhagavad_gita_from_GitaSociety.pdf
+2026-01-26 16:47:29 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 16:50:57 - User query: who is Brahman
+2026-01-26 16:50:57 - Query expansion triggered for query: 'who is Brahman'
+2026-01-26 16:50:57 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 16:50:57 - Expanded queries: ['Brahman in Hinduism', 'Definition of Brahman', 'Brahman concept in Vedas', 'Brahmanism philosophy', 'Hindu god Brahma vs Brahman', 'Meaning of Brahman in Sanskrit']
+2026-01-26 16:50:57 - Retrieved sources: Education_on_Sanatana_Dharma.csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Brahman_(\u092c\u094d\u0930\u0939\u094d\u092e\u0928\u094d).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Brahmana_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u092e\u094d).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv
+2026-01-26 16:51:05 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 16:51:44 - User query: who is Bhraman in short
+2026-01-26 16:51:44 - Retrieved sources: Bhashya.csv, Arjuna Vishada Yoga.csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv
+2026-01-26 16:51:44 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 16:55:54 - User query: Indra matlab kya?
+2026-01-26 16:55:54 - Query expansion triggered for query: 'Indra matlab kya?'
+2026-01-26 16:55:54 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 16:55:54 - Expanded queries: ['Indra ka matlab kya hai', 'Indra ki visheshata', 'Indra ka arth', 'Hindu mythology mein Indra ka mahatva', 'Indra ki stuti kya hai']
+2026-01-26 16:55:54 - Retrieved sources: Acceptor_(\u092a\u094d\u0930\u0924\u093f\u0917\u094d\u0930\u0939\u0940\u0924\u093e).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Agni in Vedas.csv, Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv, Airavata_(\u0910\u0930\u093e\u0935\u0924\u0903).csv, Dadhichi_(\u0926\u0927\u0940\u091a\u093f\u0903).csv, Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, Atithi_Satkara_(\u0905\u0924\u093f\u0925\u093f\u0938\u0924\u094d\u0915\u093e\u0930\u0903).csv, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv
+2026-01-26 16:55:55 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-26 17:02:56 - User query: Who is Akshay Kumar?
+2026-01-26 17:02:56 - Retrieved sources: Agnyadhana_(\u0905\u0917\u094d\u0928\u094d\u092f\u093e\u0927\u093e\u0928\u092e\u094d).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Agnihotra_(\u0905\u0917\u094d\u0928\u093f\u0939\u094b\u0924\u094d\u0930\u092e\u094d).csv, Atri_(\u0905\u0924\u094d\u0930\u093f\u0903).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv
+2026-01-26 17:02:56 - Retrying request to /openai/v1/chat/completions in 0.446328 seconds
+2026-01-26 17:02:56 - Retrying request to /openai/v1/chat/completions in 0.770179 seconds
+2026-01-26 17:02:57 - LLM error for query 'Who is Akshay Kumar?': Connection error.
+2026-01-27 17:31:40 - Use pytorch device_name: cpu
+2026-01-27 17:31:40 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-01-27 17:31:44 - Loading faiss with AVX512 support.
+2026-01-27 17:31:44 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-01-27 17:31:44 - Loading faiss with AVX2 support.
+2026-01-27 17:31:44 - Successfully loaded faiss with AVX2 support.
+2026-01-27 17:32:07 - User query: how is arjun feeling on the battlefield
+2026-01-27 17:32:07 - Retrieved sources: Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv, Arjuna Vishada Yoga.csv, bhagavad_gita_from_GitaSociety.pdf
+2026-01-27 17:32:08 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:32:20 - User query: who is arjun
+2026-01-27 17:32:20 - Query expansion triggered for query: 'who is arjun'
+2026-01-27 17:32:20 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:32:20 - Expanded queries: ['Arjun Kapoor', 'Arjun Rampal', 'Arjun Tendulkar', 'Arjun Reddy', 'Arjun Maini', 'Arjun Bijlani', 'Arjun Kanungo']
+2026-01-27 17:32:20 - Retrieved sources: Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Arjuna Vishada Yoga.csv, bhagavad_gita_from_GitaSociety.pdf, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv
+2026-01-27 17:32:21 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:32:45 - User query: who is arjuns brother
+2026-01-27 17:32:45 - Retrieved sources: Arjuna Vishada Yoga.csv, bhagavad_gita_from_GitaSociety.pdf
+2026-01-27 17:32:45 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:33:06 - User query: name all others also
+2026-01-27 17:33:06 - Retrieved sources: Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv, Bhumavidya_(\u092d\u0942\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Atri_(\u0905\u0924\u094d\u0930\u093f\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, Aupasana_(\u0914\u092a\u093e\u0938\u0928\u0903).csv, Brahmana_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u092e\u094d).csv
+2026-01-27 17:33:06 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:33:46 - User query: name all the brothers of arjun
+2026-01-27 17:33:46 - Retrieved sources: Arjuna Vishada Yoga.csv, bhagavad_gita_from_GitaSociety.pdf
+2026-01-27 17:33:46 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:34:10 - User query: who is bhim?
+2026-01-27 17:34:10 - Query expansion triggered for query: 'who is bhim?'
+2026-01-27 17:34:11 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:34:11 - Expanded queries: ['Bhim is a popular Indian digital payment app. Here are some alternative search queries:', '1. Bhim app features', '2. What is Bhim payment', '3. Bhim app download', '4. Bhim payment system', '5. Bhim app review']
+2026-01-27 17:34:11 - Retrieved sources: Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Education_on_Sanatana_Dharma.csv, Danavastu_(\u0926\u0947\u092f\u092e\u094d).csv, Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv, Bahupurushavada_(\u092c\u0939\u0941\u092a\u0941\u0930\u0941\u0937\u0935\u093e\u0926\u0903).csv, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, Agni in Vedas.csv, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv, Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, Bhashya.csv, bhagavad_gita_from_GitaSociety.pdf, Bhumavidya_(\u092d\u0942\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Donor_(\u0926\u093e\u0924\u093e).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Acceptor_(\u092a\u094d\u0930\u0924\u093f\u0917\u094d\u0930\u0939\u0940\u0924\u093e).csv
+2026-01-27 17:34:11 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-01-27 17:34:11 - Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-01-27 17:34:14 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:35:21 - User query: alongside arjuna but where?
+2026-01-27 17:35:21 - Retrieved sources: Arjuna Vishada Yoga.csv, bhagavad_gita_from_GitaSociety.pdf
+2026-01-27 17:35:22 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:36:03 - User query: krishnas fulll name
+2026-01-27 17:36:03 - Query expansion triggered for query: 'krishnas fulll name'
+2026-01-27 17:36:03 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:36:03 - Expanded queries: ["Krishna's full birth name", "Krishna's complete name", "Krishna's given name", "Krishna's formal name"]
+2026-01-27 17:36:03 - Retrieved sources: Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Arjuna Vishada Yoga.csv, bhagavad_gita_from_GitaSociety.pdf, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, Atri_(\u0905\u0924\u094d\u0930\u093f\u0903).csv, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, Acceptor_(\u092a\u094d\u0930\u0924\u093f\u0917\u094d\u0930\u0939\u0940\u0924\u093e).csv
+2026-01-27 17:36:04 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:36:28 - User query: what was his fathers name?
+2026-01-27 17:36:28 - Retrieved sources: Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Bhumavidya_(\u092d\u0942\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Atri_(\u0905\u0924\u094d\u0930\u093f\u0903).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx
+2026-01-27 17:36:29 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:40:06 - Use pytorch device_name: cpu
+2026-01-27 17:40:06 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-01-27 17:40:10 - Loading faiss with AVX512 support.
+2026-01-27 17:40:10 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-01-27 17:40:10 - Loading faiss with AVX2 support.
+2026-01-27 17:40:10 - Successfully loaded faiss with AVX2 support.
+2026-01-27 17:40:16 - User query: who is krishna?
+2026-01-27 17:40:16 - Query expansion triggered for query: 'who is krishna?'
+2026-01-27 17:40:17 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:40:17 - Expanded queries: ['Who is Lord Krishna', 'Krishna mythology', 'Krishna god', 'Krishna biography', 'Krishna Hinduism', 'Krishna character', 'Krishna stories', 'Krishna meaning', 'Krishna god of', 'Krishna information']
+2026-01-27 17:40:17 - Retrieved sources: Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv, Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Arjuna Vishada Yoga.csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv
+2026-01-27 17:40:18 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:40:37 - User query: what is his age?
+2026-01-27 17:40:37 - Retrieved sources: Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, bhagavad_gita_from_GitaSociety.pdf, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv
+2026-01-27 17:40:38 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:40:49 - User query: what is dharma
+2026-01-27 17:40:49 - Query expansion triggered for query: 'what is dharma'
+2026-01-27 17:40:49 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:40:49 - Expanded queries: ['What is Dharma concept in Hinduism', 'Dharma definition and meaning', 'Dharma in Buddhism and Hinduism', 'Dharma philosophy explanation', 'Meaning of Dharma in Sanskrit']
+2026-01-27 17:40:49 - Retrieved sources: Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Bahupurushavada_(\u092c\u0939\u0941\u092a\u0941\u0930\u0941\u0937\u0935\u093e\u0926\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv, Arjuna Vishada Yoga.csv
+2026-01-27 17:40:49 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-01-27 17:40:49 - Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-01-27 17:40:52 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:41:09 - User query: what it simply means
+2026-01-27 17:41:09 - Retrieved sources: Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv, Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Arjuna Vishada Yoga.csv, Agnihotra_(\u0905\u0917\u094d\u0928\u093f\u0939\u094b\u0924\u094d\u0930\u092e\u094d).csv
+2026-01-27 17:41:09 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-01-27 17:41:09 - Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-01-27 17:41:15 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:41:33 - User query: can you define dharma in short
+2026-01-27 17:41:33 - Retrieved sources: Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv, Arjuna Vishada Yoga.csv
+2026-01-27 17:41:33 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-01-27 17:41:33 - Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-01-27 17:41:37 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:41:57 - User query: who was on the side of this concept?
+2026-01-27 17:41:57 - Retrieved sources: Annadana_by_Unchavrtti_Brahmana_(\u0909\u091e\u094d\u091b\u0935\u0943\u0924\u094d\u0924\u093f\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0903).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-01-27 17:41:57 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-01-27 17:41:57 - Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-01-27 17:42:04 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:43:09 - User query: who is ishowspeed
+2026-01-27 17:43:09 - Query expansion triggered for query: 'who is ishowspeed'
+2026-01-27 17:43:09 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:43:09 - Expanded queries: ['Ishowspeed', 'Ishowspeed age', 'Ishowspeed real name', 'Ishowspeed gaming channel', 'Ishowspeed twitch streamer', 'Ishowspeed YouTube videos', 'Ishowspeed biography']
+2026-01-27 17:43:09 - Retrieved sources: Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Agni in Vedas.csv, Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, bhagavad_gita_from_GitaSociety.pdf, Annadana_by_Unchavrtti_Brahmana_(\u0909\u091e\u094d\u091b\u0935\u0943\u0924\u094d\u0924\u093f\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0903).csv, Bhumavidya_(\u092d\u0942\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Arjuna Vishada Yoga.csv, Atri_(\u0905\u0924\u094d\u0930\u093f\u0903).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Dadhichi_(\u0926\u0927\u0940\u091a\u093f\u0903).csv, Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv, Airavata_(\u0910\u0930\u093e\u0935\u0924\u0903).csv, Jambavan_(\u091c\u093e\u092e\u094d\u092c\u0935\u093e\u0928\u094d).csv
+2026-01-27 17:43:09 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-01-27 17:43:09 - LLM error for query 'who is ishowspeed': Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-8b-instant` in organization `org_01kcvy8aeyf0s817600y5caknd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 10327, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-01-27 17:43:20 - User query: who is vasudev
+2026-01-27 17:43:20 - Query expansion triggered for query: 'who is vasudev'
+2026-01-27 17:43:21 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:43:21 - Expanded queries: ['who is vasudev kumar', 'vasudev bollywood actor', 'vasudev hindu mythology', 'vasudev baba', 'vasudev guru', 'vasudev meaning', 'vasudev name origin']
+2026-01-27 17:43:21 - Retrieved sources: Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, Atithi_Satkara_(\u0905\u0924\u093f\u0925\u093f\u0938\u0924\u094d\u0915\u093e\u0930\u0903).csv, Bhumavidya_(\u092d\u0942\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Agni in Vedas.csv, Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Devalaya Vyavasthana.csv, Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Brahman_(\u092c\u094d\u0930\u0939\u094d\u092e\u0928\u094d).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv, Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv, Brahmana_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u092e\u094d).csv
+2026-01-27 17:43:22 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:43:38 - User query: define dharma
+2026-01-27 17:43:38 - Query expansion triggered for query: 'define dharma'
+2026-01-27 17:43:38 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:43:38 - Expanded queries: ['What is dharma in Hinduism', 'Definition of dharma in Buddhism', 'Meaning of dharma in Sanskrit', 'Dharma concept in Indian philosophy', 'Etymology of the word dharma']
+2026-01-27 17:43:38 - Retrieved sources: Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv, Arjuna Vishada Yoga.csv
+2026-01-27 17:43:39 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:43:55 - User query: explain Jambavan in 5 lines
+2026-01-27 17:43:55 - Retrieved sources: Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Bahupurushavada_(\u092c\u0939\u0941\u092a\u0941\u0930\u0941\u0937\u0935\u093e\u0926\u0903).csv, Jambavan_(\u091c\u093e\u092e\u094d\u092c\u0935\u093e\u0928\u094d).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv
+2026-01-27 17:43:55 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-01-27 17:43:55 - Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-01-27 17:43:56 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:45:05 - User query: brahman meaning?
+2026-01-27 17:45:05 - Query expansion triggered for query: 'brahman meaning?'
+2026-01-27 17:45:05 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:45:05 - Expanded queries: ['Brahman definition', 'Meaning of Brahman in Hinduism', 'Brahman concept explanation', 'Brahmanism vs Advaita Vedanta', 'Origin of the term Brahman', 'Hindu philosophy Brahman', 'Brahman and Atman relationship']
+2026-01-27 17:45:05 - Retrieved sources: Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Brahman_(\u092c\u094d\u0930\u0939\u094d\u092e\u0928\u094d).csv, Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Chandogya_Upanishad_(\u091b\u093e\u0928\u094d\u0926\u094b\u0917\u094d\u092f\u094b\u092a\u0928\u093f\u0937\u0924\u0926\u094d).csv, Education_on_Sanatana_Dharma.csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Brahmana_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u092e\u094d).csv
+2026-01-27 17:45:06 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:45:37 - User query: Brhaman meaning
+2026-01-27 17:45:37 - Query expansion triggered for query: 'Brhaman meaning'
+2026-01-27 17:45:37 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:45:37 - Expanded queries: ['Brahman definition', 'Meaning of Brahman in Hinduism', 'Etymology of Brahman', 'Brahman term explanation', 'What is Brahman in Sanskrit']
+2026-01-27 17:45:37 - Retrieved sources: Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, Atithi_Satkara_(\u0905\u0924\u093f\u0925\u093f\u0938\u0924\u094d\u0915\u093e\u0930\u0903).csv, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Brahman_(\u092c\u094d\u0930\u0939\u094d\u092e\u0928\u094d).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Brahmana_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u092e\u094d).csv
+2026-01-27 17:45:37 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-01-27 17:45:37 - Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-01-27 17:45:43 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:45:59 - User query: who is Brahman
+2026-01-27 17:45:59 - Query expansion triggered for query: 'who is Brahman'
+2026-01-27 17:45:59 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:45:59 - Expanded queries: ['In Hinduism', 'what is Brahman', 'Brahman concept', 'Brahman definition', 'Brahmanism religion', 'Hindu god Brahman', 'Brahman meaning']
+2026-01-27 17:45:59 - Retrieved sources: Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Brahman_(\u092c\u094d\u0930\u0939\u094d\u092e\u0928\u094d).csv, bhagavad_gita_from_GitaSociety.pdf, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv, Education_on_Sanatana_Dharma.csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Brahmana_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u092e\u094d).csv
+2026-01-27 17:45:59 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-01-27 17:45:59 - Retrying request to /openai/v1/chat/completions in 35.000000 seconds
+2026-01-27 17:46:36 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:46:36 - User query: 
+2026-01-27 17:46:36 - Query expansion triggered for query: ''
+2026-01-27 17:46:36 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-01-27 17:46:36 - Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-01-27 17:46:37 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:46:37 - Expanded queries: ["It seems like you forgot to provide the user's query. Please provide the query, and I'll generate 3-5 related alternative search queries for you."]
+2026-01-27 17:46:37 - Retrieved sources: Dana_Kala_Nirnaya_(\u0926\u093e\u0928\u0915\u093e\u0932\u0928\u093f\u0930\u094d\u0923\u092f\u0903).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Agni in Vedas.csv, bhagavad_gita_from_GitaSociety.pdf, Atithi_Satkara_by_Kapotadampati_(\u0915\u092a\u094b\u0924\u0926\u092e\u094d\u092a\u0924\u0940).csv, Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv
+2026-01-27 17:46:37 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-01-27 17:46:37 - Retrying request to /openai/v1/chat/completions in 60.000000 seconds
+2026-01-27 17:47:11 - Use pytorch device_name: cpu
+2026-01-27 17:47:11 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-01-27 17:47:16 - Loading faiss with AVX512 support.
+2026-01-27 17:47:16 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-01-27 17:47:16 - Loading faiss with AVX2 support.
+2026-01-27 17:47:16 - Successfully loaded faiss with AVX2 support.
+2026-01-27 17:47:47 - User query: who is Duryodhan
+2026-01-27 17:47:47 - Query expansion triggered for query: 'who is Duryodhan'
+2026-01-27 17:47:48 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:47:48 - Expanded queries: ['Mahabharata characters', 'Duryodhan family tree', 'Duryodhan in Hindu mythology', "Duryodhan's role in Mahabharata", "Duryodhan's father name"]
+2026-01-27 17:47:48 - Retrieved sources: Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, Atithi_Satkara_(\u0905\u0924\u093f\u0925\u093f\u0938\u0924\u094d\u0915\u093e\u0930\u0903).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, Danavastu_(\u0926\u0947\u092f\u092e\u094d).csv, Aranyaka_(\u0906\u0930\u0923\u094d\u092f\u0915\u092e\u094d).csv, Atri_(\u0905\u0924\u094d\u0930\u093f\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Arjuna Vishada Yoga.csv, Airavata_(\u0910\u0930\u093e\u0935\u0924\u0903).csv, Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv, Agni in Vedas.csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv
+2026-01-27 17:47:48 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-01-27 17:47:48 - LLM error for query 'who is Duryodhan': Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-8b-instant` in organization `org_01kcvy8aeyf0s817600y5caknd` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6958, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-01-27 17:47:59 - User query: who is Krishna
+2026-01-27 17:47:59 - Query expansion triggered for query: 'who is Krishna'
+2026-01-27 17:47:59 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:47:59 - Expanded queries: ['Who is Lord Krishna', 'Krishna mythology', 'Krishna god', 'Krishna biography', 'Krishna Hinduism', 'Krishna meaning', 'Krishna stories', 'Krishna history']
+2026-01-27 17:47:59 - Retrieved sources: Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Arjuna Vishada Yoga.csv, bhagavad_gita_from_GitaSociety.pdf, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv
+2026-01-27 17:48:00 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:50:24 - User query: who is albert einstien
+2026-01-27 17:50:24 - Retrieved sources: Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Agni in Vedas.csv, bhagavad_gita_from_GitaSociety.pdf
+2026-01-27 17:50:24 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:51:28 - User query: who is akshay kumar
+2026-01-27 17:51:28 - Retrieved sources: Agnyadhana_(\u0905\u0917\u094d\u0928\u094d\u092f\u093e\u0927\u093e\u0928\u092e\u094d).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Atri_(\u0905\u0924\u094d\u0930\u093f\u0903).csv, Agnihotra_(\u0905\u0917\u094d\u0928\u093f\u0939\u094b\u0924\u094d\u0930\u092e\u094d).csv
+2026-01-27 17:51:28 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:51:48 - User query: tell me 5 habits of brahmana
+2026-01-27 17:51:48 - Retrieved sources: Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv
+2026-01-27 17:51:48 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 17:52:20 - User query: what are cows in vedas?
+2026-01-27 17:52:20 - Retrieved sources: Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv, Anadhyayana_(\u0905\u0928\u0927\u094d\u092f\u092f\u0928\u092e\u094d).csv, Danavastu_(\u0926\u0947\u092f\u092e\u094d).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Angirasa_(\u0905\u0919\u094d\u0917\u093f\u0930\u0938\u0903).csv, Bhumavidya_(\u092d\u0942\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv
+2026-01-27 17:52:21 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-27 18:14:53 - Use pytorch device_name: cpu
+2026-01-27 18:14:53 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-01-27 18:14:57 - Loading faiss with AVX512 support.
+2026-01-27 18:14:57 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-01-27 18:14:57 - Loading faiss with AVX2 support.
+2026-01-27 18:14:57 - Successfully loaded faiss with AVX2 support.
+2026-02-02 16:40:34 - Use pytorch device_name: cpu
+2026-02-02 16:40:34 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-02 16:40:38 - Loading faiss with AVX512 support.
+2026-02-02 16:40:38 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-02-02 16:40:38 - Loading faiss with AVX2 support.
+2026-02-02 16:40:38 - Successfully loaded faiss with AVX2 support.
+2026-02-02 16:41:24 - User query: What is Brahman? and who is Krishna? explain individually in one paragraph
+2026-02-02 16:41:24 - Retrieved sources: Education_on_Sanatana_Dharma.csv, Brahman_(\u092c\u094d\u0930\u0939\u094d\u092e\u0928\u094d).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv
+2026-02-02 16:41:24 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"

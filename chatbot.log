@@ -517,3 +517,94 @@ ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
 2026-02-02 16:41:24 - User query: What is Brahman? and who is Krishna? explain individually in one paragraph
 2026-02-02 16:41:24 - Retrieved sources: Education_on_Sanatana_Dharma.csv, Brahman_(\u092c\u094d\u0930\u0939\u094d\u092e\u0928\u094d).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv
 2026-02-02 16:41:24 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-02 17:05:37 - Use pytorch device_name: cpu
+2026-02-02 17:05:37 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-02 17:05:41 - Loading faiss with AVX512 support.
+2026-02-02 17:05:41 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-02-02 17:05:41 - Loading faiss with AVX2 support.
+2026-02-02 17:05:41 - Successfully loaded faiss with AVX2 support.
+2026-02-02 17:06:15 - User query: Do you know who is Krishna? and what was his role on the battlefield of kurukshetra?
+2026-02-02 17:06:15 - Retrieved sources: Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Arjuna Vishada Yoga.csv
+2026-02-02 17:06:19 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-02 17:08:50 - Use pytorch device_name: cpu
+2026-02-02 17:08:50 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-02 17:08:53 - Loading faiss with AVX512 support.
+2026-02-02 17:08:53 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-02-02 17:08:53 - Loading faiss with AVX2 support.
+2026-02-02 17:08:53 - Successfully loaded faiss with AVX2 support.
+2026-02-02 17:10:19 - User query: according to Arjuna, he was wrong, because he was fighting against his own family members, what did krishna said to him to remove his confusion and fight ffor dharma on that battlefield?
+2026-02-02 17:10:19 - Retrieved sources: Arjuna Vishada Yoga.csv, Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-02-02 17:10:20 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-02 17:24:40 - Use pytorch device_name: cpu
+2026-02-02 17:24:40 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-02 17:24:44 - Loading faiss with AVX512 support.
+2026-02-02 17:24:44 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-02-02 17:24:44 - Loading faiss with AVX2 support.
+2026-02-02 17:24:44 - Successfully loaded faiss with AVX2 support.
+2026-02-02 17:24:57 - Normalized query: arjuna
+2026-02-02 17:24:57 - User query: Arjun
+2026-02-02 17:24:57 - Retrieved sources: Arjuna Vishada Yoga.csv, bhagavad_gita_from_GitaSociety.pdf
+2026-02-02 17:24:57 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-02 17:25:10 - Normalized query: who is arjuna
+2026-02-02 17:25:10 - User query: who is arjuna?
+2026-02-02 17:25:10 - Retrieved sources: Arjuna Vishada Yoga.csv, bhagavad_gita_from_GitaSociety.pdf
+2026-02-02 17:25:10 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-02 17:25:29 - Normalized query: tell me about him in detail
+2026-02-02 17:25:29 - User query: tell me about him in detail
+2026-02-02 17:25:29 - Retrieved sources: Atri_(\u0905\u0924\u094d\u0930\u093f\u0903).csv, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv
+2026-02-02 17:25:29 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-02 17:25:46 - Normalized query: who is krishna
+2026-02-02 17:25:46 - User query: who is krishna?
+2026-02-02 17:25:46 - Retrieved sources: Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-02-02 17:25:47 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-02 17:26:09 - Normalized query: explain brahman dharma
+2026-02-02 17:26:09 - User query: explain bhraman dharma.
+2026-02-02 17:26:09 - Retrieved sources: Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv
+2026-02-02 17:26:10 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-02 17:30:17 - Normalized query: pip install speechrecognition pyttsx3 pyaudio
+2026-02-02 17:30:17 - User query: pip install SpeechRecognition pyttsx3 pyaudio
+2026-02-02 17:30:17 - Retrieved sources: Anadhyayana_(\u0905\u0928\u0927\u094d\u092f\u092f\u0928\u092e\u094d).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Aupasana_(\u0914\u092a\u093e\u0938\u0928\u0903).csv, Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv
+2026-02-02 17:30:17 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-02 17:30:53 - Use pytorch device_name: cpu
+2026-02-02 17:30:53 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-02 17:30:57 - Loading faiss with AVX512 support.
+2026-02-02 17:30:57 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-02-02 17:30:57 - Loading faiss with AVX2 support.
+2026-02-02 17:30:57 - Successfully loaded faiss with AVX2 support.
+2026-02-02 17:31:23 - Normalized query: give a mindmap for folllowing brahman dharma
+2026-02-02 17:31:23 - User query: Give a mindmap for folllowing Brahman dharma
+2026-02-02 17:31:23 - Retrieved sources: Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx
+2026-02-02 17:31:23 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-02 17:36:37 - Use pytorch device_name: cpu
+2026-02-02 17:36:37 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-02 17:36:41 - Loading faiss with AVX512 support.
+2026-02-02 17:36:41 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-02-02 17:36:41 - Loading faiss with AVX2 support.
+2026-02-02 17:36:41 - Successfully loaded faiss with AVX2 support.
+2026-02-02 17:37:11 - Normalized query: who is shree krishna in mahabharat
+2026-02-02 17:37:11 - User query: who is shree krishna in mahabharat 
+2026-02-02 17:37:11 - Retrieved sources: Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv, Arjuna Vishada Yoga.csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Education_on_Sanatana_Dharma.csv, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv
+2026-02-02 17:37:11 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-02 17:37:34 - Normalized query: python voice_chatpy
+2026-02-02 17:37:34 - User query: python voice_chat.py
+2026-02-02 17:37:34 - Retrieved sources: Atithi_Satkara_by_Kapotadampati_(\u0915\u092a\u094b\u0924\u0926\u092e\u094d\u092a\u0924\u0940).csv, Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Atithi_Satkara_(\u0905\u0924\u093f\u0925\u093f\u0938\u0924\u094d\u0915\u093e\u0930\u0903).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Acceptor_(\u092a\u094d\u0930\u0924\u093f\u0917\u094d\u0930\u0939\u0940\u0924\u093e).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv
+2026-02-02 17:37:34 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-02 18:21:19 - Use pytorch device_name: cpu
+2026-02-02 18:21:19 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-02 18:21:23 - Loading faiss with AVX512 support.
+2026-02-02 18:21:23 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-02-02 18:21:23 - Loading faiss with AVX2 support.
+2026-02-02 18:21:23 - Successfully loaded faiss with AVX2 support.
+2026-02-05 00:27:34 - Use pytorch device_name: cpu
+2026-02-05 00:27:34 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-05 00:27:39 - Loading faiss with AVX512 support.
+2026-02-05 00:27:39 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-02-05 00:27:39 - Loading faiss with AVX2 support.
+2026-02-05 00:27:40 - Successfully loaded faiss with AVX2 support.

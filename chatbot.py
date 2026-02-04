@@ -49,6 +49,46 @@ def format_chat_history(chat_history: list) -> str:
     
     return formatted_history
 
+#Normalization of words before query expansion if needed
+import re
+
+def normalize_query(query: str) -> str:
+    """
+    Normalizes user query to handle typos, variants, and transliterations.
+    This function is intentionally lightweight and deterministic.
+    """
+    q = query.lower().strip()
+
+    # Remove punctuation (keep words only)
+    q = re.sub(r"[^\w\s]", "", q)
+
+    # Common Sanskrit / domain-specific normalizations
+    replacements = {
+        "arjun": "arjuna",
+        "bhraman": "brahman",
+        "brahman": "brahman",
+        "brahmana": "brahman",
+        "geeta": "gita",
+        "bhagvad": "bhagavad",
+        "krishnaa": "krishna",
+        "krsna": "krishna",
+        "atma": "atman",
+        "aatma": "atman",
+        "dharmaha": "dharma"
+    }
+
+    words = q.split()
+    normalized_words = [replacements.get(w, w) for w in words]
+
+    return " ".join(normalized_words)
+
+#function foe voice Speech -> text
+def process_query(query: str) -> str:
+    # move the logic that generates `answer`
+    return answer
+
+
+
 
 
 def main():
@@ -87,6 +127,8 @@ def main():
 
     while True:
         query = input("You: ")
+        normalized_query = normalize_query(query)
+        logging.info(f"Normalized query: {normalized_query}")
         if query.lower() == "exit":
             break
 
@@ -101,12 +143,12 @@ def main():
         try:
             # 1. Initial Retrieval
             # First, try a direct retrieval with the user's original query.
-            initial_docs = retriever.invoke(query)
+            initial_docs = retriever.invoke(normalized_query)
             
             # 2. Trigger Conditions for Query Expansion
             # Expansion is triggered if the query is short (<= 3 words) or initial retrieval is weak (< 3 docs).
             # This avoids wasting resources on already good queries.
-            expand_query = len(query.split()) <= 3 and len(initial_docs) < 3
+            expand_query = len(normalized_query.split()) <= 3 and len(initial_docs) < 3
             
             all_docs = initial_docs
             
@@ -121,7 +163,7 @@ def main():
                 expansion_prompt = f"""
                 Based on the user's query, generate 3 to 5 related, alternative search queries that could help find relevant information in a vector database. The queries should be short, concise, and diverse. Do not answer the question. Only provide a list of queries separated by newlines.
 
-                User Query: "{query}"
+                User Query: "{normalized_query}"
 
                 Alternative Queries:
                 """
@@ -135,8 +177,18 @@ def main():
                     expanded_queries_str = expansion_response.choices[0].message.content.strip()
                     
                     # Filter out empty lines from the response
-                    expanded_queries = [q.strip() for q in expanded_queries_str.split('\n') if q.strip()]
-                    
+                    for q in expanded_queries_str.split("\n"):
+                        q = q.strip()
+                        if not q:
+                            continue
+                         # remove bullets / numbering
+                        q = q.lstrip("-•0123456789. ").strip()
+                        if len(q.split()) <= 8:
+                            expanded_queries.append(q)
+
+                    expanded_queries = expanded_queries[:4]  # hard limit
+
+
                     # Log expanded queries for internal review. They are NOT shown to the user.
                     logging.info(f"Expanded queries: {expanded_queries}")
 
@@ -183,7 +235,9 @@ def main():
         # Build context from documents and history
         # Added history_context for conversation memory
         history_context = format_chat_history(chat_history)
-        doc_context = "\n\n".join(doc.page_content for doc in docs)
+        # doc_context = "\n\n".join(doc.page_content for doc in docs)
+        MAX_DOCS = 6
+        doc_context = "\n\n".join(doc.page_content for doc in docs[:MAX_DOCS])
         context = f"{history_context}\n\n{doc_context}"
 
         # Collect and log sources

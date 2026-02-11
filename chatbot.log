@@ -608,3 +608,1261 @@ ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
 ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
 2026-02-05 00:27:39 - Loading faiss with AVX2 support.
 2026-02-05 00:27:40 - Successfully loaded faiss with AVX2 support.
+2026-02-08 20:06:15 - Use pytorch device_name: cpu
+2026-02-08 20:06:15 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-08 20:06:19 - Loading faiss with AVX2 support.
+2026-02-08 20:06:19 - Successfully loaded faiss with AVX2 support.
+2026-02-08 20:07:01 - Normalized query: teach me the exact teachings of lord krishna which he gave to arjuna in short and in 10 points
+2026-02-08 20:07:01 - User query: teach me the exact teachings of lord krishna which he gave to arjuna in short and in 10 points.
+2026-02-08 20:07:01 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf
+2026-02-08 20:07:02 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-08 20:07:52 - Normalized query: who is an adharmi
+2026-02-08 20:07:52 - User query: who is an adharmi?
+2026-02-08 20:07:52 - Retrieved sources: Angirasa_(\u0905\u0919\u094d\u0917\u093f\u0930\u0938\u0903).csv, Atri_(\u0905\u0924\u094d\u0930\u093f\u0903).csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Aupasana_(\u0914\u092a\u093e\u0938\u0928\u0903).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Agnihotra_(\u0905\u0917\u094d\u0928\u093f\u0939\u094b\u0924\u094d\u0930\u092e\u094d).csv
+2026-02-08 20:07:52 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-08 20:08:08 - Normalized query: who were pandavs
+2026-02-08 20:08:08 - User query: who were pandavs?
+2026-02-08 20:08:08 - Retrieved sources: Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, bhagavad_gita_from_GitaSociety.pdf, Arjuna Vishada Yoga.csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Bhumavidya_(\u092d\u0942\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv
+2026-02-08 20:08:08 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-08 20:08:18 - Normalized query: what is a dharma
+2026-02-08 20:08:18 - User query: what is a dharma
+2026-02-08 20:08:18 - Retrieved sources: Arjuna Vishada Yoga.csv, Education_on_Sanatana_Dharma.csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv
+2026-02-08 20:08:18 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-08 20:08:33 - Normalized query: explain each of them in detail
+2026-02-08 20:08:33 - User query: explain each of them in detail
+2026-02-08 20:08:33 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Bhumavidya_(\u092d\u0942\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, Bahupurushavada_(\u092c\u0939\u0941\u092a\u0941\u0930\u0941\u0937\u0935\u093e\u0926\u0903).csv, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv
+2026-02-08 20:08:33 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-08 20:08:33 - Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-02-08 20:08:36 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-08 20:09:21 - Normalized query: explain each type of dharma in detail
+2026-02-08 20:09:21 - User query: explain each type of dharma in detail
+2026-02-08 20:09:21 - Retrieved sources: Arjuna Vishada Yoga.csv, Education_on_Sanatana_Dharma.csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv
+2026-02-08 20:09:23 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-08 20:10:43 - Normalized query: 0
+2026-02-08 20:10:43 - User query: 0 
+2026-02-08 20:10:43 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Arjuna Vishada Yoga.csv
+2026-02-08 20:10:44 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 11:25:28 - Use pytorch device_name: cpu
+2026-02-09 11:25:28 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 11:25:33 - Loading faiss with AVX2 support.
+2026-02-09 11:25:33 - Successfully loaded faiss with AVX2 support.
+2026-02-09 11:27:27 - Normalized query: why he krishna doing such help to pandavas
+2026-02-09 11:27:27 - User query: why he krishna doing such help to pandavas
+2026-02-09 11:27:27 - Retrieved sources: Arjuna Vishada Yoga.csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-02-09 11:27:28 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 12:07:34 - Use pytorch device_name: cpu
+2026-02-09 12:07:34 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 12:07:38 - Loading faiss with AVX2 support.
+2026-02-09 12:07:38 - Successfully loaded faiss with AVX2 support.
+2026-02-09 12:44:28 - Use pytorch device_name: cpu
+2026-02-09 12:44:28 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 12:44:59 - Use pytorch device_name: cpu
+2026-02-09 12:44:59 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 12:45:03 - Loading faiss with AVX2 support.
+2026-02-09 12:45:03 - Successfully loaded faiss with AVX2 support.
+2026-02-09 13:19:51 - Normalized query: what is a festival
+2026-02-09 13:19:51 - User query: what is a festival?
+2026-02-09 13:19:52 - Retrieved sources: Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, Agnyadhana_(\u0905\u0917\u094d\u0928\u094d\u092f\u093e\u0927\u093e\u0928\u092e\u094d).csv, Atithi_Satkara_(\u0905\u0924\u093f\u0925\u093f\u0938\u0924\u094d\u0915\u093e\u0930\u0903).csv, Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, Agnihotra_(\u0905\u0917\u094d\u0928\u093f\u0939\u094b\u0924\u094d\u0930\u092e\u094d).csv, Dana_Kala_Nirnaya_(\u0926\u093e\u0928\u0915\u093e\u0932\u0928\u093f\u0930\u094d\u0923\u092f\u0903).csv
+2026-02-09 13:19:53 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 15:24:54 - Use pytorch device_name: cpu
+2026-02-09 15:24:54 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 15:24:58 - Loading faiss with AVX2 support.
+2026-02-09 15:24:58 - Successfully loaded faiss with AVX2 support.
+2026-02-09 15:24:58 - Normalized query: what are the
+2026-02-09 15:24:59 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 15:25:11 - Use pytorch device_name: cpu
+2026-02-09 15:25:11 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 15:25:15 - Normalized query: who is
+2026-02-09 15:25:15 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 15:31:53 - Use pytorch device_name: cpu
+2026-02-09 15:31:53 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 15:31:57 - Loading faiss with AVX2 support.
+2026-02-09 15:31:57 - Successfully loaded faiss with AVX2 support.
+2026-02-09 15:31:57 - Normalized query: hey can you explain who is krishna to arjuna in bhagavad gita
+2026-02-09 15:31:58 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 15:32:26 - Use pytorch device_name: cpu
+2026-02-09 15:32:26 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 15:32:28 - Normalized query: what is the
+2026-02-09 15:32:29 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 15:32:37 - Use pytorch device_name: cpu
+2026-02-09 15:32:37 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 15:32:40 - Normalized query: what is the essence of dharma in the real life
+2026-02-09 15:32:40 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 15:35:54 - Use pytorch device_name: cpu
+2026-02-09 15:35:54 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 15:35:58 - Loading faiss with AVX2 support.
+2026-02-09 15:35:58 - Successfully loaded faiss with AVX2 support.
+2026-02-09 15:35:58 - Normalized query: who is the main character of
+2026-02-09 15:35:59 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 15:36:29 - Use pytorch device_name: cpu
+2026-02-09 15:36:29 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 15:36:32 - Normalized query: who is the main character of mahabharata
+2026-02-09 15:36:32 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 15:37:00 - Use pytorch device_name: cpu
+2026-02-09 15:37:00 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 15:37:03 - Normalized query: five assets of derma
+2026-02-09 15:37:03 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 15:37:46 - Use pytorch device_name: cpu
+2026-02-09 15:37:46 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 15:37:49 - Normalized query: who is shri krishna
+2026-02-09 15:37:49 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 15:39:20 - Use pytorch device_name: cpu
+2026-02-09 15:39:20 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 15:39:24 - Loading faiss with AVX2 support.
+2026-02-09 15:39:24 - Successfully loaded faiss with AVX2 support.
+2026-02-09 15:39:24 - Normalized query: who is shri krishna
+2026-02-09 15:39:24 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 15:39:38 - Use pytorch device_name: cpu
+2026-02-09 15:39:38 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 15:39:41 - Normalized query: dancer is not present in a given cont
+2026-02-09 15:39:41 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 15:48:24 - Use pytorch device_name: cpu
+2026-02-09 15:48:24 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 15:48:28 - Loading faiss with AVX2 support.
+2026-02-09 15:48:28 - Successfully loaded faiss with AVX2 support.
+2026-02-09 15:48:28 - Normalized query: who is shri krishna in mahabharat
+2026-02-09 15:48:29 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 15:48:29 - Imported existing <module 'comtypes.gen' from 'C:\\Users\\vijay\\OneDrive\\Documents\\ShastraLLM\\shastra-rag-system\\venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-02-09 15:48:29 - Using writeable comtypes cache directory: 'C:\Users\vijay\OneDrive\Documents\ShastraLLM\shastra-rag-system\venv\Lib\site-packages\comtypes\gen'
+2026-02-09 15:49:20 - Use pytorch device_name: cpu
+2026-02-09 15:49:20 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 15:49:23 - Normalized query: what did shri krishna told to arjuna
+2026-02-09 15:49:24 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 15:49:38 - Use pytorch device_name: cpu
+2026-02-09 15:49:38 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 15:49:41 - Normalized query: who is shri krishna in mahabharat
+2026-02-09 15:49:41 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 15:50:00 - Use pytorch device_name: cpu
+2026-02-09 15:50:00 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 15:50:03 - Normalized query: what is dharma in short
+2026-02-09 15:50:03 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 15:50:17 - Use pytorch device_name: cpu
+2026-02-09 15:50:17 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 15:50:20 - Normalized query: who is shri krishna
+2026-02-09 15:50:20 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 15:58:46 - Initializing Chatbot...
+2026-02-09 15:59:42 - Use pytorch device_name: cpu
+2026-02-09 15:59:42 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 15:59:46 - Loading faiss with AVX2 support.
+2026-02-09 15:59:47 - Successfully loaded faiss with AVX2 support.
+2026-02-09 15:59:47 - Chatbot initialized successfully.
+2026-02-09 16:00:27 - User query: who is shree krishna in mahabharata?
+2026-02-09 16:00:27 - Normalized query: who is shree krishna in mahabharata
+2026-02-09 16:00:27 - Retrieved sources: Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Arjuna Vishada Yoga.csv, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Education_on_Sanatana_Dharma.csv, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv
+2026-02-09 16:00:28 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 16:00:36 - User query: what is dharma?
+2026-02-09 16:00:36 - Normalized query: what is dharma
+2026-02-09 16:00:36 - Retrieved sources: Arjuna Vishada Yoga.csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv
+2026-02-09 16:00:36 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 16:00:53 - User query: explain types of dharma. 
+2026-02-09 16:00:53 - Normalized query: explain types of dharma
+2026-02-09 16:00:53 - Retrieved sources: Arjuna Vishada Yoga.csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv
+2026-02-09 16:00:54 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 16:51:02 - INFO - Initializing Chatbot...
+2026-02-09 16:51:17 - INFO - Use pytorch device_name: cpu
+2026-02-09 16:51:17 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 16:51:21 - INFO - Loading faiss with AVX2 support.
+2026-02-09 16:51:21 - INFO - Successfully loaded faiss with AVX2 support.
+2026-02-09 16:51:21 - INFO - Chatbot initialized successfully.
+2026-02-09 16:51:21 - INFO - Searching for an available microphone...
+2026-02-09 16:51:22 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 16:51:22 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 16:51:29 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 16:51:30 - INFO - Successfully recognized text: 'what is carbon'
+2026-02-09 16:51:30 - INFO - User query: what is carbon
+2026-02-09 16:51:30 - INFO - Normalized query: what is carbon
+2026-02-09 16:51:30 - INFO - Retrieved sources: Education_on_Sanatana_Dharma.csv, bhagavad_gita_from_GitaSociety.pdf, Dana_(\u0926\u093e\u0928\u092e\u094d).csv
+2026-02-09 16:51:31 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 16:51:31 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\vijay\\OneDrive\\Documents\\ShastraLLM\\shastra-rag-system\\venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-02-09 16:51:31 - INFO - Using writeable comtypes cache directory: 'C:\Users\vijay\OneDrive\Documents\ShastraLLM\shastra-rag-system\venv\Lib\site-packages\comtypes\gen'
+2026-02-09 16:51:47 - INFO - Searching for an available microphone...
+2026-02-09 16:51:48 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 16:51:48 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 16:51:53 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 16:51:54 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 16:51:54 - INFO - Searching for an available microphone...
+2026-02-09 16:51:54 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 16:51:54 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 16:52:03 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 16:52:04 - INFO - Successfully recognized text: 'who is the director of Arjuna'
+2026-02-09 16:52:04 - INFO - User query: who is the director of arjuna
+2026-02-09 16:52:04 - INFO - Normalized query: who is the director of arjuna
+2026-02-09 16:52:04 - INFO - Retrieved sources: Arjuna Vishada Yoga.csv, bhagavad_gita_from_GitaSociety.pdf
+2026-02-09 16:52:05 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 16:52:05 - INFO - Searching for an available microphone...
+2026-02-09 16:52:05 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 16:52:05 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 16:52:10 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 16:52:11 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 16:52:11 - INFO - Searching for an available microphone...
+2026-02-09 16:52:11 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 16:52:11 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 16:53:58 - INFO - Initializing Chatbot...
+2026-02-09 16:54:10 - INFO - Use pytorch device_name: cpu
+2026-02-09 16:54:10 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 16:54:14 - INFO - Loading faiss with AVX2 support.
+2026-02-09 16:54:14 - INFO - Successfully loaded faiss with AVX2 support.
+2026-02-09 16:54:14 - INFO - Chatbot initialized successfully.
+2026-02-09 16:54:14 - INFO - Searching for an available microphone...
+2026-02-09 16:54:14 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 16:54:15 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 16:54:24 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 16:54:26 - INFO - Successfully recognized text: 'who is arjuna's father and who is Shri Krishna'
+2026-02-09 16:54:26 - INFO - User query: who is arjuna's father and who is shri krishna
+2026-02-09 16:54:26 - INFO - Normalized query: who is arjunas father and who is shri krishna
+2026-02-09 16:54:26 - INFO - Retrieved sources: Arjuna Vishada Yoga.csv, bhagavad_gita_from_GitaSociety.pdf
+2026-02-09 16:54:27 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 16:54:27 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\vijay\\OneDrive\\Documents\\ShastraLLM\\shastra-rag-system\\venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-02-09 16:54:27 - INFO - Using writeable comtypes cache directory: 'C:\Users\vijay\OneDrive\Documents\ShastraLLM\shastra-rag-system\venv\Lib\site-packages\comtypes\gen'
+2026-02-09 16:54:55 - INFO - Searching for an available microphone...
+2026-02-09 16:54:55 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 16:54:55 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 16:55:04 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 16:55:05 - INFO - Successfully recognized text: 'what are the types of Dharma'
+2026-02-09 16:55:05 - INFO - User query: what are the types of dharma
+2026-02-09 16:55:05 - INFO - Normalized query: what are the types of dharma
+2026-02-09 16:55:05 - INFO - Retrieved sources: Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Arjuna Vishada Yoga.csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Education_on_Sanatana_Dharma.csv
+2026-02-09 16:55:06 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 16:55:06 - INFO - Searching for an available microphone...
+2026-02-09 16:55:06 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 16:55:06 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 16:55:12 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 16:55:13 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 16:55:13 - INFO - Searching for an available microphone...
+2026-02-09 16:55:13 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 16:55:13 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 16:55:22 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 16:55:23 - INFO - Successfully recognized text: 'teach me Dharma'
+2026-02-09 16:55:23 - INFO - User query: teach me dharma
+2026-02-09 16:55:23 - INFO - Normalized query: teach me dharma
+2026-02-09 16:55:23 - INFO - Retrieved sources: Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Arjuna Vishada Yoga.csv, bhagavad_gita_from_GitaSociety.pdf, Education_on_Sanatana_Dharma.csv
+2026-02-09 16:55:24 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 16:55:24 - INFO - Searching for an available microphone...
+2026-02-09 16:55:24 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 16:55:24 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 16:55:37 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 16:55:39 - INFO - Successfully recognized text: 'exit'
+2026-02-09 17:19:40 - Initializing Chatbot...
+2026-02-09 17:19:54 - Use pytorch device_name: cpu
+2026-02-09 17:19:54 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 17:19:58 - Loading faiss with AVX2 support.
+2026-02-09 17:19:58 - Successfully loaded faiss with AVX2 support.
+2026-02-09 17:19:58 - Chatbot initialized successfully.
+2026-02-09 17:21:06 - User query: who is real hero of mahabharat?
+2026-02-09 17:21:06 - Normalized query: who is real hero of mahabharat
+2026-02-09 17:21:06 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Airavata_(\u0910\u0930\u093e\u0935\u0924\u0903).csv, Arjuna Vishada Yoga.csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv
+2026-02-09 17:21:07 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 17:32:07 - Initializing Chatbot...
+2026-02-09 17:32:23 - Use pytorch device_name: cpu
+2026-02-09 17:32:23 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 17:32:26 - Loading faiss with AVX2 support.
+2026-02-09 17:32:27 - Successfully loaded faiss with AVX2 support.
+2026-02-09 17:32:27 - Chatbot initialized successfully.
+2026-02-09 17:32:28 - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-02-09 17:32:28 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-02-09 17:32:28 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-02-09 17:33:07 - User query: who is shre krishna in mahabharat?
+2026-02-09 17:33:07 - Normalized query: who is shre krishna in mahabharat
+2026-02-09 17:33:07 - Retrieved sources: Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Arjuna Vishada Yoga.csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx
+2026-02-09 17:33:08 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 17:34:32 - Initializing Chatbot...
+2026-02-09 17:34:51 - Use pytorch device_name: cpu
+2026-02-09 17:34:51 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 17:34:55 - Loading faiss with AVX2 support.
+2026-02-09 17:34:55 - Successfully loaded faiss with AVX2 support.
+2026-02-09 17:34:55 - Chatbot initialized successfully.
+2026-02-09 17:34:57 - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-02-09 17:34:57 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-02-09 17:34:58 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-02-09 17:36:04 - User query: what are the types of Dharma?
+
+2026-02-09 17:36:04 - Normalized query: what are the types of dharma
+2026-02-09 17:36:04 - Retrieved sources: Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Arjuna Vishada Yoga.csv, Education_on_Sanatana_Dharma.csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv
+2026-02-09 17:36:05 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 17:49:54 - Initializing Chatbot...
+2026-02-09 17:50:09 - Use pytorch device_name: cpu
+2026-02-09 17:50:09 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 17:50:13 - Loading faiss with AVX2 support.
+2026-02-09 17:50:13 - Successfully loaded faiss with AVX2 support.
+2026-02-09 17:50:13 - Chatbot initialized successfully.
+2026-02-09 17:54:42 - Initializing Chatbot...
+2026-02-09 17:55:00 - Use pytorch device_name: cpu
+2026-02-09 17:55:00 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 17:55:04 - Loading faiss with AVX2 support.
+2026-02-09 17:55:04 - Successfully loaded faiss with AVX2 support.
+2026-02-09 17:55:04 - Chatbot initialized successfully.
+2026-02-09 17:55:37 - Initializing Chatbot...
+2026-02-09 17:55:48 - Use pytorch device_name: cpu
+2026-02-09 17:55:48 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 17:55:52 - Loading faiss with AVX2 support.
+2026-02-09 17:55:52 - Successfully loaded faiss with AVX2 support.
+2026-02-09 17:55:52 - Chatbot initialized successfully.
+2026-02-09 18:00:57 - Initializing Chatbot...
+2026-02-09 18:01:14 - Use pytorch device_name: cpu
+2026-02-09 18:01:14 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 18:01:18 - Loading faiss with AVX2 support.
+2026-02-09 18:01:18 - Successfully loaded faiss with AVX2 support.
+2026-02-09 18:01:18 - Chatbot initialized successfully.
+2026-02-09 18:01:20 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-02-09 18:01:55 - Initializing Chatbot...
+2026-02-09 18:02:04 - Use pytorch device_name: cpu
+2026-02-09 18:02:04 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 18:02:08 - Loading faiss with AVX2 support.
+2026-02-09 18:02:08 - Successfully loaded faiss with AVX2 support.
+2026-02-09 18:02:08 - Chatbot initialized successfully.
+2026-02-09 18:02:09 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-02-09 18:12:31 - Initializing Chatbot...
+2026-02-09 18:12:49 - Use pytorch device_name: cpu
+2026-02-09 18:12:49 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 18:12:53 - Loading faiss with AVX2 support.
+2026-02-09 18:12:53 - Successfully loaded faiss with AVX2 support.
+2026-02-09 18:12:53 - Chatbot initialized successfully.
+2026-02-09 18:23:44 - User query: what are types of dharma?
+2026-02-09 18:23:44 - Normalized query: what are types of dharma
+2026-02-09 18:23:45 - Retrieved sources: Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Arjuna Vishada Yoga.csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv
+2026-02-09 18:23:47 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 18:24:23 - INFO - Initializing Chatbot...
+2026-02-09 18:24:50 - INFO - Use pytorch device_name: cpu
+2026-02-09 18:24:50 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 18:24:54 - INFO - Loading faiss with AVX2 support.
+2026-02-09 18:24:54 - INFO - Successfully loaded faiss with AVX2 support.
+2026-02-09 18:24:55 - INFO - Chatbot initialized successfully.
+2026-02-09 18:24:55 - INFO - Searching for an available microphone...
+2026-02-09 18:24:55 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:24:55 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:25:02 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:25:04 - INFO - Successfully recognized text: 'microphone pahle detect'
+2026-02-09 18:25:04 - INFO - User query: microphone pahle detect
+2026-02-09 18:25:04 - INFO - Normalized query: microphone pahle detect
+2026-02-09 18:25:04 - INFO - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Donor_(\u0926\u093e\u0924\u093e).csv, Dana_Kala_Nirnaya_(\u0926\u093e\u0928\u0915\u093e\u0932\u0928\u093f\u0930\u094d\u0923\u092f\u0903).csv, Bhumavidya_(\u092d\u0942\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv
+2026-02-09 18:25:05 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 18:25:05 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\vijay\\OneDrive\\Documents\\ShastraLLM\\shastra-rag-system\\venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-02-09 18:25:05 - INFO - Using writeable comtypes cache directory: 'C:\Users\vijay\OneDrive\Documents\ShastraLLM\shastra-rag-system\venv\Lib\site-packages\comtypes\gen'
+2026-02-09 18:25:25 - INFO - Initializing Chatbot...
+2026-02-09 18:25:43 - INFO - Use pytorch device_name: cpu
+2026-02-09 18:25:43 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 18:25:47 - INFO - Loading faiss with AVX2 support.
+2026-02-09 18:25:47 - INFO - Successfully loaded faiss with AVX2 support.
+2026-02-09 18:25:47 - INFO - Chatbot initialized successfully.
+2026-02-09 18:25:47 - INFO - Searching for an available microphone...
+2026-02-09 18:25:48 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:25:48 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:26:05 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:26:07 - INFO - Successfully recognized text: 'han pahle call'
+2026-02-09 18:26:07 - INFO - User query: han pahle call
+2026-02-09 18:26:07 - INFO - Normalized query: han pahle call
+2026-02-09 18:26:07 - INFO - Retrieved sources: Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Bhumavidya_(\u092d\u0942\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv
+2026-02-09 18:26:14 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-02-09 18:26:14 - ERROR - Error processing query 'han pahle call': Error code: 503 - {'error': {'message': 'llama-3.1-8b-instant is currently over capacity. Please try again and back off exponentially. Visit https://groqstatus.com to see if there is an active incident.', 'type': 'internal_server_error'}}
+2026-02-09 18:26:14 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\vijay\\OneDrive\\Documents\\ShastraLLM\\shastra-rag-system\\venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-02-09 18:26:14 - INFO - Using writeable comtypes cache directory: 'C:\Users\vijay\OneDrive\Documents\ShastraLLM\shastra-rag-system\venv\Lib\site-packages\comtypes\gen'
+2026-02-09 18:26:20 - INFO - Searching for an available microphone...
+2026-02-09 18:26:20 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:26:20 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:26:26 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:26:36 - INFO - Successfully recognized text: 'basic local hai jo Windows ka speaker audio Hai Vahi generate'
+2026-02-09 18:26:36 - INFO - User query: basic local hai jo windows ka speaker audio hai vahi generate
+2026-02-09 18:26:36 - INFO - Normalized query: basic local hai jo windows ka speaker audio hai vahi generate
+2026-02-09 18:26:37 - INFO - Retrieved sources: Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Acceptor_(\u092a\u094d\u0930\u0924\u093f\u0917\u094d\u0930\u0939\u0940\u0924\u093e).csv, Agni in Vedas.csv, Atithi_Satkara_(\u0905\u0924\u093f\u0925\u093f\u0938\u0924\u094d\u0915\u093e\u0930\u0903).csv
+2026-02-09 18:26:37 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 18:26:37 - INFO - Searching for an available microphone...
+2026-02-09 18:26:37 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:26:38 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:26:45 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:26:46 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:26:46 - INFO - Searching for an available microphone...
+2026-02-09 18:26:46 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:26:46 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:26:51 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:26:52 - INFO - Successfully recognized text: 'beauty of Lucknow'
+2026-02-09 18:26:52 - INFO - User query: beauty of lucknow
+2026-02-09 18:26:52 - INFO - Normalized query: beauty of lucknow
+2026-02-09 18:26:52 - INFO - Retrieved sources: Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, Bhuta_Yajna_(\u092d\u0942\u0924\u092f\u091c\u094d\u091e\u0903).csv, Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Bhumavidya_(\u092d\u0942\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Agnyadhana_(\u0905\u0917\u094d\u0928\u094d\u092f\u093e\u0927\u093e\u0928\u092e\u094d).csv
+2026-02-09 18:26:52 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 18:26:52 - INFO - Searching for an available microphone...
+2026-02-09 18:26:52 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:26:52 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:26:58 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:26:59 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:26:59 - INFO - Searching for an available microphone...
+2026-02-09 18:26:59 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:26:59 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:27:14 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:27:17 - INFO - Successfully recognized text: 'are yah tha Jab radio per open kiya tha to yah normal chart per Jo Ranuja lekin Jab audio integration karne ka'
+2026-02-09 18:27:17 - INFO - User query: are yah tha jab radio per open kiya tha to yah normal chart per jo ranuja lekin jab audio integration karne ka
+2026-02-09 18:27:17 - INFO - Normalized query: are yah tha jab radio per open kiya tha to yah normal chart per jo ranuja lekin jab audio integration karne ka
+2026-02-09 18:27:17 - INFO - Retrieved sources: Atithi_Satkara_(\u0905\u0924\u093f\u0925\u093f\u0938\u0924\u094d\u0915\u093e\u0930\u0903).csv, Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, Agni in Vedas.csv, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv, Bhumavidya_(\u092d\u0942\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv
+2026-02-09 18:27:18 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 18:27:18 - INFO - Searching for an available microphone...
+2026-02-09 18:27:18 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:27:18 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:27:22 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:27:23 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:27:23 - INFO - Searching for an available microphone...
+2026-02-09 18:27:23 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:27:23 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:27:27 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:27:28 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:27:28 - INFO - Searching for an available microphone...
+2026-02-09 18:27:28 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:27:28 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:27:35 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:27:40 - INFO - Successfully recognized text: 'bhai per acche se data Mil Gaya Mujhe to'
+2026-02-09 18:27:40 - INFO - User query: bhai per acche se data mil gaya mujhe to
+2026-02-09 18:27:40 - INFO - Normalized query: bhai per acche se data mil gaya mujhe to
+2026-02-09 18:27:40 - INFO - Retrieved sources: Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv, Education_on_Sanatana_Dharma.csv, Agni in Vedas.csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv
+2026-02-09 18:27:40 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 18:27:40 - INFO - Searching for an available microphone...
+2026-02-09 18:27:40 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:27:41 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:27:45 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:27:46 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:27:46 - INFO - Searching for an available microphone...
+2026-02-09 18:27:46 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:27:46 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:27:49 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:27:49 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:27:49 - INFO - Searching for an available microphone...
+2026-02-09 18:27:49 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:27:50 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:27:53 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:27:53 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:27:53 - INFO - Searching for an available microphone...
+2026-02-09 18:27:53 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:27:54 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:28:01 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:28:02 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:28:02 - INFO - Searching for an available microphone...
+2026-02-09 18:28:02 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:28:03 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:28:12 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:28:13 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:28:13 - INFO - Searching for an available microphone...
+2026-02-09 18:28:13 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:28:14 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:28:18 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:28:18 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:28:18 - INFO - Searching for an available microphone...
+2026-02-09 18:28:18 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:28:19 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:28:29 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:28:30 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:28:30 - INFO - Searching for an available microphone...
+2026-02-09 18:28:30 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:28:30 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:28:38 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:28:40 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:28:40 - INFO - Searching for an available microphone...
+2026-02-09 18:28:40 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:28:41 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:28:47 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:28:48 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:28:48 - INFO - Searching for an available microphone...
+2026-02-09 18:28:49 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:28:49 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:28:56 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:28:57 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:28:57 - INFO - Searching for an available microphone...
+2026-02-09 18:28:57 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:28:57 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:29:05 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:29:07 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:29:07 - INFO - Searching for an available microphone...
+2026-02-09 18:29:07 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:29:07 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:29:16 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:29:17 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:29:17 - INFO - Searching for an available microphone...
+2026-02-09 18:29:17 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:29:17 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:29:24 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:29:26 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:29:26 - INFO - Searching for an available microphone...
+2026-02-09 18:29:26 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:29:26 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:29:37 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:29:38 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:29:38 - INFO - Searching for an available microphone...
+2026-02-09 18:29:38 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:29:39 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:29:43 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:29:44 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:29:44 - INFO - Searching for an available microphone...
+2026-02-09 18:29:44 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:29:44 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:29:51 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:29:56 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:29:56 - INFO - Searching for an available microphone...
+2026-02-09 18:29:56 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:29:56 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:30:01 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:30:08 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:30:08 - INFO - Searching for an available microphone...
+2026-02-09 18:30:08 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:30:08 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:30:12 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:30:12 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:30:12 - INFO - Searching for an available microphone...
+2026-02-09 18:30:12 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:30:13 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:30:21 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:30:22 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:30:22 - INFO - Searching for an available microphone...
+2026-02-09 18:30:22 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:30:22 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:30:27 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:30:45 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:30:45 - INFO - Searching for an available microphone...
+2026-02-09 18:30:45 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:30:45 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:30:48 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:30:48 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:30:48 - INFO - Searching for an available microphone...
+2026-02-09 18:30:49 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:30:49 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:30:52 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:30:53 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:30:53 - INFO - Searching for an available microphone...
+2026-02-09 18:30:53 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:30:53 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:31:01 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:31:02 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:31:02 - INFO - Searching for an available microphone...
+2026-02-09 18:31:02 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:31:02 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:31:08 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:31:09 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:31:09 - INFO - Searching for an available microphone...
+2026-02-09 18:31:09 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:31:09 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:31:19 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:31:21 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:31:21 - INFO - Searching for an available microphone...
+2026-02-09 18:31:22 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:31:22 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:31:25 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:31:26 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:31:26 - INFO - Searching for an available microphone...
+2026-02-09 18:31:26 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:31:26 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:31:35 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:31:36 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:31:36 - INFO - Searching for an available microphone...
+2026-02-09 18:31:37 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:31:37 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:31:52 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:31:55 - INFO - Successfully recognized text: 'natural Science sample paper'
+2026-02-09 18:31:55 - INFO - User query: natural science sample paper
+2026-02-09 18:31:55 - INFO - Normalized query: natural science sample paper
+2026-02-09 18:31:55 - INFO - Retrieved sources: Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Anadhyayana_(\u0905\u0928\u0927\u094d\u092f\u092f\u0928\u092e\u094d).csv, Agni in Vedas.csv, bhagavad_gita_from_GitaSociety.pdf
+2026-02-09 18:31:55 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 18:31:55 - INFO - Searching for an available microphone...
+2026-02-09 18:31:55 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:31:55 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:32:06 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:32:09 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:32:09 - INFO - Searching for an available microphone...
+2026-02-09 18:32:09 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:32:09 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:32:14 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:32:19 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:32:19 - INFO - Searching for an available microphone...
+2026-02-09 18:32:19 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:32:19 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:32:23 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:32:24 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:32:24 - INFO - Searching for an available microphone...
+2026-02-09 18:32:24 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:32:24 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:32:32 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:32:36 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:32:36 - INFO - Searching for an available microphone...
+2026-02-09 18:32:37 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:32:37 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:32:40 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:32:41 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:32:41 - INFO - Searching for an available microphone...
+2026-02-09 18:32:41 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:32:41 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:32:48 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:32:58 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:32:58 - INFO - Searching for an available microphone...
+2026-02-09 18:32:58 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:32:58 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:33:07 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:33:08 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:33:08 - INFO - Searching for an available microphone...
+2026-02-09 18:33:08 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:33:08 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:33:13 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:33:14 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:33:14 - INFO - Searching for an available microphone...
+2026-02-09 18:33:14 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:33:14 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:33:20 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:33:21 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:33:21 - INFO - Searching for an available microphone...
+2026-02-09 18:33:21 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:33:21 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:33:28 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:33:28 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:33:28 - INFO - Searching for an available microphone...
+2026-02-09 18:33:28 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:33:29 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:33:35 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:33:36 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:33:36 - INFO - Searching for an available microphone...
+2026-02-09 18:33:36 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:33:36 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:33:44 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:33:45 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:33:45 - INFO - Searching for an available microphone...
+2026-02-09 18:33:45 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:33:45 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:33:55 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:33:59 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:33:59 - INFO - Searching for an available microphone...
+2026-02-09 18:33:59 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:33:59 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:34:04 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:34:05 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:34:05 - INFO - Searching for an available microphone...
+2026-02-09 18:34:05 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:34:05 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:34:10 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:34:11 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:34:11 - INFO - Searching for an available microphone...
+2026-02-09 18:34:11 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:34:11 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:34:18 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:34:19 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:34:19 - INFO - Searching for an available microphone...
+2026-02-09 18:34:19 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:34:19 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:34:30 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:34:33 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:34:33 - INFO - Searching for an available microphone...
+2026-02-09 18:34:33 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:34:33 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:34:36 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:34:37 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:34:37 - INFO - Searching for an available microphone...
+2026-02-09 18:34:37 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:34:37 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:34:46 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:34:47 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:34:47 - INFO - Searching for an available microphone...
+2026-02-09 18:34:47 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:34:47 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:35:03 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:35:05 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:35:05 - INFO - Searching for an available microphone...
+2026-02-09 18:35:05 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:35:06 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:35:10 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:35:10 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:35:10 - INFO - Searching for an available microphone...
+2026-02-09 18:35:10 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:35:11 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:35:16 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:35:17 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:35:17 - INFO - Searching for an available microphone...
+2026-02-09 18:35:17 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:35:17 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:35:20 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:35:22 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:35:22 - INFO - Searching for an available microphone...
+2026-02-09 18:35:22 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:35:22 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:35:34 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:35:35 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:35:35 - INFO - Searching for an available microphone...
+2026-02-09 18:35:35 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:35:35 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:36:04 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:36:07 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:36:07 - INFO - Searching for an available microphone...
+2026-02-09 18:36:07 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:36:07 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:36:12 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:36:12 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:36:12 - INFO - Searching for an available microphone...
+2026-02-09 18:36:12 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:36:12 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:36:18 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:36:19 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:36:19 - INFO - Searching for an available microphone...
+2026-02-09 18:36:19 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:36:19 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:36:26 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:36:27 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:36:27 - INFO - Searching for an available microphone...
+2026-02-09 18:36:27 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:36:27 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:36:35 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:36:37 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:36:37 - INFO - Searching for an available microphone...
+2026-02-09 18:36:37 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:36:37 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:36:39 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:36:40 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:36:40 - INFO - Searching for an available microphone...
+2026-02-09 18:36:40 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:36:40 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:36:45 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:36:47 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:36:47 - INFO - Searching for an available microphone...
+2026-02-09 18:36:47 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:36:47 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:36:51 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:36:52 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:36:52 - INFO - Searching for an available microphone...
+2026-02-09 18:36:52 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:36:52 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:37:00 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:37:01 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:37:01 - INFO - Searching for an available microphone...
+2026-02-09 18:37:01 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:37:01 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:37:05 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:37:05 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:37:05 - INFO - Searching for an available microphone...
+2026-02-09 18:37:05 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:37:05 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:37:08 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:37:11 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:37:11 - INFO - Searching for an available microphone...
+2026-02-09 18:37:11 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:37:11 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:37:25 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:37:26 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:37:26 - INFO - Searching for an available microphone...
+2026-02-09 18:37:26 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:37:26 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:37:36 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:37:36 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:37:36 - INFO - Searching for an available microphone...
+2026-02-09 18:37:36 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:37:37 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:37:41 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:37:42 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:37:42 - INFO - Searching for an available microphone...
+2026-02-09 18:37:42 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:37:42 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:37:54 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:37:56 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:37:56 - INFO - Searching for an available microphone...
+2026-02-09 18:37:56 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:37:56 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:38:05 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:38:06 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:38:06 - INFO - Searching for an available microphone...
+2026-02-09 18:38:06 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:38:06 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:38:12 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:38:13 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:38:13 - INFO - Searching for an available microphone...
+2026-02-09 18:38:13 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:38:13 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:38:20 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:38:21 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:38:21 - INFO - Searching for an available microphone...
+2026-02-09 18:38:21 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:38:21 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:38:27 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:38:28 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:38:28 - INFO - Searching for an available microphone...
+2026-02-09 18:38:28 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:38:28 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:38:49 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:38:51 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:38:51 - INFO - Searching for an available microphone...
+2026-02-09 18:38:51 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:38:51 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:38:55 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:38:56 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:38:56 - INFO - Searching for an available microphone...
+2026-02-09 18:38:56 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:38:56 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:39:07 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:39:08 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:39:08 - INFO - Searching for an available microphone...
+2026-02-09 18:39:08 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:39:08 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:39:34 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:39:36 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:39:36 - INFO - Searching for an available microphone...
+2026-02-09 18:39:37 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:39:37 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:39:41 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:39:41 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:39:41 - INFO - Searching for an available microphone...
+2026-02-09 18:39:41 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:39:41 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:39:46 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:39:46 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:39:46 - INFO - Searching for an available microphone...
+2026-02-09 18:39:46 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:39:46 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:39:59 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:40:00 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:40:00 - INFO - Searching for an available microphone...
+2026-02-09 18:40:00 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:40:00 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:40:18 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:40:20 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:40:20 - INFO - Searching for an available microphone...
+2026-02-09 18:40:20 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:40:21 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:40:24 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:40:25 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:40:25 - INFO - Searching for an available microphone...
+2026-02-09 18:40:25 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:40:25 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:40:29 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:40:30 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:40:30 - INFO - Searching for an available microphone...
+2026-02-09 18:40:30 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:40:30 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:40:37 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:40:41 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:40:41 - INFO - Searching for an available microphone...
+2026-02-09 18:40:41 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:40:41 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:41:01 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:41:05 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:41:05 - INFO - Searching for an available microphone...
+2026-02-09 18:41:05 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:41:06 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:41:17 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:41:18 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:41:18 - INFO - Searching for an available microphone...
+2026-02-09 18:41:18 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:41:18 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:41:23 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:41:28 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:41:28 - INFO - Searching for an available microphone...
+2026-02-09 18:41:28 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:41:28 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:41:36 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:41:38 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:41:38 - INFO - Searching for an available microphone...
+2026-02-09 18:41:38 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:41:38 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:41:45 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:41:46 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:41:46 - INFO - Searching for an available microphone...
+2026-02-09 18:41:47 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:41:47 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:41:52 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:41:53 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:41:53 - INFO - Searching for an available microphone...
+2026-02-09 18:41:53 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:41:53 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:42:08 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:42:10 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:42:10 - INFO - Searching for an available microphone...
+2026-02-09 18:42:10 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:42:10 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:42:31 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:42:34 - INFO - Successfully recognized text: 'evening'
+2026-02-09 18:42:34 - INFO - User query: evening
+2026-02-09 18:42:34 - INFO - Normalized query: evening
+2026-02-09 18:42:34 - INFO - Retrieved sources: Anadhyayana_(\u0905\u0928\u0927\u094d\u092f\u092f\u0928\u092e\u094d).csv, Agnihotra_(\u0905\u0917\u094d\u0928\u093f\u0939\u094b\u0924\u094d\u0930\u092e\u094d).csv, bhagavad_gita_from_GitaSociety.pdf, Education_on_Sanatana_Dharma.csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv
+2026-02-09 18:42:34 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 18:42:35 - INFO - Searching for an available microphone...
+2026-02-09 18:42:35 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:42:35 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:42:40 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:42:41 - INFO - Successfully recognized text: 'Golu se Mara vada'
+2026-02-09 18:42:41 - INFO - User query: golu se mara vada
+2026-02-09 18:42:41 - INFO - Normalized query: golu se mara vada
+2026-02-09 18:42:41 - INFO - Retrieved sources: Angirasa_(\u0905\u0919\u094d\u0917\u093f\u0930\u0938\u0903).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv, Acceptor_(\u092a\u094d\u0930\u0924\u093f\u0917\u094d\u0930\u0939\u0940\u0924\u093e).csv, Agni in Vedas.csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Airavata_(\u0910\u0930\u093e\u0935\u0924\u0903).csv, Bhumavidya_(\u092d\u0942\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv
+2026-02-09 18:42:41 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 18:42:41 - INFO - Searching for an available microphone...
+2026-02-09 18:42:41 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:42:42 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:42:46 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:42:47 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:42:47 - INFO - Searching for an available microphone...
+2026-02-09 18:42:47 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:42:47 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:42:51 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:42:52 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:42:52 - INFO - Searching for an available microphone...
+2026-02-09 18:42:52 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:42:52 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:42:57 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:42:57 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:42:57 - INFO - Searching for an available microphone...
+2026-02-09 18:42:57 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:42:58 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:43:03 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:43:03 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:43:03 - INFO - Searching for an available microphone...
+2026-02-09 18:43:03 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:43:03 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:43:12 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:43:13 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:43:13 - INFO - Searching for an available microphone...
+2026-02-09 18:43:13 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:43:13 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:43:17 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:43:21 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:43:21 - INFO - Searching for an available microphone...
+2026-02-09 18:43:21 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:43:21 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:43:29 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:43:30 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:43:30 - INFO - Searching for an available microphone...
+2026-02-09 18:43:30 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:43:30 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:43:39 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:43:40 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:43:40 - INFO - Searching for an available microphone...
+2026-02-09 18:43:40 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:43:40 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:43:48 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:43:50 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:43:50 - INFO - Searching for an available microphone...
+2026-02-09 18:43:50 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:43:50 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:43:55 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:43:55 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:43:55 - INFO - Searching for an available microphone...
+2026-02-09 18:43:55 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:43:56 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:44:00 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:44:01 - INFO - Successfully recognized text: 'Tumne nashta biscuit 10 banana'
+2026-02-09 18:44:01 - INFO - User query: tumne nashta biscuit 10 banana
+2026-02-09 18:44:01 - INFO - Normalized query: tumne nashta biscuit 10 banana
+2026-02-09 18:44:01 - INFO - Retrieved sources: Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, bhagavad_gita_from_GitaSociety.pdf, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Danavastu_(\u0926\u0947\u092f\u092e\u094d).csv
+2026-02-09 18:44:02 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 18:44:02 - INFO - Searching for an available microphone...
+2026-02-09 18:44:02 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:44:02 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:44:17 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:44:18 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:44:18 - INFO - Searching for an available microphone...
+2026-02-09 18:44:19 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:44:19 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:44:48 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:44:51 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:44:51 - INFO - Searching for an available microphone...
+2026-02-09 18:44:51 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:44:51 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:45:03 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:45:04 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:45:04 - INFO - Searching for an available microphone...
+2026-02-09 18:45:04 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:45:04 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:45:09 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:45:12 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:45:12 - INFO - Searching for an available microphone...
+2026-02-09 18:45:12 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:45:12 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:45:18 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:45:18 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:45:18 - INFO - Searching for an available microphone...
+2026-02-09 18:45:19 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:45:19 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:45:22 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:45:23 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:45:23 - INFO - Searching for an available microphone...
+2026-02-09 18:45:23 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:45:23 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:45:29 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:45:31 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:45:31 - INFO - Searching for an available microphone...
+2026-02-09 18:45:31 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:45:31 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:45:41 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:45:42 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:45:42 - INFO - Searching for an available microphone...
+2026-02-09 18:45:42 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:45:42 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:45:52 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:45:53 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:45:53 - INFO - Searching for an available microphone...
+2026-02-09 18:45:54 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:45:54 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:46:01 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:46:02 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:46:02 - INFO - Searching for an available microphone...
+2026-02-09 18:46:02 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:46:03 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:46:10 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:46:11 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:46:11 - INFO - Searching for an available microphone...
+2026-02-09 18:46:11 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:46:11 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:46:14 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:46:17 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:46:17 - INFO - Searching for an available microphone...
+2026-02-09 18:46:17 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:46:17 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:46:39 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:46:42 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:46:42 - INFO - Searching for an available microphone...
+2026-02-09 18:46:42 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:46:42 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:46:50 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:46:52 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:46:52 - INFO - Searching for an available microphone...
+2026-02-09 18:46:52 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:46:52 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:46:58 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:46:59 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:46:59 - INFO - Searching for an available microphone...
+2026-02-09 18:46:59 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:46:59 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:47:03 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:47:03 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:47:03 - INFO - Searching for an available microphone...
+2026-02-09 18:47:03 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:47:03 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:47:11 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:47:12 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:47:12 - INFO - Searching for an available microphone...
+2026-02-09 18:47:12 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:47:13 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:47:26 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:47:28 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:47:28 - INFO - Searching for an available microphone...
+2026-02-09 18:47:28 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:47:28 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:47:56 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:48:00 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:48:00 - INFO - Searching for an available microphone...
+2026-02-09 18:48:00 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:48:00 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:48:30 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:48:33 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:48:33 - INFO - Searching for an available microphone...
+2026-02-09 18:48:33 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:48:33 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:48:41 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:48:42 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:48:42 - INFO - Searching for an available microphone...
+2026-02-09 18:48:42 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:48:42 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:48:50 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:48:51 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:48:51 - INFO - Searching for an available microphone...
+2026-02-09 18:48:51 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:48:51 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:49:23 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:49:27 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:49:27 - INFO - Searching for an available microphone...
+2026-02-09 18:49:27 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:49:28 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:49:37 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:49:45 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:49:45 - INFO - Searching for an available microphone...
+2026-02-09 18:49:45 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:49:45 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:49:53 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:49:54 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:49:54 - INFO - Searching for an available microphone...
+2026-02-09 18:49:54 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:49:54 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:50:00 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:50:01 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:50:01 - INFO - Searching for an available microphone...
+2026-02-09 18:50:01 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:50:01 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:50:07 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:50:07 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:50:07 - INFO - Searching for an available microphone...
+2026-02-09 18:50:07 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:50:08 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:50:11 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:50:12 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:50:12 - INFO - Searching for an available microphone...
+2026-02-09 18:50:12 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:50:12 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:50:27 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:51:48 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:51:48 - INFO - Searching for an available microphone...
+2026-02-09 18:51:49 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:51:49 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:51:55 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:52:01 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:52:01 - INFO - Searching for an available microphone...
+2026-02-09 18:52:02 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:52:02 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:52:06 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:52:07 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:52:07 - INFO - Searching for an available microphone...
+2026-02-09 18:52:07 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:52:07 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:52:14 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 18:52:16 - WARNING - Google Speech Recognition could not understand the audio.
+2026-02-09 18:52:16 - INFO - Searching for an available microphone...
+2026-02-09 18:52:16 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 18:52:16 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 18:52:24 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 19:02:02 - Initializing Chatbot...
+2026-02-09 19:02:18 - Use pytorch device_name: cpu
+2026-02-09 19:02:18 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 19:02:22 - Loading faiss with AVX2 support.
+2026-02-09 19:02:22 - Successfully loaded faiss with AVX2 support.
+2026-02-09 19:02:22 - Chatbot initialized successfully.
+2026-02-09 19:02:42 - User query: who was so terified in the battlefield
+2026-02-09 19:02:42 - Normalized query: who was so terified in the battlefield
+2026-02-09 19:02:43 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Ashrama_Dharma_(\u0906\u0936\u094d\u0930\u092e\u0927\u0930\u094d\u092e\u0903).csv, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv, Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv
+2026-02-09 19:02:43 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 19:15:46 - User query: what are the things done in hell
+2026-02-09 19:15:46 - Normalized query: what are the things done in hell
+2026-02-09 19:15:46 - Retrieved sources: Danavastu_(\u0926\u0947\u092f\u092e\u094d).csv, bhagavad_gita_from_GitaSociety.pdf, Arjuna Vishada Yoga.csv
+2026-02-09 19:15:47 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 19:38:31 - Initializing Chatbot...
+2026-02-09 19:38:49 - Use pytorch device_name: cpu
+2026-02-09 19:38:49 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 19:38:53 - Loading faiss with AVX2 support.
+2026-02-09 19:38:53 - Successfully loaded faiss with AVX2 support.
+2026-02-09 19:38:53 - Chatbot initialized successfully.
+2026-02-09 19:38:55 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-02-09 19:40:52 - Initializing Chatbot...
+2026-02-09 19:41:05 - Use pytorch device_name: cpu
+2026-02-09 19:41:05 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 19:41:09 - Loading faiss with AVX2 support.
+2026-02-09 19:41:09 - Successfully loaded faiss with AVX2 support.
+2026-02-09 19:41:09 - Chatbot initialized successfully.
+2026-02-09 19:41:11 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-02-09 19:47:36 - Initializing Chatbot...
+2026-02-09 19:47:48 - Use pytorch device_name: cpu
+2026-02-09 19:47:48 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 19:47:51 - Loading faiss with AVX2 support.
+2026-02-09 19:47:51 - Successfully loaded faiss with AVX2 support.
+2026-02-09 19:47:51 - Chatbot initialized successfully.
+2026-02-09 19:48:04 - User query: hey what are the types of dharma?
+2026-02-09 19:48:04 - Normalized query: hey what are the types of dharma
+2026-02-09 19:48:04 - Retrieved sources: Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Arjuna Vishada Yoga.csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv
+2026-02-09 19:48:05 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 19:48:21 - INFO - Initializing Chatbot...
+2026-02-09 19:48:30 - INFO - Use pytorch device_name: cpu
+2026-02-09 19:48:30 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 19:48:34 - INFO - Loading faiss with AVX2 support.
+2026-02-09 19:48:34 - INFO - Successfully loaded faiss with AVX2 support.
+2026-02-09 19:48:34 - INFO - Chatbot initialized successfully.
+2026-02-09 19:48:34 - INFO - Voice chatbot initialized successfully
+2026-02-09 19:48:34 - INFO - Searching for an available microphone...
+2026-02-09 19:48:34 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 19:48:34 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 19:48:40 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 19:48:42 - INFO - Successfully recognized text: 'who is Shri Krishna in Mahabharat'
+2026-02-09 19:48:42 - INFO - User query: who is shri krishna in mahabharat
+2026-02-09 19:48:42 - INFO - Normalized query: who is shri krishna in mahabharat
+2026-02-09 19:48:42 - INFO - Retrieved sources: Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, bhagavad_gita_from_GitaSociety.pdf, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv
+2026-02-09 19:48:42 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 19:48:42 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\vijay\\OneDrive\\Documents\\ShastraLLM\\shastra-rag-system\\venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-02-09 19:48:42 - INFO - Using writeable comtypes cache directory: 'C:\Users\vijay\OneDrive\Documents\ShastraLLM\shastra-rag-system\venv\Lib\site-packages\comtypes\gen'
+2026-02-09 19:49:14 - INFO - Query processed: who is shri krishna in mahabharat...
+2026-02-09 19:49:14 - INFO - Searching for an available microphone...
+2026-02-09 19:49:14 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 19:49:14 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 19:49:20 - INFO - Sending audio to Google Speech Recognition API.
+2026-02-09 19:49:21 - INFO - Successfully recognized text: 'what are the types of Dharma'
+2026-02-09 19:49:21 - INFO - User query: what are the types of dharma
+2026-02-09 19:49:21 - INFO - Normalized query: what are the types of dharma
+2026-02-09 19:49:21 - INFO - Retrieved sources: Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Arjuna Vishada Yoga.csv, Education_on_Sanatana_Dharma.csv
+2026-02-09 19:49:22 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 19:49:22 - INFO - Query processed: what are the types of dharma...
+2026-02-09 19:49:22 - INFO - Searching for an available microphone...
+2026-02-09 19:49:22 - INFO - Microphone found: 'Microsoft Sound Mapper - Input' (index: 0)
+2026-02-09 19:49:22 - INFO - Adjusting for ambient noise and starting to listen.
+2026-02-09 19:49:54 - Initializing Chatbot...
+2026-02-09 19:50:03 - Use pytorch device_name: cpu
+2026-02-09 19:50:03 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 19:50:07 - Loading faiss with AVX2 support.
+2026-02-09 19:50:07 - Successfully loaded faiss with AVX2 support.
+2026-02-09 19:50:07 - Chatbot initialized successfully.
+2026-02-09 19:50:08 - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-02-09 19:50:08 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-02-09 19:50:09 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-02-09 19:53:14 - Initializing Chatbot...
+2026-02-09 19:53:28 - Use pytorch device_name: cpu
+2026-02-09 19:53:28 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 19:53:32 - Loading faiss with AVX2 support.
+2026-02-09 19:53:32 - Successfully loaded faiss with AVX2 support.
+2026-02-09 19:53:32 - Chatbot initialized successfully.
+2026-02-09 19:53:34 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-02-09 19:55:40 - Initializing Chatbot...
+2026-02-09 19:55:54 - Use pytorch device_name: cpu
+2026-02-09 19:55:54 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 19:55:58 - Loading faiss with AVX2 support.
+2026-02-09 19:55:58 - Successfully loaded faiss with AVX2 support.
+2026-02-09 19:55:58 - Chatbot initialized successfully.
+2026-02-09 19:56:00 - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-02-09 19:56:00 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-02-09 19:56:00 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-02-09 19:56:19 - User query: who is shri krishna in mahabharata
+2026-02-09 19:56:19 - Normalized query: who is shri krishna in mahabharata
+2026-02-09 19:56:19 - Retrieved sources: Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, bhagavad_gita_from_GitaSociety.pdf, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv
+2026-02-09 19:56:20 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 20:03:36 - Initializing Chatbot...
+2026-02-09 20:03:53 - Use pytorch device_name: cpu
+2026-02-09 20:03:53 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 20:03:58 - Loading faiss with AVX2 support.
+2026-02-09 20:03:58 - Successfully loaded faiss with AVX2 support.
+2026-02-09 20:03:58 - Chatbot initialized successfully.
+2026-02-09 20:04:00 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-02-09 20:07:50 - Initializing Chatbot...
+2026-02-09 20:08:06 - Use pytorch device_name: cpu
+2026-02-09 20:08:06 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 20:08:10 - Loading faiss with AVX2 support.
+2026-02-09 20:08:10 - Successfully loaded faiss with AVX2 support.
+2026-02-09 20:08:11 - Chatbot initialized successfully.
+2026-02-09 20:08:12 - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-02-09 20:08:12 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-02-09 20:08:13 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-02-09 20:08:49 - User query: who is main person in mahabharat?
+2026-02-09 20:08:49 - Normalized query: who is main person in mahabharat
+2026-02-09 20:08:50 - Retrieved sources: Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, bhagavad_gita_from_GitaSociety.pdf, Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Arjuna Vishada Yoga.csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv
+2026-02-09 20:08:50 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 20:10:54 - Initializing Chatbot...
+2026-02-09 20:11:09 - Use pytorch device_name: cpu
+2026-02-09 20:11:09 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-09 20:11:13 - Loading faiss with AVX2 support.
+2026-02-09 20:11:13 - Successfully loaded faiss with AVX2 support.
+2026-02-09 20:11:13 - Chatbot initialized successfully.
+2026-02-09 20:11:15 - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-02-09 20:11:15 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-02-09 20:11:15 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-02-09 20:11:38 - User query: who is shre krishna?
+2026-02-09 20:11:38 - Normalized query: who is shre krishna
+2026-02-09 20:11:38 - Retrieved sources: Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-02-09 20:11:39 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 20:12:17 - User query: mention five types of dharma a human has to follow according to krishnas teachings in bhagvad gita
+2026-02-09 20:12:17 - Normalized query: mention five types of dharma a human has to follow according to krishnas teachings in bhagavad gita
+2026-02-09 20:12:17 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv
+2026-02-09 20:12:18 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 20:12:41 - User query: teach me about dharma
+2026-02-09 20:12:41 - Normalized query: teach me about dharma
+2026-02-09 20:12:41 - Retrieved sources: Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Education_on_Sanatana_Dharma.csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Arjuna Vishada Yoga.csv
+2026-02-09 20:12:42 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 18:16:39 - Initializing Chatbot...
+2026-02-10 18:17:11 - Use pytorch device_name: cpu
+2026-02-10 18:17:11 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-10 18:17:15 - Loading faiss with AVX2 support.
+2026-02-10 18:17:15 - Successfully loaded faiss with AVX2 support.
+2026-02-10 18:17:15 - Chatbot initialized successfully.
+2026-02-10 18:17:31 - User query: who is atma?
+2026-02-10 18:17:31 - Normalized query: who is atman
+2026-02-10 18:17:32 - Retrieved sources: Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, Chandogya_Upanishad_(\u091b\u093e\u0928\u094d\u0926\u094b\u0917\u094d\u092f\u094b\u092a\u0928\u093f\u0937\u0924\u0926\u094d).csv, Brahman_(\u092c\u094d\u0930\u0939\u094d\u092e\u0928\u094d).csv, Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv
+2026-02-10 18:17:32 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 19:27:01 - Initializing Chatbot...
+2026-02-11 19:27:54 - Use pytorch device_name: cpu
+2026-02-11 19:27:54 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-11 19:27:58 - Loading faiss with AVX2 support.
+2026-02-11 19:27:59 - Successfully loaded faiss with AVX2 support.
+2026-02-11 19:27:59 - Chatbot initialized successfully.
+2026-02-11 19:28:15 - User query: what was arjunas main target?
+2026-02-11 19:28:15 - Normalized query: what was arjunas main target
+2026-02-11 19:28:15 - Retrieved sources: Arjuna Vishada Yoga.csv, bhagavad_gita_from_GitaSociety.pdf, Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv
+2026-02-11 19:28:16 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 19:58:55 - User query: who is krishnas father?
+2026-02-11 19:58:55 - Normalized query: who is krishnas father
+2026-02-11 19:58:56 - Retrieved sources: Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Dadhichi_(\u0926\u0927\u0940\u091a\u093f\u0903).csv, Atri_(\u0905\u0924\u094d\u0930\u093f\u0903).csv, Jambavan_(\u091c\u093e\u092e\u094d\u092c\u0935\u093e\u0928\u094d).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-02-11 19:58:56 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"

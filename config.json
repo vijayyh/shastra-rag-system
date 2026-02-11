@@ -1,0 +1,59 @@
+{
+  "chatbot": {
+    "name": "ShastraBot",
+    "vectorstore_dir": "vectorstore",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "llm_model": "llama-3.1-8b-instant"
+  },
+  "retrieval": {
+    "search_k": 8,
+    "max_docs_in_context": 6,
+    "history_max_turns": 5
+  },
+  "query_expansion": {
+    "word_threshold": 3,
+    "doc_threshold": 3,
+    "max_queries": 4
+  },
+  "llm": {
+    "temperature": 0.2,
+    "timeout_seconds": 30,
+    "max_retries": 3,
+    "retry_backoff_multiplier": 1,
+    "retry_min_wait": 2,
+    "retry_max_wait": 10
+  },
+  "voice": {
+    "microphone_timeout_seconds": 10,
+    "phrase_time_limit": null,
+    "pause_threshold": 1.2,
+    "phrase_threshold": 0.3,
+    "speech_rate": 165,
+    "max_consecutive_errors": 3,
+    "mic_retries": 2
+  },
+  "data_ingestion": {
+    "csv_encodings": ["utf-8", "utf-16", "latin-1", "ISO-8859-1"],
+    "pdf_loader": "PyPDFLoader",
+    "chunk_size": 1000,
+    "chunk_overlap": 200
+  },
+  "logging": {
+    "level": "INFO",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    "chatbot_log": "chatbot.log",
+    "voice_log": "voice_chat.log"
+  },
+  "security": {
+    "max_query_length": 5000,
+    "block_patterns": [
+      "<system>",
+      "</system>",
+      "ignore instructions",
+      "you are now",
+      "forget your instructions",
+      "system prompt",
+      "jailbreak"
+    ]
+  }
+}

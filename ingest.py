@@ -22,38 +22,54 @@ def load_csv(file_path):
     encodings = ["utf-8", "utf-16", "latin-1", "ISO-8859-1"]
 
     df = None
+    loaded_encoding = None
+    
     for enc in encodings:
         try:
             df = pd.read_csv(file_path, encoding=enc, on_bad_lines="skip")
+            loaded_encoding = enc
             print(f"✅ Loaded CSV with encoding: {enc} -> {file_path}")
             break
         except UnicodeDecodeError:
             continue
+        except Exception as e:
+            print(f"⚠️ Error reading {file_path} with encoding {enc}: {e}")
+            continue
 
     if df is None:
-        print(f"❌ Failed to read CSV: {file_path}")
+        print(f"❌ Failed to read CSV with any encoding: {file_path}")
+        print(f"   Tried: {', '.join(encodings)}")
+        print(f"   This file will be skipped.")
         return docs
 
     df = df.fillna("")
 
     for idx, row in df.iterrows():
-        text = " | ".join(
-            f"{str(col)}: {str(val)}"
-            for col, val in row.items()
-            if str(val).strip() != ""
-        )
-
-        if text.strip():
-            docs.append(
-                Document(
-                    page_content=text,
-                    metadata={
-                        "source": file_path,
-                        "row": idx
-                    }
-                )
+        try:
+            text = " | ".join(
+                f"{str(col)}: {str(val)}"
+                for col, val in row.items()
+                if str(val).strip() != ""
             )
 
+            if text.strip():
+                docs.append(
+                    Document(
+                        page_content=text,
+                        metadata={
+                            "source": file_path,
+                            "row": idx,
+                            "encoding": loaded_encoding
+                        }
+                    )
+                )
+        except Exception as e:
+            print(f"⚠️ Error processing row {idx} in {file_path}: {e}")
+            continue
+
+    if not docs:
+        print(f"⚠️ No valid documents extracted from {file_path}")
+    
     return docs
 
 

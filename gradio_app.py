@@ -21,7 +21,7 @@ def chat_fn(user_input):
 with gr.Blocks(title="🕉️ ShastraBot") as demo:
     gr.Markdown(
         "## 🕉️ ShastraBot\n"
-        "*A Retrieval-Augmented AI Assistant for Vedic Scriptures*"
+        "*AI Assistant for Vedic Scriptures*"
     )
 
     user_input = gr.Textbox(

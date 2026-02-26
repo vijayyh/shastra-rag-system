@@ -132,14 +132,14 @@ def main():
     print(f"✅ Loaded {len(documents)} documents")
 
     splitter = RecursiveCharacterTextSplitter(
-        chunk_size=1000,
-        chunk_overlap=200
+        chunk_size=350,
+        chunk_overlap=75
     )
 
     chunks = splitter.split_documents(documents)
 
     embeddings = HuggingFaceEmbeddings(
-        model_name="sentence-transformers/all-MiniLM-L6-v2"
+        model_name="BAAI/bge-base-en-v1.5" 
     )
 
     db = FAISS.from_documents(chunks, embeddings)

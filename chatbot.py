@@ -3,6 +3,8 @@ import os.path
 import logging
 import re
 import json
+from rank_bm25 import BM25Okapi
+
 from dotenv import load_dotenv
 from groq import Groq
 from tenacity import retry, stop_after_attempt, wait_exponential
@@ -13,7 +15,7 @@ from langchain_community.vectorstores import FAISS
 # Constants and Configuration
 BOT_NAME = "ShastraBot"
 VECTORSTORE_DIR = "vectorstore"
-EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+EMBEDDING_MODEL = "BAAI/bge-base-en-v1.5"
 LLM_MODEL = "llama-3.1-8b-instant"
 
 # Retrieval and Context Configuration
@@ -144,8 +146,16 @@ class Chatbot:
                 allow_dangerous_deserialization=True
             )
             self.retriever = vectorstore.as_retriever(search_kwargs={"k": RETRIEVER_SEARCH_K})
+            # Build BM25 keyword index for hybrid retrieval
+            self.docs = list(vectorstore.docstore._dict.values())
+            self.tokenized_docs = [
+            doc.page_content.lower().split() for doc in self.docs]
+            self.bm25 = BM25Okapi(self.tokenized_docs)
+
             self.client = client
             self.chat_history = []
+
+            
             logging.info("Chatbot initialized successfully.")
         except Exception as e:
             logging.error(f"Chatbot initialization failed: {e}")
@@ -189,6 +199,22 @@ class Chatbot:
             logging.error(f"LLM error during query expansion: {e}")
             return []
 
+    def _keyword_search(self, query, top_k=5):
+        """
+        BM25 keyword search for hybrid retrieval.
+        """
+        tokens = query.lower().split()
+        scores = self.bm25.get_scores(tokens)
+
+        ranked = sorted(
+        zip(self.docs, scores),
+        key=lambda x: x[1],
+        reverse=True
+        )
+
+        return [doc for doc, _ in ranked[:top_k]]
+
+
     def _retrieve_docs(self, query: str):
         """
         Retrieves documents from the vector store, with optional query expansion.
@@ -203,7 +229,10 @@ class Chatbot:
         expand_query = (len(normalized_query.split()) <= QUERY_EXPANSION_WORD_THRESHOLD and 
                         len(initial_docs) < QUERY_EXPANSION_DOC_THRESHOLD)
         
-        all_docs = initial_docs
+        # Hybrid retrieval: semantic + keyword
+        keyword_docs = self._keyword_search(normalized_query)
+        all_docs = initial_docs + keyword_docs
+
         
         if expand_query:
             logging.info(f"Query expansion triggered for query: '{query}'")

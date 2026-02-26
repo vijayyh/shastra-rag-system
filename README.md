@@ -1,64 +1,94 @@
-# Shastra RAG LLM
+# 🕉️ ShastraBot: A Voice-Enabled RAG Chatbot
 
-A Retrieval-Augmented Generation (RAG) chatbot designed to answer questions based on the Bhagavad Gita (or other PDF documents) using Groq's Llama 3.1 model and LangChain.
+ShastraBot is a Retrieval-Augmented Generation (RAG) system designed to answer questions about Vedic scriptures and related texts. It can process documents, listen to voice commands, and provide answers through a command-line interface, a voice-based chat, or a web UI.
 
-## Features
+## ✨ Features
 
-- **Document Ingestion**: Loads PDF documents from a `data/` directory.
-- **Vector Store**: Uses FAISS and HuggingFace embeddings (`all-MiniLM-L6-v2`) for efficient similarity search.
-- **LLM Integration**: Custom integration with Groq API using `llama-3.1-8b-instant`.
-- **Query Expansion**: Improves retrieval accuracy by expanding short or ambiguous queries using the LLM.
-- **Conversational Memory**: Remembers the last 5 turns of the conversation to answer follow-up questions.
-- **Multi-Persona Chatbot**: Adopts different personas based on the user's query (e.g., "mindmap", "teacher").
-- **Source Citation**: Cites the sources used to generate the answer.
-- **Logging**: Logs user queries, retrieved sources, and errors to `chatbot.log`.
-- **Error Handling**: Handles errors gracefully during retrieval and LLM generation.
-- **Interactive Chat**: Console-based interface for querying the document context.
+*   **Multi-Format Data Ingestion**: Ingests and processes data from `.pdf`, `.csv`, and `.xlsx` files.
+*   **Vector-Based Retrieval**: Uses FAISS and sentence transformers for efficient and semantic document retrieval.
+*   **Multiple Interfaces**: Interact via a standard text-based console, a hands-free voice chat, or a user-friendly Gradio web app.
+*   **Dynamic Personas**: The chatbot can adopt different response styles (standard assistant, mind-map generator, or step-by-step teacher) based on the user's query.
+*   **Intelligent Query Handling**: Includes query normalization, sanitization, and an automatic query expansion mechanism to improve retrieval accuracy for short or ambiguous questions.
+*   **Robust Error Handling**: Features retry logic for LLM calls and graceful error recovery in the voice and chat interfaces.
 
-## Prerequisites
+## ⚙️ Setup and Installation
 
-- Python 3.8+
-- A Groq API Key
+Follow these steps to set up and run the project on your local machine.
 
-## Installation
-
-1. Clone the repository.
-2. Install the required dependencies:
+### 1. Clone the Repository
 
 ```bash
-pip install langchain langchain-community faiss-cpu python-dotenv groq sentence-transformers pypdf
+git clone <your-repository-url>
+cd shastra-rag-system
 ```
 
-3. Create a `.env` file in the root directory and add your Groq API key:
+### 2. Create a Virtual Environment
 
-```env
-GROQ_API_KEY=your_groq_api_key_here
+It's highly recommended to use a virtual environment to manage dependencies.
+
+```bash
+# For Windows
+python -m venv venv
+.\venv\Scripts\activate
+
+# For macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
 ```
 
-## Usage
+### 3. Install Dependencies
 
-### 1. Ingest Data
+**Important**: The `PyAudio` library, used for microphone input, has system-level dependencies. Please install them *before* running the pip command.
 
-Place your PDF files (e.g., Bhagavad Gita) inside the `data/` folder. Then run the ingestion script to create the vector database:
+*   **On Windows**: `pip install pyaudio` usually works directly as it installs a pre-compiled wheel. [1] If it fails, you may need to install Microsoft C++ Build Tools. [7]
+*   **On macOS**: `brew install portaudio` [1, 3]
+*   **On Debian/Ubuntu**: `sudo apt-get install portaudio19-dev` [1, 2]
+
+Once the `portaudio` dependency is met, install all the Python packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Configure Environment Variables
+
+The chatbot uses the Groq API for fast LLM inference. You need to provide an API key.
+
+1.  Create a new file named `.env` in the root of the project directory.
+2.  Add your API key to this file:
+
+    ```
+    GROQ_API_KEY="your_grok_api_key_here"
+    ```
+
+## 🚀 Usage
+
+Make sure you have activated your virtual environment (`source venv/bin/activate`) before running any scripts.
+
+### 1. Ingest Your Data
+
+Place your source documents (`.pdf`, `.csv`, `.xlsx`) into the `data/` directory. Then, run the ingestion script to process them and create the vector store.
 
 ```bash
 python ingest.py
 ```
 
-This will generate a `vectorstore/` directory containing the FAISS index.
-
 ### 2. Run the Chatbot
 
-Start the interactive chatbot:
+You can interact with ShastraBot in three different ways:
 
-```bash
-python chatbot.py
-```
+*   **Web Interface (Recommended)**:
+    ```bash
+    python gradio_app.py
+    ```
+    Open your browser and navigate to the local URL provided (e.g., `http://127.0.0.1:7860`).
 
-The chatbot will greet you and provide some example prompts. You can ask normal questions, or try one of the special "personas":
+*   **Voice Chat**:
+    ```bash
+    python voice_chat.py
+    ```
 
-- **Normal Query**: "What is Dharma?"
-- **Mindmap Query**: "Give me a mind map of the main concepts in the Bhagavad Gita"
-- **Teacher Query**: "Teach me about the concept of Atman, starting from the basics"
-
-Type your questions when prompted. Type `exit` to quit.
+*   **Text-based Console Chat**:
+    ```bash
+    python chatbot.py
+    ```

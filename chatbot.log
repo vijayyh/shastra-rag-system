@@ -2382,3 +2382,658 @@ How were their moral dilemmas similar?
 2026-02-26 19:42:21 - Normalized query: what are the essense of dharma
 2026-02-26 19:42:23 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Brahman_(\u092c\u094d\u0930\u0939\u094d\u092e\u0928\u094d).csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv, Donor_(\u0926\u093e\u0924\u093e).csv
 2026-02-26 19:42:24 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 22:44:07 - Initializing Chatbot...
+2026-02-28 22:44:14 - Use pytorch device_name: cpu
+2026-02-28 22:44:14 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-02-28 22:44:18 - Loading faiss with AVX512 support.
+2026-02-28 22:44:18 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-02-28 22:44:18 - Loading faiss with AVX2 support.
+2026-02-28 22:44:18 - Successfully loaded faiss with AVX2 support.
+2026-02-28 22:44:18 - Chatbot initialized successfully.
+2026-02-28 22:44:25 - User query: who is krishna?
+2026-02-28 22:44:25 - Normalized query: who is krishna
+2026-02-28 22:44:25 - Retrieved sources: Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv
+2026-02-28 22:44:26 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 22:44:52 - Initializing Chatbot...
+2026-02-28 22:44:57 - Use pytorch device_name: cpu
+2026-02-28 22:44:57 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-02-28 22:45:01 - Loading faiss with AVX512 support.
+2026-02-28 22:45:01 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-02-28 22:45:01 - Loading faiss with AVX2 support.
+2026-02-28 22:45:01 - Successfully loaded faiss with AVX2 support.
+2026-02-28 22:45:01 - Chatbot initialized successfully.
+2026-02-28 22:45:02 - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-02-28 22:45:02 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-02-28 22:45:02 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-02-28 22:46:04 - User query: who is krishna and what is his teachings to arjuna?
+list any 5 important topics or points that he tought to arjun at the battlefield.
+2026-02-28 22:46:04 - Normalized query: who is krishna and what is his teachings to arjuna list any 5 important topics or points that he tought to arjuna at the battlefield
+2026-02-28 22:46:04 - Retrieved sources: Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-02-28 22:46:04 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 21:02:26 - Initializing Chatbot...
+2026-03-01 21:02:50 - Use pytorch device_name: cpu
+2026-03-01 21:02:50 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-01 21:02:54 - Loading faiss with AVX512 support.
+2026-03-01 21:02:54 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-01 21:02:54 - Loading faiss with AVX2 support.
+2026-03-01 21:02:54 - Successfully loaded faiss with AVX2 support.
+2026-03-01 21:02:54 - Chatbot initialized successfully.
+2026-03-01 21:03:17 - User query: who is the king of shri lanka?
+2026-03-01 21:03:17 - Normalized query: who is the king of shri lanka
+2026-03-01 21:03:17 - Retrieved sources: Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Atithi_Satkara_(\u0905\u0924\u093f\u0925\u093f\u0938\u0924\u094d\u0915\u093e\u0930\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Airavata_(\u0910\u0930\u093e\u0935\u0924\u0903).csv, Jambavan_(\u091c\u093e\u092e\u094d\u092c\u0935\u093e\u0928\u094d).csv
+2026-03-01 21:03:17 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 21:03:43 - User query: who was Ravana?
+2026-03-01 21:03:43 - Normalized query: who was ravana
+2026-03-01 21:03:43 - Retrieved sources: Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv, Annadana_by_Unchavrtti_Brahmana_(\u0909\u091e\u094d\u091b\u0935\u0943\u0924\u094d\u0924\u093f\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0903).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Aranyaka_(\u0906\u0930\u0923\u094d\u092f\u0915\u092e\u094d).csv, Airavata_(\u0910\u0930\u093e\u0935\u0924\u0903).csv, Jambavan_(\u091c\u093e\u092e\u094d\u092c\u0935\u093e\u0928\u094d).csv
+2026-03-01 21:03:43 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 21:56:08 - Initializing Chatbot...
+2026-03-01 21:56:18 - Use pytorch device_name: cpu
+2026-03-01 21:56:18 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-01 21:56:21 - Loading faiss with AVX512 support.
+2026-03-01 21:56:21 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-01 21:56:21 - Loading faiss with AVX2 support.
+2026-03-01 21:56:21 - Successfully loaded faiss with AVX2 support.
+2026-03-01 21:56:22 - Chatbot initialized successfully.
+2026-03-01 21:56:29 - User query: who abducted sita?
+2026-03-01 21:56:29 - Normalized query: who abducted sita
+2026-03-01 21:56:29 - Context not relevant enough. Refusing to answer.
+2026-03-01 21:56:45 - User query: who abducted sita according to ramayana?
+2026-03-01 21:56:45 - Normalized query: who abducted sita according to ramayana
+2026-03-01 21:56:45 - Retrieved sources: Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, Agnihotra_(\u0905\u0917\u094d\u0928\u093f\u0939\u094b\u0924\u094d\u0930\u092e\u094d).csv, Dadhichi_(\u0926\u0927\u0940\u091a\u093f\u0903).csv, Aupasana_(\u0914\u092a\u093e\u0938\u0928\u0903).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv, Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv
+2026-03-01 21:56:45 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 21:57:03 - User query: who is arjunas son ?
+2026-03-01 21:57:03 - Normalized query: who is arjunas son
+2026-03-01 21:57:03 - Context not relevant enough. Refusing to answer.
+2026-03-01 21:57:13 - User query: who is arjuna?
+2026-03-01 21:57:13 - Normalized query: who is arjuna
+2026-03-01 21:57:13 - Retrieved sources: Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv, Arjuna Vishada Yoga.csv, bhagavad_gita_from_GitaSociety.pdf
+2026-03-01 21:57:14 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 21:57:28 - User query: what is dharma?
+2026-03-01 21:57:28 - Normalized query: what is dharma
+2026-03-01 21:57:28 - Retrieved sources: Arjuna Vishada Yoga.csv, Donor_(\u0926\u093e\u0924\u093e).csv, Education_on_Sanatana_Dharma.csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv
+2026-03-01 21:57:29 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 11:34:48 - Initializing Chatbot...
+2026-03-02 11:35:12 - Use pytorch device_name: cpu
+2026-03-02 11:35:12 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-02 11:35:16 - Loading faiss with AVX512 support.
+2026-03-02 11:35:16 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-02 11:35:16 - Loading faiss with AVX2 support.
+2026-03-02 11:35:16 - Successfully loaded faiss with AVX2 support.
+2026-03-02 11:35:16 - Chatbot initialized successfully.
+2026-03-02 11:35:44 - User query: "Give me a mind map of the main concepts in the Bhagavad Gita"
+2026-03-02 11:35:44 - Normalized query: give me a mind map of the main concepts in the bhagavad gita
+2026-03-02 11:35:44 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Brahman_(\u092c\u094d\u0930\u0939\u094d\u092e\u0928\u094d).csv, Education_on_Sanatana_Dharma.csv, Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv
+2026-03-02 11:35:44 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 11:36:08 - User query: explain these mindmap points in detail
+2026-03-02 11:36:08 - Normalized query: explain these mindmap points in detail
+2026-03-02 11:36:08 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Bhumavidya_(\u092d\u0942\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Agni in Vedas.csv, Bahupurushavada_(\u092c\u0939\u0941\u092a\u0941\u0930\u0941\u0937\u0935\u093e\u0926\u0903).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv
+2026-03-02 11:36:09 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 11:47:16 - Initializing Chatbot...
+2026-03-02 11:47:20 - Use pytorch device_name: cpu
+2026-03-02 11:47:20 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-02 11:47:24 - Loading faiss with AVX512 support.
+2026-03-02 11:47:24 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-02 11:47:24 - Loading faiss with AVX2 support.
+2026-03-02 11:47:24 - Successfully loaded faiss with AVX2 support.
+2026-03-02 11:47:24 - Chatbot initialized successfully.
+2026-03-02 11:47:35 - User query: telll me about bali
+2026-03-02 11:47:35 - Normalized query: telll me about bali
+2026-03-02 11:47:35 - Context not relevant enough. Refusing to answer.
+2026-03-02 11:48:13 - User query: who is dharmas biggest follower and how can you judge a person how well he follows he dharma
+2026-03-02 11:48:13 - Normalized query: who is dharmas biggest follower and how can you judge a person how well he follows he dharma
+2026-03-02 11:48:13 - Retrieved sources: Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv, Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-03-02 11:48:14 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 11:48:55 - User query: who abducted sita in mahabharat?
+2026-03-02 11:49:21 - User query: who abducted sita in mahabharata and who is lor krishan
+2026-03-02 11:49:21 - Normalized query: who abducted sita in mahabharata and who is lor krishan
+2026-03-02 11:49:21 - Retrieved sources: Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Dadhichi_(\u0926\u0927\u0940\u091a\u093f\u0903).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, bhagavad_gita_from_GitaSociety.pdf
+2026-03-02 11:49:21 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 11:49:55 - User query: who is lord krishna?
+2026-03-02 11:50:03 - User query: who is lord shre krishna
+2026-03-02 11:50:15 - User query: who is lord krishna in maha bharat
+2026-03-02 11:50:15 - Normalized query: who is lord krishna in maha bharat
+2026-03-02 11:50:15 - Retrieved sources: Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-03-02 11:50:16 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 11:57:49 - Initializing Chatbot...
+2026-03-02 11:58:09 - Use pytorch device_name: cpu
+2026-03-02 11:58:09 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-02 11:58:13 - Loading faiss with AVX512 support.
+2026-03-02 11:58:13 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-02 11:58:13 - Loading faiss with AVX2 support.
+2026-03-02 11:58:13 - Successfully loaded faiss with AVX2 support.
+2026-03-02 11:58:13 - Chatbot initialized successfully.
+2026-03-02 11:58:22 - User query: who is krishna?
+2026-03-02 11:58:22 - Normalized query: who is krishna
+2026-03-02 11:58:22 - Context not relevant enough. Refusing to answer.
+2026-03-02 12:04:17 - Initializing Chatbot...
+2026-03-02 12:04:22 - Use pytorch device_name: cpu
+2026-03-02 12:04:22 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-02 12:04:25 - Loading faiss with AVX512 support.
+2026-03-02 12:04:25 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-02 12:04:25 - Loading faiss with AVX2 support.
+2026-03-02 12:04:25 - Successfully loaded faiss with AVX2 support.
+2026-03-02 12:04:25 - Chatbot initialized successfully.
+2026-03-02 12:04:46 - User query: who is krishna?
+2026-03-02 12:04:46 - Normalized query: who is krishna
+2026-03-02 12:04:46 - Retrieved sources: Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv
+2026-03-02 12:04:46 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 12:05:06 - User query: he is a human according to mahabharat?
+2026-03-02 12:05:12 - User query: krishna
+2026-03-02 12:05:12 - Normalized query: krishna
+2026-03-02 12:05:12 - Retrieved sources: Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Jambavan_(\u091c\u093e\u092e\u094d\u092c\u0935\u093e\u0928\u094d).csv
+2026-03-02 12:05:13 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 12:05:22 - User query: is krishna a human
+2026-03-02 12:05:22 - Normalized query: is krishna a human
+2026-03-02 12:05:22 - Retrieved sources: Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv
+2026-03-02 12:05:22 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 12:58:37 - Initializing Chatbot...
+2026-03-02 12:58:42 - Use pytorch device_name: cpu
+2026-03-02 12:58:42 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-02 12:58:45 - Loading faiss with AVX512 support.
+2026-03-02 12:58:45 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-02 12:58:45 - Loading faiss with AVX2 support.
+2026-03-02 12:58:45 - Successfully loaded faiss with AVX2 support.
+2026-03-02 12:58:45 - Chatbot initialized successfully.
+2026-03-02 12:58:50 - User query: who is krishna?
+2026-03-02 12:58:50 - Normalized query: who is krishna
+2026-03-02 12:58:50 - Retrieved sources: Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv
+2026-03-02 12:58:50 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 12:59:00 - User query: is he human?
+2026-03-02 13:06:00 - Initializing Chatbot...
+2026-03-02 13:06:04 - Use pytorch device_name: cpu
+2026-03-02 13:06:04 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-02 13:06:07 - Loading faiss with AVX512 support.
+2026-03-02 13:06:07 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-02 13:06:07 - Loading faiss with AVX2 support.
+2026-03-02 13:06:07 - Successfully loaded faiss with AVX2 support.
+2026-03-02 13:06:07 - Chatbot initialized successfully.
+2026-03-02 13:06:14 - User query: who is krishna?
+2026-03-02 13:06:14 - Normalized query: who is krishna
+2026-03-02 13:06:14 - Retrieved sources: Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv
+2026-03-02 13:06:14 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 13:06:19 - User query: is he human?
+2026-03-02 13:06:33 - User query: tell me about arjuna
+2026-03-02 13:06:33 - Normalized query: tell me about arjuna
+2026-03-02 13:06:33 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf
+2026-03-02 13:06:33 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 13:06:40 - User query: did he fight karna?
+2026-03-02 13:06:40 - Normalized query: did he fight karna
+2026-03-02 13:06:40 - Retrieved sources: Annadana_by_Unchavrtti_Brahmana_(\u0909\u091e\u094d\u091b\u0935\u0943\u0924\u094d\u0924\u093f\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0903).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, Arjuna Vishada Yoga.csv, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv
+2026-03-02 13:06:41 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 13:07:04 - User query: is he afraid to figh
+2026-03-02 13:07:04 - Normalized query: is he afraid to figh
+2026-03-02 13:07:04 - Retrieved sources: Annadana_by_Unchavrtti_Brahmana_(\u0909\u091e\u094d\u091b\u0935\u0943\u0924\u094d\u0924\u093f\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0903).csv, Bhumavidya_(\u092d\u0942\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Atithi_Satkara_by_Kapotadampati_(\u0915\u092a\u094b\u0924\u0926\u092e\u094d\u092a\u0924\u0940).csv, Atri_(\u0905\u0924\u094d\u0930\u093f\u0903).csv, Agnyadhana_(\u0905\u0917\u094d\u0928\u094d\u092f\u093e\u0927\u093e\u0928\u092e\u094d).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-03-02 13:07:04 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 13:08:46 - Initializing Chatbot...
+2026-03-02 13:08:51 - Use pytorch device_name: cpu
+2026-03-02 13:08:51 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-02 13:08:54 - Loading faiss with AVX512 support.
+2026-03-02 13:08:54 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-02 13:08:54 - Loading faiss with AVX2 support.
+2026-03-02 13:08:54 - Successfully loaded faiss with AVX2 support.
+2026-03-02 13:08:54 - Chatbot initialized successfully.
+2026-03-02 13:09:00 - User query: who is krisnna?
+2026-03-02 13:09:00 - Normalized query: who is krisnna
+2026-03-02 13:09:00 - Context not relevant enough. Refusing to answer.
+2026-03-02 13:09:07 - User query: who is krishna?
+2026-03-02 13:09:07 - Normalized query: who is krishna
+2026-03-02 13:09:07 - Retrieved sources: Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv
+2026-03-02 13:09:07 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 13:09:21 - User query: is he human/
+2026-03-02 13:09:35 - User query: yeah krishna
+2026-03-02 13:09:35 - Normalized query: yeah krishna
+2026-03-02 13:09:35 - Retrieved sources: Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Jambavan_(\u091c\u093e\u092e\u094d\u092c\u0935\u093e\u0928\u094d).csv, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv
+2026-03-02 13:09:35 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 13:09:49 - User query: is he a human
+2026-03-02 13:09:49 - Normalized query: is he a human
+2026-03-02 13:09:49 - Retrieved sources: Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Atri_(\u0905\u0924\u094d\u0930\u093f\u0903).csv, Donor_(\u0926\u093e\u0924\u093e).csv, Agni in Vedas.csv, bhagavad_gita_from_GitaSociety.pdf
+2026-03-02 13:09:49 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 13:34:16 - Initializing Chatbot...
+2026-03-02 13:34:21 - Use pytorch device_name: cpu
+2026-03-02 13:34:21 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-02 13:34:25 - Loading faiss with AVX512 support.
+2026-03-02 13:34:25 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-02 13:34:25 - Loading faiss with AVX2 support.
+2026-03-02 13:34:25 - Successfully loaded faiss with AVX2 support.
+2026-03-02 13:34:25 - Chatbot initialized successfully.
+2026-03-02 13:34:38 - User query: did krishna meet buddha?
+2026-03-02 13:34:38 - Normalized query: did krishna meet buddha
+2026-03-02 13:34:38 - Confidence score: 0.25
+2026-03-02 13:34:38 - Low confidence answer refused.
+2026-03-02 13:34:51 - User query: what is dharma?
+2026-03-02 13:34:51 - Normalized query: what is dharma
+2026-03-02 13:34:51 - Confidence score: 1.0
+2026-03-02 13:34:51 - Retrieved sources: Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Arjuna Vishada Yoga.csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Donor_(\u0926\u093e\u0924\u093e).csv, Education_on_Sanatana_Dharma.csv
+2026-03-02 13:34:52 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 13:35:01 - User query: who is krishna?
+2026-03-02 13:35:01 - Normalized query: who is krishna
+2026-03-02 13:35:01 - Confidence score: 1.0
+2026-03-02 13:35:01 - Retrieved sources: Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv
+2026-03-02 13:35:01 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 13:41:40 - Initializing Chatbot...
+2026-03-02 13:41:44 - Use pytorch device_name: cpu
+2026-03-02 13:41:44 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-02 13:41:48 - Loading faiss with AVX512 support.
+2026-03-02 13:41:48 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-02 13:41:48 - Loading faiss with AVX2 support.
+2026-03-02 13:41:48 - Successfully loaded faiss with AVX2 support.
+2026-03-02 13:41:48 - Chatbot initialized successfully.
+2026-03-02 13:41:59 - User query: Who is Krishna?
+2026-03-02 13:41:59 - Normalized query: who is krishna
+2026-03-02 13:41:59 - Confidence score: 1.0
+2026-03-02 13:41:59 - Retrieved sources: Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv
+2026-03-02 13:41:59 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 13:41:59 - User query: What is Dharma?
+2026-03-02 13:41:59 - Normalized query: what is dharma
+2026-03-02 13:41:59 - Confidence score: 1.0
+2026-03-02 13:41:59 - Retrieved sources: Donor_(\u0926\u093e\u0924\u093e).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Arjuna Vishada Yoga.csv, Education_on_Sanatana_Dharma.csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv
+2026-03-02 13:42:00 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 13:42:18 - User query: Who is Krishna?What is Dharma?Explain Bhagavad Gita
+2026-03-02 13:42:18 - Normalized query: who is krishnawhat is dharmaexplain bhagavad gita
+2026-03-02 13:42:18 - Confidence score: 0.38
+2026-03-02 13:42:18 - Retrieved sources: Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Bhumavidya_(\u092d\u0942\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Education_on_Sanatana_Dharma.csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv
+2026-03-02 13:42:18 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 13:42:41 - User query: who is Elon Musk?
+2026-03-02 13:42:41 - Normalized query: who is elon musk
+2026-03-02 13:42:41 - Context not relevant enough. Refusing to answer.
+2026-03-02 13:43:04 - User query: what is yoga?
+2026-03-02 13:43:04 - Normalized query: what is yoga
+2026-03-02 13:43:04 - Confidence score: 1.0
+2026-03-02 13:43:04 - Retrieved sources: Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-03-02 13:43:04 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 13:43:16 - User query: what is karma?
+2026-03-02 13:43:16 - Normalized query: what is karma
+2026-03-02 13:43:16 - Confidence score: 1.0
+2026-03-02 13:43:16 - Retrieved sources: Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv, bhagavad_gita_from_GitaSociety.pdf, Dana_(\u0926\u093e\u0928\u092e\u094d).csv
+2026-03-02 13:43:16 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 13:43:38 - User query: what is quantum physics?
+2026-03-02 13:43:38 - Normalized query: what is quantum physics
+2026-03-02 13:43:38 - Context not relevant enough. Refusing to answer.
+2026-03-02 13:43:52 - User query: who won the fifa world cup?
+2026-03-02 13:43:52 - Normalized query: who won the fifa world cup
+2026-03-02 13:43:52 - Confidence score: 0.13
+2026-03-02 13:43:52 - Low confidence answer refused.
+2026-03-02 13:55:46 - Initializing Chatbot...
+2026-03-02 13:55:51 - Use pytorch device_name: cpu
+2026-03-02 13:55:51 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-02 13:55:54 - Loading faiss with AVX512 support.
+2026-03-02 13:55:54 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-02 13:55:54 - Loading faiss with AVX2 support.
+2026-03-02 13:55:54 - Successfully loaded faiss with AVX2 support.
+2026-03-02 13:55:54 - Chatbot initialized successfully.
+2026-03-02 13:56:05 - User query: who won fifa world cup?
+2026-03-02 13:56:05 - Normalized query: who won fifa world cup
+2026-03-02 13:56:05 - Error processing query 'who won fifa world cup?': 'FAISS' object has no attribute 'embedding'
+Traceback (most recent call last):
+  File "C:\Users\Vedx6\shastra_rag_llm\chatbot.py", line 498, in process_query
+    if not self._is_domain_relevant(query, docs):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vedx6\shastra_rag_llm\chatbot.py", line 353, in _is_domain_relevant
+    query_vector = self.retriever.vectorstore.embedding.embed_query(query)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FAISS' object has no attribute 'embedding'
+2026-03-02 13:56:12 - User query: who is krishna?
+2026-03-02 13:56:12 - Normalized query: who is krishna
+2026-03-02 13:56:12 - Error processing query 'who is krishna?': 'FAISS' object has no attribute 'embedding'
+Traceback (most recent call last):
+  File "C:\Users\Vedx6\shastra_rag_llm\chatbot.py", line 498, in process_query
+    if not self._is_domain_relevant(query, docs):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vedx6\shastra_rag_llm\chatbot.py", line 353, in _is_domain_relevant
+    query_vector = self.retriever.vectorstore.embedding.embed_query(query)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FAISS' object has no attribute 'embedding'
+2026-03-02 14:02:39 - Initializing Chatbot...
+2026-03-02 14:02:44 - Use pytorch device_name: cpu
+2026-03-02 14:02:44 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-02 14:02:47 - Loading faiss with AVX512 support.
+2026-03-02 14:02:47 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-02 14:02:47 - Loading faiss with AVX2 support.
+2026-03-02 14:02:47 - Successfully loaded faiss with AVX2 support.
+2026-03-02 14:02:47 - Chatbot initialized successfully.
+2026-03-02 14:02:52 - User query: who is krishna?
+2026-03-02 14:02:52 - Normalized query: who is krishna
+2026-03-02 14:02:52 - Confidence score: 1.0
+2026-03-02 14:02:52 - Retrieved sources: Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-03-02 14:02:52 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 14:03:10 - User query: who is karna we all know
+2026-03-02 14:03:10 - Normalized query: who is karna we all know
+2026-03-02 14:03:10 - Confidence score: 0.42
+2026-03-02 14:03:10 - Retrieved sources: Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Jambavan_(\u091c\u093e\u092e\u094d\u092c\u0935\u093e\u0928\u094d).csv, Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Agni in Vedas.csv, Bhumavidya_(\u092d\u0942\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv
+2026-03-02 14:03:10 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 14:03:31 - User query: how krishna used his brain to fight against kauravas?
+2026-03-02 14:03:31 - Normalized query: how krishna used his brain to fight against kauravas
+2026-03-02 14:03:31 - Confidence score: 0.27
+2026-03-02 14:03:31 - Low confidence answer refused.
+2026-03-02 14:03:49 - User query: what is dharma according to him?
+2026-03-02 14:03:49 - Normalized query: what is dharma according to him
+2026-03-02 14:03:49 - Confidence score: 0.507
+2026-03-02 14:03:49 - Retrieved sources: Donor_(\u0926\u093e\u0924\u093e).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv, Bhumavidya_(\u092d\u0942\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv
+2026-03-02 14:03:49 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 14:04:16 - User query: what is dharma ?
+2026-03-02 14:04:16 - Normalized query: what is dharma
+2026-03-02 14:04:16 - Confidence score: 1.0
+2026-03-02 14:04:16 - Retrieved sources: Donor_(\u0926\u093e\u0924\u093e).csv, Arjuna Vishada Yoga.csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv
+2026-03-02 14:04:16 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 14:06:19 - Initializing Chatbot...
+2026-03-02 14:06:24 - Use pytorch device_name: cpu
+2026-03-02 14:06:24 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-02 14:06:27 - Loading faiss with AVX512 support.
+2026-03-02 14:06:27 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-02 14:06:27 - Loading faiss with AVX2 support.
+2026-03-02 14:06:27 - Successfully loaded faiss with AVX2 support.
+2026-03-02 14:06:28 - Chatbot initialized successfully.
+2026-03-02 14:06:33 - User query: what is dharma?
+2026-03-02 14:06:33 - Normalized query: what is dharma
+2026-03-02 14:06:33 - Confidence score: 1.0
+2026-03-02 14:06:33 - Retrieved sources: Education_on_Sanatana_Dharma.csv, Donor_(\u0926\u093e\u0924\u093e).csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Arjuna Vishada Yoga.csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv
+2026-03-02 14:06:34 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 14:06:58 - Initializing Chatbot...
+2026-03-02 14:07:03 - Use pytorch device_name: cpu
+2026-03-02 14:07:03 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-02 14:07:06 - Loading faiss with AVX512 support.
+2026-03-02 14:07:06 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-02 14:07:06 - Loading faiss with AVX2 support.
+2026-03-02 14:07:06 - Successfully loaded faiss with AVX2 support.
+2026-03-02 14:07:06 - Chatbot initialized successfully.
+2026-03-02 14:07:13 - User query: what is dharma?
+2026-03-02 14:07:13 - Normalized query: what is dharma
+2026-03-02 14:07:13 - Confidence score: 1.0
+2026-03-02 14:07:13 - Retrieved sources: Donor_(\u0926\u093e\u0924\u093e).csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Arjuna Vishada Yoga.csv, Education_on_Sanatana_Dharma.csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv
+2026-03-02 14:07:13 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 14:07:33 - User query: who is strongest in the dharma
+2026-03-02 14:07:33 - Normalized query: who is strongest in the dharma
+2026-03-02 14:07:33 - Confidence score: 0.38
+2026-03-02 14:07:33 - Retrieved sources: Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, bhagavad_gita_from_GitaSociety.pdf, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Annadana_by_Unchavrtti_Brahmana_(\u0909\u091e\u094d\u091b\u0935\u0943\u0924\u094d\u0924\u093f\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0903).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv
+2026-03-02 14:07:33 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 14:08:34 - User query: who is donald trunp?
+2026-03-02 14:08:34 - Normalized query: who is donald trunp
+2026-03-02 14:08:34 - Query outside domain.
+2026-03-02 14:08:45 - User query: who won the fifa world cup 2025?
+2026-03-02 14:08:45 - Normalized query: who won the fifa world cup 2025
+2026-03-02 14:08:45 - Context not relevant enough. Refusing to answer.
+2026-03-02 14:08:54 - User query: fifa world cup 2025?
+2026-03-02 14:08:54 - Normalized query: fifa world cup 2025
+2026-03-02 14:08:54 - Context not relevant enough. Refusing to answer.
+2026-03-02 14:09:05 - User query: jumanji movie update?
+2026-03-02 14:09:05 - Normalized query: jumanji movie update
+2026-03-02 14:09:05 - Context not relevant enough. Refusing to answer.
+2026-03-02 14:09:16 - User query: who is virat kohli?
+2026-03-02 14:09:16 - Normalized query: who is virat kohli
+2026-03-02 14:09:16 - Context not relevant enough. Refusing to answer.
+2026-03-02 14:09:25 - User query: who is donald trump?
+2026-03-02 14:09:25 - Normalized query: who is donald trump
+2026-03-02 14:09:25 - Context not relevant enough. Refusing to answer.
+2026-03-02 14:14:48 - Initializing Chatbot...
+2026-03-02 14:14:52 - Use pytorch device_name: cpu
+2026-03-02 14:14:52 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-02 14:14:55 - Loading faiss with AVX512 support.
+2026-03-02 14:14:55 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-02 14:14:55 - Loading faiss with AVX2 support.
+2026-03-02 14:14:55 - Successfully loaded faiss with AVX2 support.
+2026-03-02 14:14:56 - Chatbot initialized successfully.
+2026-03-02 14:15:00 - User query: who is shri krishna?
+2026-03-02 14:15:00 - Normalized query: who is shri krishna
+2026-03-02 14:15:00 - Confidence score: 0.88
+2026-03-02 14:15:00 - Retrieved sources: Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Jambavan_(\u091c\u093e\u092e\u094d\u092c\u0935\u093e\u0928\u094d).csv, bhagavad_gita_from_GitaSociety.pdf, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv, Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv
+2026-03-02 14:15:01 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 14:15:17 - User query: who is virat kohli?
+2026-03-02 14:15:17 - Normalized query: who is virat kohli
+2026-03-02 14:15:17 - Context not relevant enough. Refusing to answer.
+2026-03-02 14:15:28 - User query: who is donald trump?
+2026-03-02 14:15:28 - Normalized query: who is donald trump
+2026-03-02 14:15:28 - Query outside domain.
+2026-03-02 14:15:35 - User query: who is saistakhan?
+2026-03-02 14:15:35 - Normalized query: who is saistakhan
+2026-03-02 14:15:35 - Context not relevant enough. Refusing to answer.
+2026-03-02 14:15:54 - User query: tell me about the quantum physics
+2026-03-02 14:15:54 - Normalized query: tell me about the quantum physics
+2026-03-02 14:15:54 - Confidence score: 0.256
+2026-03-02 14:15:54 - Low confidence answer refused.
+2026-03-02 14:17:57 - User query: who is arjun?
+2026-03-02 14:17:57 - Normalized query: who is arjuna
+2026-03-02 14:17:58 - Confidence score: 1.0
+2026-03-02 14:17:58 - Retrieved sources: Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv, bhagavad_gita_from_GitaSociety.pdf, Arjuna Vishada Yoga.csv
+2026-03-02 14:17:58 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 14:18:09 - User query: who is krishna?
+2026-03-02 14:18:09 - Normalized query: who is krishna
+2026-03-02 14:18:09 - Confidence score: 1.0
+2026-03-02 14:18:09 - Retrieved sources: Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv
+2026-03-02 14:18:09 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 14:18:20 - User query: who is arjunas charioteer
+2026-03-02 14:18:20 - Normalized query: who is arjunas charioteer
+2026-03-02 14:18:20 - Confidence score: 0.38
+2026-03-02 14:18:20 - Retrieved sources: Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, bhagavad_gita_from_GitaSociety.pdf, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Arjuna Vishada Yoga.csv
+2026-03-02 14:18:20 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 14:19:19 - User query: is it a war crime how ram killed bali from hiding from the bushes according to modern warfare
+2026-03-02 14:20:14 - User query: Lord ram killed bali by hiding in the bushes and attacking him, is this correct way according to modern war fare rules or protocols
+2026-03-02 14:20:31 - User query: i am referring to lord Ram
+2026-03-02 14:20:31 - Normalized query: i am referring to lord ram
+2026-03-02 14:20:32 - Confidence score: 0.456
+2026-03-02 14:20:32 - Retrieved sources: Agni in Vedas.csv, bhagavad_gita_from_GitaSociety.pdf, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv
+2026-03-02 14:20:32 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 14:21:09 - User query: Lord ram killed bali by hiding in the bushes and attacking him, is this correct way according to mo
+2026-03-02 14:21:09 - Normalized query: lord ram killed bali by hiding in the bushes and attacking him is this correct way according to mo
+2026-03-02 14:21:09 - Confidence score: 0.237
+2026-03-02 14:21:09 - Low confidence answer refused.
+2026-03-02 14:21:44 - User query: Lord krishna killed bali by hiding in the bushes and attacking him, is this correct way according to modern war fare rules or protocols
+2026-03-02 14:21:44 - Normalized query: lord krishna killed bali by hiding in the bushes and attacking him is this correct way according to modern war fare rules or protocols
+2026-03-02 14:21:44 - Confidence score: 0.288
+2026-03-02 14:21:44 - Low confidence answer refused.
+2026-03-02 14:22:01 - User query: was karna on the right side in the battlefield
+2026-03-02 14:22:01 - Normalized query: was karna on the right side in the battlefield
+2026-03-02 14:22:01 - Confidence score: 0.464
+2026-03-02 14:22:01 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, Arjuna Vishada Yoga.csv
+2026-03-02 14:22:02 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 14:22:12 - User query: who is karna then?
+2026-03-02 14:22:12 - Normalized query: who is karna then
+2026-03-02 14:22:12 - Context not relevant enough. Refusing to answer.
+2026-03-02 14:22:25 - User query: what are the types of dharma?
+2026-03-02 14:22:25 - Normalized query: what are the types of dharma
+2026-03-02 14:22:25 - Confidence score: 0.5
+2026-03-02 14:22:25 - Retrieved sources: Dana_(\u0926\u093e\u0928\u092e\u094d).csv, bhagavad_gita_from_GitaSociety.pdf, Education_on_Sanatana_Dharma.csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv
+2026-03-02 14:22:26 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 14:22:34 - User query: is it really important
+2026-03-02 14:22:34 - Normalized query: is it really important
+2026-03-02 14:22:34 - Confidence score: 0.333
+2026-03-02 14:22:34 - Retrieved sources: Atithi_Satkara_(\u0905\u0924\u093f\u0925\u093f\u0938\u0924\u094d\u0915\u093e\u0930\u0903).csv, Agnyadhana_(\u0905\u0917\u094d\u0928\u094d\u092f\u093e\u0927\u093e\u0928\u092e\u094d).csv, Bhumavidya_(\u092d\u0942\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Agnihotra_(\u0905\u0917\u094d\u0928\u093f\u0939\u094b\u0924\u094d\u0930\u092e\u094d).csv, Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, bhagavad_gita_from_GitaSociety.pdf, Education_on_Sanatana_Dharma.csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv
+2026-03-02 14:22:34 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 14:33:15 - Initializing Chatbot...
+2026-03-02 14:33:19 - Use pytorch device_name: cpu
+2026-03-02 14:33:19 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-02 14:33:23 - Loading faiss with AVX512 support.
+2026-03-02 14:33:23 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-02 14:33:23 - Loading faiss with AVX2 support.
+2026-03-02 14:33:23 - Successfully loaded faiss with AVX2 support.
+2026-03-02 14:33:23 - Chatbot initialized successfully.
+2026-03-02 14:33:38 - User query: what is dharma?
+2026-03-02 14:33:38 - Normalized query: what is dharma
+2026-03-02 14:33:38 - Confidence score: 1.0
+2026-03-02 14:33:38 - Retrieved sources: Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Arjuna Vishada Yoga.csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv, Donor_(\u0926\u093e\u0924\u093e).csv
+2026-03-02 14:33:38 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 14:33:46 - User query: is it important?
+2026-03-02 14:33:46 - Normalized query: is it important dharma
+2026-03-02 14:33:46 - Confidence score: 0.587
+2026-03-02 14:33:46 - Retrieved sources: Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Arjuna Vishada Yoga.csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv
+2026-03-02 14:33:46 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 14:34:04 - User query: who is follwer of it?
+2026-03-02 14:34:04 - Normalized query: who is follwer of it
+2026-03-02 14:34:04 - Confidence score: 0.5
+2026-03-02 14:34:04 - Retrieved sources: Annadana_by_Unchavrtti_Brahmana_(\u0909\u091e\u094d\u091b\u0935\u0943\u0924\u094d\u0924\u093f\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0903).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Atri_(\u0905\u0924\u094d\u0930\u093f\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv, Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv
+2026-03-02 14:34:04 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 14:34:12 - User query: who is krishna?
+2026-03-02 14:34:12 - Normalized query: who is krishna
+2026-03-02 14:34:12 - Confidence score: 1.0
+2026-03-02 14:34:12 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv
+2026-03-02 14:34:13 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 14:34:23 - User query: is he really powerfull?
+2026-03-02 14:34:23 - Normalized query: is he really powerfull krishna
+2026-03-02 14:34:24 - Confidence score: 0.5
+2026-03-02 14:34:24 - Retrieved sources: Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Agni in Vedas.csv, Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv
+2026-03-02 14:34:24 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 14:34:52 - User query: is he power full or not , just say yes or no
+2026-03-02 14:34:52 - Normalized query: is he power full or not just say yes or no
+2026-03-02 14:34:52 - Query outside domain.
+2026-03-02 14:35:06 - User query: is shree krishna human?
+2026-03-02 14:35:06 - Normalized query: is shree krishna human
+2026-03-02 14:35:06 - Confidence score: 0.507
+2026-03-02 14:35:06 - Retrieved sources: Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Annadana_(\u0905\u0928\u094d\u0928\u0926\u093e\u0928\u092e\u094d).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, bhagavad_gita_from_GitaSociety.pdf, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv
+2026-03-02 14:35:06 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 14:35:34 - User query: is he a advisor of arjuna?
+2026-03-02 14:35:34 - Normalized query: is he a advisor of arjuna
+2026-03-02 14:35:34 - Confidence score: 0.627
+2026-03-02 14:35:34 - Retrieved sources: Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, bhagavad_gita_from_GitaSociety.pdf, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Brahmavidya_(\u092c\u094d\u0930\u0939\u094d\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv
+2026-03-02 14:35:35 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 15:03:01 - User query: who is advisor of arjun
+2026-03-02 15:03:01 - Normalized query: who is advisor of arjuna
+2026-03-02 15:03:01 - Confidence score: 0.5
+2026-03-02 15:03:01 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf
+2026-03-02 15:03:02 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 15:03:27 - Initializing Chatbot...
+2026-03-02 15:03:32 - Use pytorch device_name: cpu
+2026-03-02 15:03:32 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-02 15:03:35 - Loading faiss with AVX512 support.
+2026-03-02 15:03:35 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-02 15:03:35 - Loading faiss with AVX2 support.
+2026-03-02 15:03:35 - Successfully loaded faiss with AVX2 support.
+2026-03-02 15:03:35 - Chatbot initialized successfully.
+2026-03-02 15:03:36 - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-03-02 15:03:36 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-03-02 15:03:36 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-02 15:04:02 - User query: who is advisor of arjun
+2026-03-02 15:04:02 - Normalized query: who is advisor of arjuna
+2026-03-02 15:04:02 - Confidence score: 0.5
+2026-03-02 15:04:02 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf
+2026-03-02 15:04:03 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 15:04:23 - User query: who is advisor of arjun?
+2026-03-02 15:04:23 - Normalized query: who is advisor of arjuna
+2026-03-02 15:04:23 - Confidence score: 0.5
+2026-03-02 15:04:23 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf
+2026-03-02 15:04:23 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 15:04:36 - User query: what is dharma?
+2026-03-02 15:04:36 - Normalized query: what is dharma
+2026-03-02 15:04:36 - Confidence score: 1.0
+2026-03-02 15:04:36 - Retrieved sources: Education_on_Sanatana_Dharma.csv, Donor_(\u0926\u093e\u0924\u093e).csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Arjuna Vishada Yoga.csv
+2026-03-02 15:04:36 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 15:05:08 - User query: types of dharma with its explanation for around 100 words each
+2026-03-02 15:05:08 - Normalized query: types of dharma with its explanation for around 100 words each
+2026-03-02 15:05:08 - Confidence score: 0.129
+2026-03-02 15:05:08 - Low confidence answer refused.
+2026-03-02 15:05:16 - User query: types of dharma with its explanation
+2026-03-02 15:05:16 - Normalized query: types of dharma with its explanation
+2026-03-02 15:05:16 - Confidence score: 0.488
+2026-03-02 15:05:16 - Retrieved sources: Education_on_Sanatana_Dharma.csv, bhagavad_gita_from_GitaSociety.pdf, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Brahman_(\u092c\u094d\u0930\u0939\u094d\u092e\u0928\u094d).csv, Bahupurushavada_(\u092c\u0939\u0941\u092a\u0941\u0930\u0941\u0937\u0935\u093e\u0926\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv
+2026-03-02 15:05:17 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 15:05:28 - User query: explain types of dharma
+2026-03-02 15:05:28 - Normalized query: explain types of dharma
+2026-03-02 15:05:28 - Confidence score: 0.333
+2026-03-02 15:05:28 - Retrieved sources: Education_on_Sanatana_Dharma.csv, bhagavad_gita_from_GitaSociety.pdf, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Bahupurushavada_(\u092c\u0939\u0941\u092a\u0941\u0930\u0941\u0937\u0935\u093e\u0926\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv
+2026-03-02 15:05:29 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 15:05:45 - User query: explain types of dharma in detail
+2026-03-02 15:05:45 - Normalized query: explain types of dharma in detail
+2026-03-02 15:05:45 - Confidence score: 0.25
+2026-03-02 15:05:45 - Low confidence answer refused.
+2026-03-02 15:06:08 - User query: what is sage jutsu
+2026-03-02 15:06:08 - Normalized query: what is sage jutsu dharma
+2026-03-02 15:06:08 - Confidence score: 0.467
+2026-03-02 15:06:08 - Retrieved sources: Education_on_Sanatana_Dharma.csv, bhagavad_gita_from_GitaSociety.pdf, Donor_(\u0926\u093e\u0924\u093e).csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv
+2026-03-02 15:06:08 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 15:06:39 - User query: who is a brahman?
+2026-03-02 15:06:39 - Normalized query: who is a brahman
+2026-03-02 15:06:39 - Confidence score: 1.0
+2026-03-02 15:06:39 - Retrieved sources: Brahmana_Dharma_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u0927\u0930\u094d\u092e\u0903).csv, Brahman_(\u092c\u094d\u0930\u0939\u094d\u092e\u0928\u094d).csv, Brahmana_(\u092c\u094d\u0930\u093e\u0939\u094d\u092e\u0923\u092e\u094d).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv
+2026-03-02 15:06:39 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 16:21:54 - Initializing Chatbot...
+2026-03-02 16:21:59 - Use pytorch device_name: cpu
+2026-03-02 16:21:59 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-02 16:22:02 - Loading faiss with AVX512 support.
+2026-03-02 16:22:02 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-02 16:22:02 - Loading faiss with AVX2 support.
+2026-03-02 16:22:02 - Successfully loaded faiss with AVX2 support.
+2026-03-02 16:22:02 - Chatbot initialized successfully.
+2026-03-02 16:22:10 - User query: who is krishna?
+2026-03-02 16:22:10 - Normalized query: who is krishna
+2026-03-02 16:22:10 - Confidence score: 1.0
+2026-03-02 16:22:10 - Retrieved sources: Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv, bhagavad_gita_from_GitaSociety.pdf, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv
+2026-03-02 16:22:11 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 16:22:31 - User query: is krishna a wicked man?
+2026-03-02 16:22:31 - Normalized query: is krishna a wicked man
+2026-03-02 16:22:31 - Confidence score: 0.507
+2026-03-02 16:22:31 - Retrieved sources: Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Arjuna Vishada Yoga.csv, bhagavad_gita_from_GitaSociety.pdf, Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx
+2026-03-02 16:22:32 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 16:22:32 - Answer contains unsupported content.
+2026-03-02 16:30:29 - Initializing Chatbot...
+2026-03-02 16:30:34 - Use pytorch device_name: cpu
+2026-03-02 16:30:34 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-02 16:30:37 - Loading faiss with AVX512 support.
+2026-03-02 16:30:37 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-02 16:30:37 - Loading faiss with AVX2 support.
+2026-03-02 16:30:37 - Successfully loaded faiss with AVX2 support.
+2026-03-02 16:30:37 - Chatbot initialized successfully.
+2026-03-02 16:30:49 - User query: what is a Dharma?
+2026-03-02 16:30:49 - Normalized query: what is a dharma
+2026-03-02 16:30:49 - Confidence score: 1.0
+2026-03-02 16:30:49 - Retrieved sources: Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Donor_(\u0926\u093e\u0924\u093e).csv, Education_on_Sanatana_Dharma.csv, Arjuna Vishada Yoga.csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv
+2026-03-02 16:30:50 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 16:31:03 - User query: who is krishna?
+2026-03-02 16:31:03 - Normalized query: who is krishna
+2026-03-02 16:31:03 - Confidence score: 1.0
+2026-03-02 16:31:03 - Retrieved sources: Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-03-02 16:31:03 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 16:31:26 - User query: why is arjuna so afraid to fight?
+2026-03-02 16:31:26 - Normalized query: why is arjuna so afraid to fight
+2026-03-02 16:31:26 - Confidence score: 0.6
+2026-03-02 16:31:26 - Retrieved sources: Arjuna Vishada Yoga.csv, bhagavad_gita_from_GitaSociety.pdf
+2026-03-02 16:31:27 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 16:31:27 - Answer contains unsupported content.
+2026-03-02 16:49:27 - Initializing Chatbot...
+2026-03-02 16:49:31 - Use pytorch device_name: cpu
+2026-03-02 16:49:31 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-02 16:49:35 - Loading faiss with AVX512 support.
+2026-03-02 16:49:35 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-02 16:49:35 - Loading faiss with AVX2 support.
+2026-03-02 16:49:35 - Successfully loaded faiss with AVX2 support.
+2026-03-02 16:49:35 - Chatbot initialized successfully.
+2026-03-02 16:49:35 - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-03-02 16:49:35 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-03-02 16:49:36 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-02 16:49:47 - User query: who is krishna?
+2026-03-02 16:49:47 - Normalized query: who is krishna
+2026-03-02 16:49:47 - Confidence score: 1.0
+2026-03-02 16:49:47 - Retrieved sources: Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv
+2026-03-02 16:49:48 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 16:50:35 - User query: what is meant by Dharma?
+2026-03-02 16:50:35 - Normalized query: what is meant by dharma
+2026-03-02 16:50:35 - Confidence score: 0.333
+2026-03-02 16:50:35 - Retrieved sources: Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Dana_(\u0926\u093e\u0928\u092e\u094d).csv, Arjuna Vishada Yoga.csv, Donor_(\u0926\u093e\u0924\u093e).csv
+2026-03-02 16:50:36 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 16:50:57 - User query: who is Arjuna?
+2026-03-02 16:50:57 - Normalized query: who is arjuna
+2026-03-02 16:50:57 - Confidence score: 1.0
+2026-03-02 16:50:57 - Retrieved sources: Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv, Arjuna Vishada Yoga.csv, bhagavad_gita_from_GitaSociety.pdf
+2026-03-02 16:50:57 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-02 16:50:57 - Answer contains unsupported content.
+2026-03-02 16:50:57 - Doctrinal fidelity risk detected.

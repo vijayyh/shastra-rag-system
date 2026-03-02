@@ -135,16 +135,34 @@ def normalize_query(query: str) -> str:
     return " ".join(normalized_words)
 
 class Chatbot:
+    CONFIDENCE_HIGH = 0.55
+    CONFIDENCE_MEDIUM = 0.30
+
+    DOMAIN_CONCEPT = """
+    Hindu scriptures, Bhagavad Gita, Mahabharata, Ramayana,
+    Vedas, Upanishads, dharma, karma, yoga, moksha,
+    Krishna, Rama, Arjuna, spiritual philosophy
+    """
+
     def __init__(self):
         """Initializes the Chatbot, loading models and vector store."""
         logging.info("Initializing Chatbot...")
         try:
-            embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
+            self.embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
             vectorstore = FAISS.load_local(
                 VECTORSTORE_DIR,
-                embeddings,
+                self.embeddings,
                 allow_dangerous_deserialization=True
             )
+
+            self.DOMAIN_CONCEPT = """
+            Hindu scriptures, Bhagavad Gita, Mahabharata, Ramayana,
+            Vedas, Upanishads, dharma, karma, yoga, moksha,
+            Krishna, Rama, Arjuna, spiritual philosophy
+            """
+
+            self.domain_vector = self.embeddings.embed_query(self.DOMAIN_CONCEPT)
+
             self.retriever = vectorstore.as_retriever(search_kwargs={"k": RETRIEVER_SEARCH_K})
             # Build BM25 keyword index for hybrid retrieval
             self.docs = list(vectorstore.docstore._dict.values())
@@ -154,6 +172,9 @@ class Chatbot:
 
             self.client = client
             self.chat_history = []
+
+            self.last_entity = None
+            self.domain_vector = self.embeddings.embed_query(self.DOMAIN_CONCEPT)
 
             
             logging.info("Chatbot initialized successfully.")
@@ -251,6 +272,237 @@ class Chatbot:
                 unique_docs[doc_key] = doc
         
         return list(unique_docs.values())
+    
+
+    def _is_context_relevant(self, query: str, docs) -> bool:
+        """
+        Checks whether retrieved docs are relevant enough to answer.
+        Improved to support entity-based queries.
+        """
+        stopwords = {
+            "who", "what", "is", "are", "the", "a", "an", "of",
+            "in", "on", "at", "to", "for", "and", "why", "when"
+        }
+        query_words = [
+            w for w in normalize_query(query).split()
+            if w not in stopwords
+        ]
+
+        if not query_words:
+            return False
+        
+        for doc in docs[:3]: # check top documents
+            content = doc.page_content.lower()
+
+            for word in query_words:
+                if word in content:
+                    return True  #strong entity match
+            
+        return False
+    
+    def _calculate_confidence(self, query: str, docs) -> float:
+        """
+        Calculates confidence score for retrieved context.
+
+        Combines:
+        - keyword/entity presence
+        - frequency of query terms
+        - document coverage
+        """
+
+        stopwords = {
+            "who","what","is","are","the","a","an","of",
+                "in","on","at","to","for","and","why","when"
+        }
+
+        query_terms = [
+            w for w in normalize_query(query).split()
+            if w not in stopwords
+        ]
+
+        if not query_terms or not docs:
+            return 0.0
+
+        term_hits = 0
+        coverage_score = 0
+
+        for doc in docs[:5]:
+            text = doc.page_content.lower()
+
+            for term in query_terms:
+                if term in text:
+                    term_hits += 1
+
+        # how many documents contain query terms
+        for term in query_terms:
+            if any(term in d.page_content.lower() for d in docs[:5]):
+                    coverage_score += 1
+
+        term_density = term_hits / (len(query_terms) * min(len(docs), 5))
+        coverage_ratio = coverage_score / len(query_terms)
+
+        confidence = (term_density * 0.6) + (coverage_ratio * 0.4)
+
+        return round(confidence, 3)
+
+    def _is_answer_supported(self, answer: str, docs) -> bool:
+        """
+        Verifies whether the generated answer is supported
+        by the retrieved context to prevent hallucinations.
+        """
+
+        if not answer or not docs:
+            return True
+
+        answer_words = set(answer.lower().split())
+
+        ignore_words = {
+            "the","is","are","was","were","and","of","to",
+            "in","that","it","can","be","as","with","for",
+            "from","this","these","those","have","has"
+        }
+
+        # extract meaningful terms
+        key_terms = {
+            w.strip(".,:;!?()[]")
+            for w in answer_words
+            if len(w) > 4 and w not in ignore_words
+        }
+
+        if not key_terms:
+            return True
+
+        context_text = " ".join(
+            doc.page_content.lower() for doc in docs[:5]
+        )
+
+        matches = sum(1 for term in key_terms if term in context_text)
+
+        support_ratio = matches / len(key_terms)
+
+        return support_ratio >= 0.35
+
+
+    
+    DOMAIN_KEYWORDS = {
+        "krishna","rama","ram","arjuna","sita","radha","hanuman",
+        "shiva","vishnu","brahma","narayana","lakshmi","parvati",
+        "gita","mahabharata","ramayana","vedas","upanishads",
+        "dharma","karma","yoga","bhakti","atman","brahman",
+        "moksha","samsara","avatar","kuru","pandava","kurukshetra"
+    }
+
+    def _is_domain_relevant(self, query: str, docs) -> bool:
+        """
+        Determines if query belongs to the scripture domain using
+        semantic similarity instead of keyword lists.
+        This scales to unlimited non-domain topics.
+        """
+
+        try:
+            # embed user query
+            query_vector = self.embeddings.embed_query(query)
+
+            # cosine similarity (dot product since vectors are normalized)
+            similarity = sum(q * d for q, d in zip(query_vector, self.domain_vector))
+
+            # threshold determines domain relevance
+            return similarity >= 0.38
+
+        except Exception as e:
+            logging.error(f"Domain detection error: {e}")
+            return True   # fail-safe: allow instead of crash
+        
+    # SCRIPTURE FIDELITY GUARD -> layer 8
+    DOCTRINAL_TERMS = {
+        "dharma","karma","moksha","atman","brahman",
+        "yoga","bhakti","jnana","samsara","guna",
+        "satva","rajas","tamas","avatar","veda",
+        "upanishad","sacred","cosmic","duty","righteousness",
+        "liberation","self-realization","devotion"
+    }
+
+    def _check_doctrinal_fidelity(self, answer: str, docs) -> bool:
+        """
+        Ensures the response preserves doctrinal meaning
+        and avoids oversimplified or distorted interpretations.
+        """
+
+        if not answer or not docs:
+            return True
+
+        answer_lower = answer.lower()
+
+        # detect oversimplification phrases
+        distortion_patterns = [
+            "simply means",
+            "just means",
+            "only means",
+            "basically means",
+            "nothing but"
+        ]
+
+        if any(p in answer_lower for p in distortion_patterns):
+            return False
+
+        # ensure doctrinal terms present when relevant
+        context_text = " ".join(
+            doc.page_content.lower() for doc in docs[:5]
+        )
+
+        doctrinal_hits = sum(
+            1 for term in self.DOCTRINAL_TERMS
+            if term in answer_lower and term in context_text
+        )
+
+        # if doctrine discussed but no doctrinal language preserved
+        if doctrinal_hits == 0 and any(term in context_text for term in self.DOCTRINAL_TERMS):
+            return False
+
+        return True
+    
+
+    def _is_ambiguous_followup(self, query: str) -> bool:
+        """
+        Detect ambiguous follow-up queries.
+        Allow pronoun follow-ups if entity known.
+        """
+        words = set(query.lower().split())
+        
+
+        # pronouns that indicate dependency on previous context
+        pronouns = {"it","this","that","they","them","he","she"}
+
+        if words.intersection(pronouns):
+
+            # if entity exists → NOT ambiguous
+            if self.last_entity:
+                return False
+
+            return True
+    
+
+    def _extract_entity(self, query: str):
+        """
+        Extract key spiritual concept or figure from query.
+        Prioritizes important domain terms.
+        """
+
+        domain_entities = {
+        "dharma","karma","moksha","yoga","atman","brahman",
+        "krishna","rama","arjuna","sita","hanuman",
+        "vedas","gita","ramayana","mahabharata"
+        }
+
+        words = normalize_query(query).split()
+
+        for w in words:
+            if w in domain_entities:
+                return w
+
+        return None
+
+
 
     def _construct_prompt(self, query: str, context: str) -> str:
         """Constructs the appropriate prompt based on the query type."""
@@ -296,15 +548,16 @@ class Chatbot:
             A patient, step-by-step explanation:
             """
         else:
-            prompt = f"""
-            You are a knowledgeable and respectful assistant. Your goal is to answer questions factually, based strictly on the provided context. For a touch of warmth, you might occasionally begin your response with a brief, gentle greeting like "Hare Krishna 🙏".
+           prompt = f"""
+            You are a knowledgeable and respectful assistant answering questions based strictly on the provided context.
 
-            Guiding Principles:
-            - Start with a single, optional greeting only if it feels natural.
-            - Answer only with the information given in the context.
-            - Present facts in a calm, clear, and neutral tone.
-            - Use gentle phrasing (e.g., "It can be understood as..."). Avoid absolute words.
-            - If the answer is not in the context, state so clearly and gently after the optional greeting.
+            Response Guidelines:
+            - Write in a natural, clear, and engaging way.
+            - Avoid repetitive phrases or formulaic openings.
+            - Present the information confidently but calmly.
+            - If helpful, structure the answer with short paragraphs or bullet points.
+            - Do not add information that is not present in the context.
+            - If the answer is not in the context, say so clearly.
 
             Context:
             {context}
@@ -314,7 +567,6 @@ class Chatbot:
 
             Answer:
             """
-
         return prompt
 
     def process_query(self, query: str) -> tuple[str, set[str]]:
@@ -330,11 +582,52 @@ class Chatbot:
             query = sanitize_query(query)
             logging.info(f"User query: {query}")
 
+            # attach last entity to short follow-up questions
+            if len(query.split()) <= 4 and self.last_entity:
+                if not self._extract_entity(query):
+                    query = query + " " + self.last_entity
+
+            # Ambiguous Follow-up Detection:
+            if self._is_ambiguous_followup(query):
+                return(
+                    "Your question seems to refer to something mentioned earlier. "
+                    "Could you please clarify who or what you are referring to?",
+                    set()                    
+                )
+
             # 1. Retrieve documents
             docs = self._retrieve_docs(query)
             if not docs:
                 answer = "This question is not covered in the available data."
                 return answer, sources
+            
+            # --- Domain Boundary Guard ---
+            if not self._is_domain_relevant(query, docs):
+                logging.warning("Query outside domain.")
+                return (
+                    "This question appears to be outside the scope of the available spiritual texts.",
+                    sources
+                )
+            
+            # Update: Context Grounding Gaurd -->
+            if not self._is_context_relevant(query,docs):
+                logging.warning("Context not relevant enough. Refusing to answer.")
+                return ( 
+                    "I could not find a clear answer in the available texts. "
+                    "Please try rephrasing or asking in more detail.",
+                    sources
+                )
+            #confidence scoring
+            confidence = self._calculate_confidence(query, docs)
+            logging.info(f"Confidence score: {confidence}")
+
+            #low confidence refusal
+            if confidence < self.CONFIDENCE_MEDIUM:
+                logging.warning("Low confidence answer refused.")
+                return (
+                    "I do not have enough reliable information in the available texts to answer this clearly.",
+                    sources
+                )
 
             # 2. Build context and collect sources
             history_context = format_chat_history(self.chat_history)
@@ -351,10 +644,43 @@ class Chatbot:
             response = self._call_llm_with_retry(prompt, temperature=0.2)
             answer = response.choices[0].message.content.strip()
 
+            # --- Output Validation Guard ---
+            if not self._is_answer_supported(answer, docs):
+                logging.warning("Answer contains unsupported content.")
+
+                answer = (
+                    "According to the available teachings:\n\n" + answer
+                    )
+                
+            # --- Scripture Fidelity Guard ---
+            if not self._check_doctrinal_fidelity(answer, docs):
+                logging.warning("Doctrinal fidelity risk detected.")
+
+                answer = (
+                    "According to the teachings, the concept is more nuanced. "
+                    "Based on the available texts:\n\n"
+                    + answer
+                )
+
+            #adjust tone for moderate confidence
+            if self.CONFIDENCE_MEDIUM <= confidence < self.CONFIDENCE_HIGH:
+                answer = (
+                    "Based on the available texts, it can be understood that:\n\n"
+                    + answer
+                )
+
+            #Updated entity.
+            entity = self._extract_entity(query)
+
+            if entity:
+                self.last_entity = entity
+
             # 4. Update chat history
             self.chat_history.append((query, answer))
             if len(self.chat_history) > HISTORY_MAX_TURNS:
                 self.chat_history.pop(0)
+
+            print("ENTITY:", self.last_entity)
 
         except ValueError as e:
             # Input validation error

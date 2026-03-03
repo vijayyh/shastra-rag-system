@@ -1,31 +1,13 @@
-# -- Core RAG and Language Model --
-langchain==0.1.20
-langchain-community==0.0.38
-langchain-text-splitters==0.0.2
-groq==1.0.0
-sentence-transformers==5.2.0
-faiss-cpu==1.13.1
-rank_bm25
-
-# -- Data Handling --
+gradio==4.44.0
+huggingface_hub==0.23.4
+faiss-cpu
+langchain
+langchain-community
+langchain-text-splitters
+sentence-transformers
+pypdf
 pandas
-pypdf==6.4.2
-openpyxl
-
-# -- Application Interfaces --
-fastapi
-uvicorn[standard]
-gradio
-python-dotenv==1.2.1
-
-# -- Voice I/O --
-SpeechRecognition
-pyttsx3
-# PyAudio is also required for voice input. On Windows, it can be tricky.
-# You may need to install it from a wheel file, like the one included in this repo:
-# pip install PyAudio-0.2.11-cp311-cp311-win_amd64.whl
-
-# -- Utilities --
-tenacity==8.5.0
-# For keyword-based search component
 rank_bm25
+groq
+python-dotenv
+tenacity

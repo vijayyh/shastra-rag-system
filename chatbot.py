@@ -51,8 +51,31 @@ if not API_KEY:
 client = Groq(api_key=API_KEY)
 
 if not os.path.exists(VECTORSTORE_DIR):
-    import ingest
-    ingest.main()
+    _cache_loaded = False
+    try:
+        from huggingface_hub import hf_hub_download, list_repo_files as _lrf
+        import shutil
+        print("🔍 Checking for cached vectorstore...")
+        _repo_files = list(_lrf("vijayyh/shastrabot-data", repo_type="dataset"))
+        _vs_files = [f for f in _repo_files if f.startswith("vectorstore_cache/")]
+
+        if _vs_files:
+            os.makedirs(VECTORSTORE_DIR, exist_ok=True)
+            for _vf in _vs_files:
+                _src = hf_hub_download(
+                    "vijayyh/shastrabot-data", _vf, repo_type="dataset"
+                )
+                _dest = _vf.replace("vectorstore_cache/", f"{VECTORSTORE_DIR}/")
+                shutil.copy(_src, _dest)
+            print("✅ Vectorstore loaded from cache — skipping ingest")
+            _cache_loaded = True
+    except Exception as e:
+        print(f"⚠️ Cache download failed: {e}")
+
+    if not _cache_loaded:
+        print("🔨 No cache — running full ingest...")
+        import ingest
+        ingest.main()
 
 def is_mindmap_query(query: str) -> bool:
     keywords = ["mindmap", "mind map", "outline", "tree", "structure", "map"]
@@ -173,7 +196,9 @@ class Chatbot:
             self.tokenized_docs = [
             doc.page_content.lower().split() for doc in self.docs]
             self.bm25 = BM25Okapi(self.tokenized_docs)
-
+            # Cross-encoder re-ranker
+            from sentence_transformers import CrossEncoder
+            self.reranker = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")
             self.client = client
             self.chat_history = []
 
@@ -223,7 +248,38 @@ class Chatbot:
         except Exception as e:
             logging.error(f"LLM error during query expansion: {e}")
             return []
+    
+    def _rewrite_as_standalone(self, query: str, history: list) -> str:
+        """
+        Rewrites a follow-up question into a self-contained standalone query.
+        Example: 'What did he teach?' + history about Krishna
+                  becomes: 'What did Krishna teach in the Bhagavad Gita?'
+        """
+        if not history or len(query.split()) > 10:
+            return query  # already standalone, skip LLM call
 
+        history_text = "\n".join(
+            [f"User: {h[0]}\nBot: {h[1][:200]}" for h in history[-3:]]
+        )
+
+        prompt = f"""Given this conversation and a follow-up question, rewrite the follow-up as a complete standalone question.
+        Output ONLY the rewritten question. No explanation. Nothing else.
+
+        Conversation:
+        {history_text}
+
+        Follow-up question: {query}
+
+        Standalone question:"""
+
+        try:
+            response = self._call_llm_with_retry(prompt, temperature=0.0)
+            rewritten = response.choices[0].message.content.strip()
+            logging.info(f"Rewritten query: '{query}' -> '{rewritten}'")
+            return rewritten
+        except Exception as e:
+            logging.warning(f"Query rewrite failed: {e}")
+            return query  # safe fallback
     def _keyword_search(self, query, top_k=5):
         """
         BM25 keyword search for hybrid retrieval.
@@ -238,6 +294,29 @@ class Chatbot:
         )
 
         return [doc for doc, _ in ranked[:top_k]]
+    
+    def _rerank_docs(self, query: str, docs: list, top_k: int = 5) -> list:
+        """
+        Re-ranks retrieved docs using a cross-encoder.
+        The cross-encoder reads query+doc TOGETHER — far more accurate
+        than embeddings which encode them separately.
+        """
+        if not docs or len(docs) == 1:
+            return docs
+
+        try:
+            pairs = [(query, doc.page_content) for doc in docs]
+            scores = self.reranker.predict(pairs)
+
+            ranked = sorted(zip(docs, scores), key=lambda x: x[1], reverse=True)
+            top_docs = [doc for doc, score in ranked[:top_k] if score > -8]
+
+            logging.info(f"Re-ranked {len(docs)} docs → kept {len(top_docs)}")
+            return top_docs if top_docs else docs[:top_k]
+
+        except Exception as e:
+            logging.warning(f"Re-ranking failed, using original order: {e}")
+            return docs[:top_k]
 
 
     def _retrieve_docs(self, query: str):
@@ -275,7 +354,7 @@ class Chatbot:
             if doc_key not in unique_docs:
                 unique_docs[doc_key] = doc
         
-        return list(unique_docs.values())
+        return self._rerank_docs(query, list(unique_docs.values()))
     
 
     def _is_context_relevant(self, query: str, docs) -> bool:
@@ -386,6 +465,43 @@ class Chatbot:
 
         return support_ratio >= 0.35
 
+    def _verify_answer_faithfulness(self, answer: str, docs: list) -> tuple:
+        """
+        Uses a second LLM call to verify the answer is grounded in context.
+        Returns: (is_faithful: bool, score: float 0.0-1.0)
+        """
+        if not answer or not docs:
+            return True, 1.0
+
+        context = "\n\n".join(doc.page_content for doc in docs[:4])
+
+        verification_prompt = f"""You are a strict fact-checker for a spiritual scripture chatbot.
+
+        Check if every factual claim in the Answer can be found or inferred from the Context below.
+
+        Context:
+        {context}
+
+        Answer:
+        {answer}
+
+        Respond with ONLY a JSON object, no markdown, no explanation:
+        {{"faithful": true, "score": 0.9, "reason": "All claims supported"}}
+        or
+        {{"faithful": false, "score": 0.3, "reason": "Claim about X not found in context"}}"""
+
+        try:
+            response = self._call_llm_with_retry(verification_prompt, temperature=0.0)
+            raw = response.choices[0].message.content.strip()
+            raw = raw.replace("```json", "").replace("```", "").strip()
+            result = json.loads(raw)
+            score = float(result.get("score", 0.5))
+            faithful = result.get("faithful", True)
+            logging.info(f"Faithfulness: {faithful}, score={score}")
+            return faithful, score
+        except Exception as e:
+            logging.warning(f"Faithfulness check failed (non-critical): {e}")
+            return True, 0.5  # fail-safe: let answer through
 
     
     DOMAIN_KEYWORDS = {
@@ -472,8 +588,6 @@ class Chatbot:
         Allow pronoun follow-ups if entity known.
         """
         words = set(query.lower().split())
-        
-
         # pronouns that indicate dependency on previous context
         pronouns = {"it","this","that","they","them","he","she"}
 
@@ -484,7 +598,7 @@ class Chatbot:
                 return False
 
             return True
-    
+        return False
 
     def _extract_entity(self, query: str):
         """
@@ -552,28 +666,28 @@ class Chatbot:
             A patient, step-by-step explanation:
             """
         else:
-           prompt = f"""
-            You are a knowledgeable and respectful assistant answering questions based strictly on the provided context.
+            prompt = f"""You are ShastraBot — a spiritual knowledge assistant for Hindu scriptures.
+                You answer ONLY from the Context section below. Never use outside knowledge.
 
-            Response Guidelines:
-            - Write in a natural, clear, and engaging way.
-            - Avoid repetitive phrases or formulaic openings.
-            - Present the information confidently but calmly.
-            - If helpful, structure the answer with short paragraphs or bullet points.
-            - Do not add information that is not present in the context.
-            - If the answer is not in the context, say so clearly.
+                STRICT RULES:
+                    1. If the answer is not clearly in the Context, say exactly:
+                        "I don't have enough information in the available texts to answer this."
+                    2. Never use phrases like "simply means", "just means", or "basically means" — these distort meaning.
+                    3. Do not say "according to the context" — speak naturally like a teacher.
+                    4. If Context has only partial info, give a partial answer and say:
+                        "The available texts only partially cover this topic."
+                    5. Keep answers under 250 words unless the question clearly needs more.
+                    6. Never invent verse numbers, chapter references, or Sanskrit terms not in the Context.
 
             Context:
             {context}
 
-            Question:
-            {query}
+            Question: {query}
 
-            Answer:
-            """
-        return prompt
+            Answer (strictly from Context only):"""
+            return prompt
 
-    def process_query(self, query: str) -> tuple[str, set[str]]:
+    def process_query(self, query: str, session_history: list = None) -> tuple[str, set[str]]:
         """
         Processes a user query and returns the answer and sources.
         This is the main method to interact with the chatbot.
@@ -586,10 +700,9 @@ class Chatbot:
             query = sanitize_query(query)
             logging.info(f"User query: {query}")
 
-            # attach last entity to short follow-up questions
-            if len(query.split()) <= 4 and self.last_entity:
-                if not self._extract_entity(query):
-                    query = query + " " + self.last_entity
+            # Rewrite follow-up questions into standalone queries
+            active_history = session_history if session_history is not None else self.chat_history
+            query = self._rewrite_as_standalone(query, active_history)
 
             # Ambiguous Follow-up Detection:
             if self._is_ambiguous_followup(query):
@@ -634,7 +747,8 @@ class Chatbot:
                 )
 
             # 2. Build context and collect sources
-            history_context = format_chat_history(self.chat_history)
+            active_history = session_history if session_history is not None else self.chat_history
+            history_context = format_chat_history(active_history)
             doc_context = "\n\n".join(doc.page_content for doc in docs[:CONTEXT_MAX_DOCS])
             context = f"{history_context}\n\n{doc_context}"
 
@@ -645,25 +759,18 @@ class Chatbot:
             # 3. Construct prompt and get LLM response
             prompt = self._construct_prompt(query, context)
             
-            response = self._call_llm_with_retry(prompt, temperature=0.2)
+            response = self._call_llm_with_retry(prompt, temperature=0.1)
             answer = response.choices[0].message.content.strip()
 
             # --- Output Validation Guard ---
-            if not self._is_answer_supported(answer, docs):
-                logging.warning("Answer contains unsupported content.")
-
+            # --- LLM Faithfulness Verifier ---
+            is_faithful, faith_score = self._verify_answer_faithfulness(answer, docs)
+            if not is_faithful or faith_score < 0.45:
+                logging.warning(f"Faithfulness low: score={faith_score}")
                 answer = (
-                    "According to the available teachings:\n\n" + answer
-                    )
-                
-            # --- Scripture Fidelity Guard ---
-            if not self._check_doctrinal_fidelity(answer, docs):
-                logging.warning("Doctrinal fidelity risk detected.")
-
-                answer = (
-                    "According to the teachings, the concept is more nuanced. "
-                    "Based on the available texts:\n\n"
+                    "Based on the available scriptures:\n\n"
                     + answer
+                    + "\n\n*(Note: Some details may be partially inferred.)*"
                 )
 
             #adjust tone for moderate confidence

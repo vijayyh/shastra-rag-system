@@ -193,6 +193,27 @@ def main():
 
     print("✅ Vector database created successfully")
 
+    # Cache vectorstore to HF Dataset so next restart loads in seconds
+    try:
+        from huggingface_hub import HfApi
+        import hashlib
+        api = HfApi()
+
+        files_list = list(list_repo_files(repo_id="vijayyh/shastrabot-data", repo_type="dataset"))
+        version = hashlib.md5("".join(sorted(files_list)).encode()).hexdigest()[:8]
+        with open(f"{VECTORSTORE_DIR}/version.txt", "w") as f:
+            f.write(version)
+
+        api.upload_folder(
+            folder_path=VECTORSTORE_DIR,
+            repo_id="vijayyh/shastrabot-data",
+            repo_type="dataset",
+            path_in_repo="vectorstore_cache",
+        )
+        print("✅ Vectorstore cached to HF Dataset repo")
+    except Exception as e:
+        print(f"⚠️ Cache upload skipped (non-critical): {e}")
+
 
 if __name__ == "__main__":
     main()

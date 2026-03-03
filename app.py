@@ -1,3 +1,8 @@
+import gradio as gr
+from chatbot import Chatbot
+
+chatbot = Chatbot()
+
 import os
 
 def respond(message, history):
@@ -11,3 +16,9 @@ def respond(message, history):
         answer = answer + citation_text
 
     return answer
+
+
+demo = gr.ChatInterface(respond)
+
+if __name__ == "__main__":
+    demo.launch()

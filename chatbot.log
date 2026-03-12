@@ -3128,3 +3128,408 @@ ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
 2026-03-03 13:52:15 - Confidence score: 1.0
 2026-03-03 13:52:15 - Retrieved sources: Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, bhagavad_gita_from_GitaSociety.pdf
 2026-03-03 13:52:15 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 21:38:07 - Initializing Chatbot...
+2026-03-12 21:38:12 - Use pytorch device_name: cpu
+2026-03-12 21:38:12 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-12 21:38:13 - HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:13 - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-03-12 21:38:13 - HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:13 - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-12 21:38:13 - HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:13 - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-12 21:38:13 - HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:13 - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/README.md "HTTP/1.1 200 OK"
+2026-03-12 21:38:14 - HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:14 - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-03-12 21:38:14 - HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:14 - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-03-12 21:38:14 - HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-03-12 21:38:14 - HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:14 - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-12 21:38:14 - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-03-12 21:38:15 - HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:15 - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-03-12 21:38:15 - HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:15 - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-12 21:38:15 - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-12 21:38:16 - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-12 21:38:16 - HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:16 - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-03-12 21:38:16 - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5 "HTTP/1.1 200 OK"
+2026-03-12 21:38:16 - Loading faiss with AVX512 support.
+2026-03-12 21:38:16 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-12 21:38:16 - Loading faiss with AVX2 support.
+2026-03-12 21:38:16 - Successfully loaded faiss with AVX2 support.
+2026-03-12 21:38:16 - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:17 - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:17 - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/config.json "HTTP/1.1 200 OK"
+2026-03-12 21:38:17 - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/config.json "HTTP/1.1 200 OK"
+2026-03-12 21:38:17 - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/model.safetensors "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:17 - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-03-12 21:38:17 - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2/xet-read-token/c5ee24cb16019beea0893ab7796b1df96625c6b8 "HTTP/1.1 200 OK"
+2026-03-12 21:38:21 - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:21 - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:21 - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/config.json "HTTP/1.1 200 OK"
+2026-03-12 21:38:21 - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:21 - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:21 - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-12 21:38:21 - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-12 21:38:22 - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:22 - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-12 21:38:22 - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:22 - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-12 21:38:22 - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/vocab.txt "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:23 - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/vocab.txt "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:23 - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/vocab.txt "HTTP/1.1 200 OK"
+2026-03-12 21:38:23 - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/vocab.txt "HTTP/1.1 200 OK"
+2026-03-12 21:38:23 - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/tokenizer.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:23 - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/tokenizer.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:23 - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/tokenizer.json "HTTP/1.1 200 OK"
+2026-03-12 21:38:23 - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/tokenizer.json "HTTP/1.1 200 OK"
+2026-03-12 21:38:23 - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/added_tokens.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:24 - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/added_tokens.json "HTTP/1.1 404 Not Found"
+2026-03-12 21:38:24 - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/special_tokens_map.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:24 - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/special_tokens_map.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:24 - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/special_tokens_map.json "HTTP/1.1 200 OK"
+2026-03-12 21:38:24 - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/special_tokens_map.json "HTTP/1.1 200 OK"
+2026-03-12 21:38:24 - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/chat_template.jinja "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:24 - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/chat_template.jinja "HTTP/1.1 404 Not Found"
+2026-03-12 21:38:25 - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:25 - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:25 - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/README.md "HTTP/1.1 200 OK"
+2026-03-12 21:38:25 - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/README.md "HTTP/1.1 200 OK"
+2026-03-12 21:38:25 - Use pytorch device: cpu
+2026-03-12 21:38:25 - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2 "HTTP/1.1 307 Temporary Redirect"
+2026-03-12 21:38:25 - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-03-12 21:38:25 - Chatbot initialized successfully.
+2026-03-12 21:38:48 - User query: who is arjuna?
+2026-03-12 21:38:48 - Normalized query: who is arjuna
+2026-03-12 21:38:48 - Re-ranked 13 docs \u2192 kept 5
+2026-03-12 21:38:48 - Confidence score: 1.0
+2026-03-12 21:38:48 - Retrieved sources: Arjuna Vishada Yoga.csv, bhagavad_gita_from_GitaSociety.pdf
+2026-03-12 21:38:48 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 21:38:48 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 21:38:48 - Faithfulness: True, score=0.9
+2026-03-12 21:39:11 - User query: what is dharma?
+2026-03-12 21:39:11 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 21:39:11 - Rewritten query: 'what is dharma?' -> 'In the context of the Bhagavad Gita, what is dharma?'
+2026-03-12 21:39:11 - Normalized query: in the context of the bhagavad gita what is dharma
+2026-03-12 21:39:11 - Re-ranked 13 docs \u2192 kept 5
+2026-03-12 21:39:11 - Confidence score: 0.63
+2026-03-12 21:39:11 - Retrieved sources: Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Education_on_Sanatana_Dharma.csv, bhagavad_gita_from_GitaSociety.pdf, Indra_and_Vrtrasura_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903_\u0935\u0943\u0924\u094d\u0930\u093e\u0938\u0941\u0930\u0903_\u091a).csv
+2026-03-12 21:39:12 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 21:39:12 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 21:39:12 - Faithfulness: True, score=0.9
+2026-03-12 21:46:37 - Initializing Chatbot...
+2026-03-12 21:46:43 - Use pytorch device_name: cpu
+2026-03-12 21:46:43 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-12 21:46:47 - Loading faiss with AVX512 support.
+2026-03-12 21:46:47 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-12 21:46:47 - Loading faiss with AVX2 support.
+2026-03-12 21:46:47 - Successfully loaded faiss with AVX2 support.
+2026-03-12 21:46:49 - Use pytorch device: cpu
+2026-03-12 21:46:50 - Chatbot initialized successfully.
+2026-03-12 21:46:51 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-12 21:46:51 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-03-12 21:46:51 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-03-12 21:46:52 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-12 21:47:23 - Matplotlib is building the font cache; this may take a moment.
+2026-03-12 21:47:26 - generated new fontManager
+2026-03-12 21:47:28 - User query: who is arjuna and krishna?
+2026-03-12 21:47:28 - Normalized query: who is arjuna and krishna
+2026-03-12 21:47:29 - Re-ranked 10 docs \u2192 kept 5
+2026-03-12 21:47:29 - Confidence score: 1.0
+2026-03-12 21:47:29 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf
+2026-03-12 21:47:30 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 21:47:30 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 21:47:30 - Faithfulness: True, score=0.9
+2026-03-12 21:47:43 - User query: who is dharma?
+2026-03-12 21:47:43 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 21:47:43 - Rewritten query: 'who is dharma?' -> 'What is the significance of dharma in the context of Arjuna and Lord Krishna?'
+2026-03-12 21:47:43 - Normalized query: what is the significance of dharma in the context of arjuna and lord krishna
+2026-03-12 21:47:44 - Re-ranked 11 docs \u2192 kept 5
+2026-03-12 21:47:44 - Confidence score: 0.587
+2026-03-12 21:47:44 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf
+2026-03-12 21:47:44 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 21:47:45 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 21:47:45 - Faithfulness: True, score=0.9
+2026-03-12 21:48:12 - User query: what is the steps to follow dharma?
+2026-03-12 21:48:12 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 21:48:12 - Rewritten query: 'what is the steps to follow dharma?' -> 'What are the steps to follow dharma as mentioned in the context of Lord Krishna and Arjuna?'
+2026-03-12 21:48:12 - Normalized query: what are the steps to follow dharma as mentioned in the context of lord krishna and arjuna
+2026-03-12 21:48:13 - Re-ranked 12 docs \u2192 kept 5
+2026-03-12 21:48:13 - Confidence score: 0.476
+2026-03-12 21:48:13 - Retrieved sources: Arjuna Vishada Yoga.csv, bhagavad_gita_from_GitaSociety.pdf
+2026-03-12 21:48:14 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 21:48:14 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 21:48:14 - Faithfulness: True, score=1.0
+2026-03-12 21:48:48 - User query: arjuna and his emotions on the battlefield
+2026-03-12 21:48:48 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 21:48:48 - Rewritten query: 'arjuna and his emotions on the battlefield' -> 'What are Arjuna's emotions like on the battlefield?'
+2026-03-12 21:48:48 - Normalized query: what are arjunas emotions like on the battlefield
+2026-03-12 21:48:48 - Re-ranked 13 docs \u2192 kept 5
+2026-03-12 21:48:49 - Confidence score: 0.32
+2026-03-12 21:48:49 - Retrieved sources: Arjuna Vishada Yoga.csv, bhagavad_gita_from_GitaSociety.pdf
+2026-03-12 21:48:49 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 21:48:49 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 21:48:49 - Faithfulness: True, score=0.9
+2026-03-12 21:49:16 - User query: arjuna and his emotions on battlefield
+2026-03-12 21:49:16 - Normalized query: arjuna and his emotions on battlefield
+2026-03-12 21:49:17 - Re-ranked 11 docs \u2192 kept 5
+2026-03-12 21:49:17 - Confidence score: 0.66
+2026-03-12 21:49:17 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf
+2026-03-12 21:49:17 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 21:49:17 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 21:49:17 - Faithfulness: True, score=0.9
+2026-03-12 22:05:52 - Initializing Chatbot...
+2026-03-12 22:05:59 - Use pytorch device_name: cpu
+2026-03-12 22:05:59 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-12 22:06:02 - Loading faiss with AVX512 support.
+2026-03-12 22:06:02 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-12 22:06:02 - Loading faiss with AVX2 support.
+2026-03-12 22:06:02 - Successfully loaded faiss with AVX2 support.
+2026-03-12 22:06:04 - Use pytorch device: cpu
+2026-03-12 22:06:05 - Chatbot initialized successfully.
+2026-03-12 22:07:30 - User query: who is krishna?
+2026-03-12 22:07:30 - Normalized query: who is krishna
+2026-03-12 22:07:30 - Re-ranked 13 docs \u2192 kept 5
+2026-03-12 22:07:30 - Confidence score: 1.0
+2026-03-12 22:07:30 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv
+2026-03-12 22:07:30 - Error processing query 'who is krishna?': name 'is_detailed_query' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Vedx6\shastra_rag_llm\chatbot.py", line 784, in process_query
+    prompt = self._construct_prompt(query, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vedx6\shastra_rag_llm\chatbot.py", line 669, in _construct_prompt
+    if is_detailed_query(query):
+       ^^^^^^^^^^^^^^^^^
+NameError: name 'is_detailed_query' is not defined
+2026-03-12 22:10:56 - User query: who is krishna?
+2026-03-12 22:10:56 - Normalized query: who is krishna
+2026-03-12 22:10:56 - Re-ranked 13 docs \u2192 kept 5
+2026-03-12 22:10:56 - Confidence score: 1.0
+2026-03-12 22:10:56 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv
+2026-03-12 22:10:56 - Error processing query 'who is krishna?': name 'is_detailed_query' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Vedx6\shastra_rag_llm\chatbot.py", line 784, in process_query
+    prompt = self._construct_prompt(query, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vedx6\shastra_rag_llm\chatbot.py", line 669, in _construct_prompt
+    if is_detailed_query(query):
+       ^^^^^^^^^^^^^^^^^
+NameError: name 'is_detailed_query' is not defined
+2026-03-12 22:20:44 - Initializing Chatbot...
+2026-03-12 22:20:51 - Use pytorch device_name: cpu
+2026-03-12 22:20:51 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-12 22:20:55 - Loading faiss with AVX512 support.
+2026-03-12 22:20:55 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-12 22:20:55 - Loading faiss with AVX2 support.
+2026-03-12 22:20:55 - Successfully loaded faiss with AVX2 support.
+2026-03-12 22:20:56 - Use pytorch device: cpu
+2026-03-12 22:20:57 - Chatbot initialized successfully.
+2026-03-12 22:25:19 - User query: who is krishna?
+2026-03-12 22:25:19 - Normalized query: who is krishna
+2026-03-12 22:25:19 - Re-ranked 13 docs \u2192 kept 5
+2026-03-12 22:25:19 - Confidence score: 1.0
+2026-03-12 22:25:19 - Retrieved sources: Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-03-12 22:25:19 - Error processing query 'who is krishna?': name 'is_detailed_query' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Vedx6\shastra_rag_llm\chatbot.py", line 793, in process_query
+    prompt = self._construct_prompt(query, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vedx6\shastra_rag_llm\chatbot.py", line 678, in _construct_prompt
+    if is_detailed_query(query):
+       ^^^^^^^^^^^^^^^^^
+NameError: name 'is_detailed_query' is not defined
+2026-03-12 22:27:22 - Initializing Chatbot...
+2026-03-12 22:27:28 - Use pytorch device_name: cpu
+2026-03-12 22:27:28 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-12 22:27:31 - Loading faiss with AVX512 support.
+2026-03-12 22:27:31 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-12 22:27:31 - Loading faiss with AVX2 support.
+2026-03-12 22:27:31 - Successfully loaded faiss with AVX2 support.
+2026-03-12 22:27:33 - Use pytorch device: cpu
+2026-03-12 22:27:34 - Chatbot initialized successfully.
+2026-03-12 22:27:49 - User query: who is krishna?
+2026-03-12 22:27:49 - Normalized query: who is krishna
+2026-03-12 22:27:50 - Re-ranked 13 docs \u2192 kept 5
+2026-03-12 22:27:50 - Confidence score: 1.0
+2026-03-12 22:27:50 - Retrieved sources: Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-03-12 22:27:50 - Error processing query 'who is krishna?': name 'is_detailed_query' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Vedx6\shastra_rag_llm\chatbot.py", line 750, in process_query
+    prompt = self._construct_prompt(query, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vedx6\shastra_rag_llm\chatbot.py", line 635, in _construct_prompt
+    if is_detailed_query(query):
+       ^^^^^^^^^^^^^^^^^
+NameError: name 'is_detailed_query' is not defined
+2026-03-12 22:30:49 - Initializing Chatbot...
+2026-03-12 22:30:55 - Use pytorch device_name: cpu
+2026-03-12 22:30:55 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-12 22:30:58 - Loading faiss with AVX512 support.
+2026-03-12 22:30:58 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-12 22:30:58 - Loading faiss with AVX2 support.
+2026-03-12 22:30:58 - Successfully loaded faiss with AVX2 support.
+2026-03-12 22:31:00 - Use pytorch device: cpu
+2026-03-12 22:31:01 - Chatbot initialized successfully.
+2026-03-12 22:31:18 - User query: who is krishna?
+2026-03-12 22:31:18 - Normalized query: who is krishna
+2026-03-12 22:31:19 - Re-ranked 13 docs \u2192 kept 5
+2026-03-12 22:31:19 - Confidence score: 1.0
+2026-03-12 22:31:19 - Retrieved sources: Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-03-12 22:31:19 - Error processing query 'who is krishna?': name 'is_detailed_query' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Vedx6\shastra_rag_llm\chatbot.py", line 750, in process_query
+    prompt = self._construct_prompt(query, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vedx6\shastra_rag_llm\chatbot.py", line 635, in _construct_prompt
+    if is_detailed_query(query):
+       ^^^^^^^^^^^^^^^^^
+NameError: name 'is_detailed_query' is not defined
+2026-03-12 22:33:10 - Initializing Chatbot...
+2026-03-12 22:33:17 - Use pytorch device_name: cpu
+2026-03-12 22:33:17 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-12 22:33:20 - Loading faiss with AVX512 support.
+2026-03-12 22:33:20 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-12 22:33:20 - Loading faiss with AVX2 support.
+2026-03-12 22:33:20 - Successfully loaded faiss with AVX2 support.
+2026-03-12 22:33:22 - Use pytorch device: cpu
+2026-03-12 22:33:23 - Chatbot initialized successfully.
+2026-03-12 22:33:32 - User query: who is krishna?
+2026-03-12 22:33:32 - Normalized query: who is krishna
+2026-03-12 22:33:32 - Re-ranked 13 docs \u2192 kept 5
+2026-03-12 22:33:32 - Confidence score: 1.0
+2026-03-12 22:33:32 - Retrieved sources: Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-03-12 22:33:32 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-03-12 22:33:34 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-03-12 22:33:36 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-03-12 22:33:37 - Error processing query 'who is krishna?': RetryError[<Future at 0x20fad30ccd0 state=finished raised BadRequestError>]
+Traceback (most recent call last):
+  File "C:\Users\Vedx6\AppData\Local\Programs\Python\Python311\Lib\site-packages\tenacity\__init__.py", line 478, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vedx6\shastra_rag_llm\chatbot.py", line 227, in _call_llm_with_retry
+    return self.client.chat.completions.create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vedx6\AppData\Local\Programs\Python\Python311\Lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\Vedx6\AppData\Local\Programs\Python\Python311\Lib\site-packages\groq\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vedx6\AppData\Local\Programs\Python\Python311\Lib\site-packages\groq\_base_client.py", line 1044, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': "'messages.0' : for 'role:user' the following must be satisfied[('messages.0.content' : one of the following must be satisfied[('messages.0.content' : Value is not nullable) OR ('messages.0.content' : Value is not nullable)])]", 'type': 'invalid_request_error'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Vedx6\shastra_rag_llm\chatbot.py", line 762, in process_query
+    response = self._call_llm_with_retry(prompt, temperature=0.4)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vedx6\AppData\Local\Programs\Python\Python311\Lib\site-packages\tenacity\__init__.py", line 336, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vedx6\AppData\Local\Programs\Python\Python311\Lib\site-packages\tenacity\__init__.py", line 475, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vedx6\AppData\Local\Programs\Python\Python311\Lib\site-packages\tenacity\__init__.py", line 376, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vedx6\AppData\Local\Programs\Python\Python311\Lib\site-packages\tenacity\__init__.py", line 419, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x20fad30ccd0 state=finished raised BadRequestError>]
+2026-03-12 22:41:30 - Initializing Chatbot...
+2026-03-12 22:41:35 - Use pytorch device_name: cpu
+2026-03-12 22:41:35 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-12 22:41:39 - Loading faiss with AVX512 support.
+2026-03-12 22:41:39 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-12 22:41:39 - Loading faiss with AVX2 support.
+2026-03-12 22:41:39 - Successfully loaded faiss with AVX2 support.
+2026-03-12 22:41:41 - Use pytorch device: cpu
+2026-03-12 22:41:41 - Chatbot initialized successfully.
+2026-03-12 22:41:47 - User query: who is arjuna?
+2026-03-12 22:41:47 - Normalized query: who is arjuna
+2026-03-12 22:41:47 - Re-ranked 13 docs \u2192 kept 5
+2026-03-12 22:41:48 - Confidence score: 1.0
+2026-03-12 22:41:48 - Retrieved sources: Arjuna Vishada Yoga.csv, bhagavad_gita_from_GitaSociety.pdf
+2026-03-12 22:41:49 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 22:42:03 - User query: who is krishna?
+2026-03-12 22:42:03 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 22:42:03 - Rewritten query: 'who is krishna?' -> 'Who is Krishna, the figure often mentioned alongside Arjuna in the epic Mahabharata?'
+2026-03-12 22:42:03 - Normalized query: who is krishna the figure often mentioned alongside arjuna in the epic mahabharata
+2026-03-12 22:42:03 - Re-ranked 12 docs \u2192 kept 5
+2026-03-12 22:42:03 - Confidence score: 0.38
+2026-03-12 22:42:03 - Retrieved sources: Bhagavad_Gita_(\u092d\u0917\u0935\u0926\u094d\u0917\u0940\u0924\u093e).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-03-12 22:42:05 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 22:42:48 - User query: what is dharma?
+2026-03-12 22:42:48 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 22:42:48 - Rewritten query: 'what is dharma?' -> 'What is the concept of dharma as it relates to the epic Mahabharata and the characters of Arjuna and Krishna?'
+2026-03-12 22:42:48 - Normalized query: what is the concept of dharma as it relates to the epic mahabharata and the characters of arjuna and krishna
+2026-03-12 22:42:48 - Re-ranked 10 docs \u2192 kept 5
+2026-03-12 22:42:48 - Confidence score: 0.56
+2026-03-12 22:42:48 - Retrieved sources: Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-03-12 22:42:50 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 22:45:11 - User query: how was arjuna feeling in the battlefield?
+2026-03-12 22:45:11 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 22:45:11 - Rewritten query: 'how was arjuna feeling in the battlefield?' -> 'How was Arjuna feeling on the battlefield in the epic Mahabharata?'
+2026-03-12 22:45:11 - Normalized query: how was arjuna feeling on the battlefield in the epic mahabharata
+2026-03-12 22:45:12 - Re-ranked 13 docs \u2192 kept 5
+2026-03-12 22:45:12 - Confidence score: 0.4
+2026-03-12 22:45:12 - Retrieved sources: Arjuna Vishada Yoga.csv, bhagavad_gita_from_GitaSociety.pdf
+2026-03-12 22:45:12 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 22:49:54 - Initializing Chatbot...
+2026-03-12 22:50:01 - Use pytorch device_name: cpu
+2026-03-12 22:50:01 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-12 22:50:04 - Loading faiss with AVX512 support.
+2026-03-12 22:50:04 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-12 22:50:04 - Loading faiss with AVX2 support.
+2026-03-12 22:50:04 - Successfully loaded faiss with AVX2 support.
+2026-03-12 22:50:06 - Use pytorch device: cpu
+2026-03-12 22:50:07 - Chatbot initialized successfully.
+2026-03-12 22:50:52 - User query: who is krishna?
+2026-03-12 22:50:52 - Normalized query: who is krishna
+2026-03-12 22:50:52 - Re-ranked 13 docs \u2192 kept 5
+2026-03-12 22:50:53 - Confidence score: 1.0
+2026-03-12 22:50:53 - Retrieved sources: Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-03-12 22:50:54 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 22:51:41 - User query: explain the teachings of dharma?
+2026-03-12 22:51:41 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 22:51:41 - Rewritten query: 'explain the teachings of dharma?' -> 'What are the core teachings and principles of Dharma in Hindu scriptures and how do they relate to the overall philosophy of Hinduism?'
+2026-03-12 22:51:41 - Normalized query: what are the core teachings and principles of dharma in hindu scriptures and how do they relate to the overall philosophy of hinduism
+2026-03-12 22:51:42 - Re-ranked 13 docs \u2192 kept 5
+2026-03-12 22:51:42 - Confidence score: 0.117
+2026-03-12 22:51:42 - Low confidence — letting LLM attempt with general knowledge.
+2026-03-12 22:51:42 - Retrieved sources: Education_on_Sanatana_Dharma.csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv
+2026-03-12 22:51:43 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 22:53:36 - Initializing Chatbot...
+2026-03-12 22:53:41 - Use pytorch device_name: cpu
+2026-03-12 22:53:41 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-12 22:53:45 - Loading faiss with AVX512 support.
+2026-03-12 22:53:45 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-12 22:53:45 - Loading faiss with AVX2 support.
+2026-03-12 22:53:45 - Successfully loaded faiss with AVX2 support.
+2026-03-12 22:53:47 - Use pytorch device: cpu
+2026-03-12 22:53:47 - Chatbot initialized successfully.
+2026-03-12 22:53:48 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-03-12 22:53:48 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-03-12 22:53:48 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-12 22:53:49 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-12 22:53:49 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-12 22:53:59 - User query: who is krishna?
+2026-03-12 22:53:59 - Normalized query: who is krishna
+2026-03-12 22:54:00 - Re-ranked 13 docs \u2192 kept 5
+2026-03-12 22:54:00 - Confidence score: 1.0
+2026-03-12 22:54:00 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv
+2026-03-12 22:54:02 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"

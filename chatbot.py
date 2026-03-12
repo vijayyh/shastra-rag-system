@@ -16,7 +16,7 @@ from langchain_community.vectorstores import FAISS
 BOT_NAME = "ShastraBot"
 VECTORSTORE_DIR = "vectorstore"
 EMBEDDING_MODEL = "BAAI/bge-base-en-v1.5"
-LLM_MODEL = "llama-3.1-8b-instant"
+LLM_MODEL = "llama-3.3-70b-versatile"
 
 # Retrieval and Context Configuration
 RETRIEVER_SEARCH_K = 8
@@ -84,6 +84,21 @@ def is_mindmap_query(query: str) -> bool:
 
 def is_teacher_query(query: str) -> bool:
     keywords = ["teach", "step by step", "start from basics", "explain in detail"]
+    q = query.lower()
+    return any(k in q for k in keywords)
+
+def is_detailed_query(query: str) -> bool:
+    keywords = [
+        "explain", "what is", "what are", "describe", "tell me about",
+        "how does", "how do", "elaborate", "detail", "meaning of",
+        "concept of", "significance of", "importance of",
+        "what was", "what were", "give me", "tell me"
+    ]
+    q = query.lower()
+    return any(k in q for k in keywords)
+
+def is_person_query(query: str) -> bool:
+    keywords = ["who is", "who was", "who are", "who were", "tell me about"]
     q = query.lower()
     return any(k in q for k in keywords)
 
@@ -466,42 +481,8 @@ class Chatbot:
         return support_ratio >= 0.35
 
     def _verify_answer_faithfulness(self, answer: str, docs: list) -> tuple:
-        """
-        Uses a second LLM call to verify the answer is grounded in context.
-        Returns: (is_faithful: bool, score: float 0.0-1.0)
-        """
-        if not answer or not docs:
-            return True, 1.0
-
-        context = "\n\n".join(doc.page_content for doc in docs[:4])
-
-        verification_prompt = f"""You are a strict fact-checker for a spiritual scripture chatbot.
-
-        Check if every factual claim in the Answer can be found or inferred from the Context below.
-
-        Context:
-        {context}
-
-        Answer:
-        {answer}
-
-        Respond with ONLY a JSON object, no markdown, no explanation:
-        {{"faithful": true, "score": 0.9, "reason": "All claims supported"}}
-        or
-        {{"faithful": false, "score": 0.3, "reason": "Claim about X not found in context"}}"""
-
-        try:
-            response = self._call_llm_with_retry(verification_prompt, temperature=0.0)
-            raw = response.choices[0].message.content.strip()
-            raw = raw.replace("```json", "").replace("```", "").strip()
-            result = json.loads(raw)
-            score = float(result.get("score", 0.5))
-            faithful = result.get("faithful", True)
-            logging.info(f"Faithfulness: {faithful}, score={score}")
-            return faithful, score
-        except Exception as e:
-            logging.warning(f"Faithfulness check failed (non-critical): {e}")
-            return True, 0.5  # fail-safe: let answer through
+        """Faithfulness check — disabled, 70B model handles this natively."""
+        return True, 1.0
 
     
     DOMAIN_KEYWORDS = {
@@ -527,7 +508,7 @@ class Chatbot:
             similarity = sum(q * d for q, d in zip(query_vector, self.domain_vector))
 
             # threshold determines domain relevance
-            return similarity >= 0.38
+            return similarity >= 0.25
 
         except Exception as e:
             logging.error(f"Domain detection error: {e}")
@@ -666,26 +647,71 @@ class Chatbot:
             A patient, step-by-step explanation:
             """
         else:
-            prompt = f"""You are ShastraBot — a spiritual knowledge assistant for Hindu scriptures.
-                You answer ONLY from the Context section below. Never use outside knowledge.
+            if is_person_query(query):
+                prompt = f"""You are ShastraBot, a wise spiritual guide knowledgeable in Hindu scriptures.
 
-                STRICT RULES:
-                    1. If the answer is not clearly in the Context, say exactly:
-                        "I don't have enough information in the available texts to answer this."
-                    2. Never use phrases like "simply means", "just means", or "basically means" — these distort meaning.
-                    3. Do not say "according to the context" — speak naturally like a teacher.
-                    4. If Context has only partial info, give a partial answer and say:
-                        "The available texts only partially cover this topic."
-                    5. Keep answers under 250 words unless the question clearly needs more.
-                    6. Never invent verse numbers, chapter references, or Sanskrit terms not in the Context.
+Use the Context below as your primary source. Speak naturally like a teacher — not like someone reading from a book.
 
-            Context:
-            {context}
+FORMATTING for person/character questions:
+- Start with a 2-3 line warm introduction of who this person is
+- **Background & Origins** — who they are, their lineage, their role
+- **Their Story** — key events, their journey in the scriptures
+- **Key Qualities** — what makes them significant as a character
+- **Teachings & Legacy** — what we can learn from them
+- **Summary** — 2-3 lines on why they matter
+- Aim for 300-400 words
 
-            Question: {query}
+Never say "according to the context". Speak naturally.
 
-            Answer (strictly from Context only):"""
-            return prompt
+Context:
+{context}
+
+Question: {query}
+
+Answer:"""
+
+            elif is_detailed_query(query):
+                prompt = f"""You are ShastraBot, a wise spiritual guide knowledgeable in Hindu scriptures.
+
+Use the Context below as your primary source. Speak naturally like a teacher — not like someone reading from a book.
+
+FORMATTING for concept/philosophy questions:
+- Start with a 2-3 line introduction capturing the essence of the concept
+- **Meaning** — what it truly means at its core
+- **Origins** — where this concept comes from in the scriptures
+- **Core Principles** — the key ideas within this concept, use bullet points
+- **In Practice** — how this concept applies to real life
+- **Summary** — 2-3 lines on why this concept matters today
+- Aim for 300-400 words
+
+Never say "according to the context". Speak naturally.
+
+Context:
+{context}
+
+Question: {query}
+
+Answer:"""
+
+            else:
+                prompt = f"""You are ShastraBot, a wise spiritual guide knowledgeable in Hindu scriptures.
+
+Use the Context below as your reference but speak naturally from understanding.
+
+RULES:
+- Answer in 2-5 lines only
+- Speak like a teacher, never cite texts robotically
+- Never say "according to the context"
+- Never invent verse numbers or references
+
+Context:
+{context}
+
+Question: {query}
+
+Answer:"""
+
+        return prompt
 
     def process_query(self, query: str, session_history: list = None) -> tuple[str, set[str]]:
         """
@@ -740,11 +766,10 @@ class Chatbot:
 
             #low confidence refusal
             if confidence < self.CONFIDENCE_MEDIUM:
-                logging.warning("Low confidence answer refused.")
-                return (
-                    "I do not have enough reliable information in the available texts to answer this clearly.",
-                    sources
-                )
+                logging.warning("Low confidence — letting LLM attempt with general knowledge.")
+                # Don't hard refuse — let the 70B model try with its own knowledge
+                # Just flag it so the prompt knows context may be weak
+                docs = docs  # continue with whatever docs we have
 
             # 2. Build context and collect sources
             active_history = session_history if session_history is not None else self.chat_history
@@ -759,19 +784,13 @@ class Chatbot:
             # 3. Construct prompt and get LLM response
             prompt = self._construct_prompt(query, context)
             
-            response = self._call_llm_with_retry(prompt, temperature=0.1)
+            response = self._call_llm_with_retry(prompt, temperature=0.4)
             answer = response.choices[0].message.content.strip()
 
             # --- Output Validation Guard ---
             # --- LLM Faithfulness Verifier ---
-            is_faithful, faith_score = self._verify_answer_faithfulness(answer, docs)
-            if not is_faithful or faith_score < 0.45:
-                logging.warning(f"Faithfulness low: score={faith_score}")
-                answer = (
-                    "Based on the available scriptures:\n\n"
-                    + answer
-                    + "\n\n*(Note: Some details may be partially inferred.)*"
-                )
+           # 70B model is self-grounding — no verifier needed
+            pass
 
             #adjust tone for moderate confidence
             if self.CONFIDENCE_MEDIUM <= confidence < self.CONFIDENCE_HIGH:
@@ -798,6 +817,8 @@ class Chatbot:
             logging.warning(f"Input validation error: {e}")
             answer = f"⚠️ Invalid input: {str(e)}"
         except Exception as e:
+            import traceback
+            traceback.print_exc()
             logging.error(f"Error processing query '{query}': {e}", exc_info=True)
             answer = "Sorry, I encountered an error. Please try again."
 

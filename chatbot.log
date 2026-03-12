@@ -3533,3 +3533,19 @@ ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
 2026-03-12 22:54:00 - Confidence score: 1.0
 2026-03-12 22:54:00 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv
 2026-03-12 22:54:02 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 22:59:22 - Initializing Chatbot...
+2026-03-12 22:59:28 - Use pytorch device_name: cpu
+2026-03-12 22:59:28 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-12 22:59:31 - Loading faiss with AVX512 support.
+2026-03-12 22:59:31 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-12 22:59:31 - Loading faiss with AVX2 support.
+2026-03-12 22:59:31 - Successfully loaded faiss with AVX2 support.
+2026-03-12 22:59:33 - Use pytorch device: cpu
+2026-03-12 22:59:33 - Chatbot initialized successfully.
+2026-03-12 22:59:41 - User query: who is krishna?
+2026-03-12 22:59:41 - Normalized query: who is krishna
+2026-03-12 22:59:41 - Re-ranked 13 docs \u2192 kept 5
+2026-03-12 22:59:41 - Confidence score: 1.0
+2026-03-12 22:59:41 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv
+2026-03-12 22:59:43 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"

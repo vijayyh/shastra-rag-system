@@ -664,7 +664,7 @@ with gr.Blocks(
                     render=False,
                     # Force Gradio to use light colours from the start
                     avatar_images=(None, None),
-                    type="messages",
+                    
                 ),
                 examples=[
                     "What is the meaning of Dharma?",

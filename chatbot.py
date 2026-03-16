@@ -235,6 +235,21 @@ class Chatbot:
             temperature=temperature,
             timeout=30
         )
+    
+    def _call_llm_with_prompt(self, prompt: str, temperature: float = 0.4) -> str:
+        """Direct LLM call with a raw prompt. Used by KnowledgeExplorer."""
+        try:
+            response = self.client.chat.completions.create(
+                model=LLM_MODEL,
+                messages=[{"role": "user", "content": prompt}],
+                temperature=temperature,
+                max_tokens=1024,
+        )
+            return response.choices[0].message.content.strip()
+        except Exception as e:
+            logging.error(f"_call_llm_with_prompt failed: {e}")
+            return "I encountered an error generating this explanation. Please try again."
+
 
     def _get_expanded_queries(self, normalized_query: str) -> list[str]:
         """Generates alternative search queries using an LLM."""

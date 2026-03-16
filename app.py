@@ -50,6 +50,10 @@ vedic_theme = gr.themes.Base(
     input_shadow_focus="0 0 0 3px rgba(232,100,12,0.18)",
     body_text_color="#2C1A0E",
     body_text_color_subdued="#6B4423",
+    body_text_color="#2C1A0E",
+    body_text_color_subdued="#6B4423",
+    color_accent_soft="#FBF0DC",
+    color_accent_soft_dark="#FBF0DC",
     button_primary_background_fill="linear-gradient(135deg, #E8640C 0%, #C9973A 100%)",
     button_primary_background_fill_hover="linear-gradient(135deg, #CC4E00 0%, #A37A20 100%)",
     button_primary_text_color="#FFFFFF",
@@ -64,6 +68,15 @@ vedic_theme = gr.themes.Base(
 
 
 VEDIC_CSS = """
+/* Force chatbot background — HF Spaces iframe safe */
+.svelte-byatnx, [class*="svelte-"],
+.wrap, .wrap > div, .wrap > div > div,
+.chatbot .wrap, .chatbot .wrap *,
+.message-wrap, .message-wrap * {
+    background-color: #FDF3E3 !important;
+    color: #2C1A0E !important;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 
 /* ══════════════════════════════════════════════════════
@@ -611,7 +624,7 @@ def _breadcrumb(path):
 with gr.Blocks(
     theme=vedic_theme,
     css=VEDIC_CSS,
-    title="ShastraBot — Sacred Knowledge"
+    title="ShastraBot — Sacred Knowledge",
 ) as demo:
 
     gr.HTML("""
@@ -653,6 +666,7 @@ with gr.Blocks(
                     render=False,
                     # Force Gradio to use light colours from the start
                     avatar_images=(None, None),
+                    type="messages",
                 ),
                 examples=[
                     "What is the meaning of Dharma?",

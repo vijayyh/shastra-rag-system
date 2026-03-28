@@ -3549,3 +3549,384 @@ ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
 2026-03-12 22:59:41 - Confidence score: 1.0
 2026-03-12 22:59:41 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv
 2026-03-12 22:59:43 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 12:38:47 - Initializing Chatbot...
+2026-03-14 12:38:58 - Use pytorch device_name: cpu
+2026-03-14 12:38:58 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-14 12:39:01 - Loading faiss with AVX512 support.
+2026-03-14 12:39:01 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-14 12:39:01 - Loading faiss with AVX2 support.
+2026-03-14 12:39:01 - Successfully loaded faiss with AVX2 support.
+2026-03-14 12:39:03 - Use pytorch device: cpu
+2026-03-14 12:39:04 - Chatbot initialized successfully.
+2026-03-14 12:39:16 - User query: who is krishna?
+2026-03-14 12:39:16 - Normalized query: who is krishna
+2026-03-14 12:39:17 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 12:39:17 - Confidence score: 1.0
+2026-03-14 12:39:17 - Retrieved sources: Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-03-14 12:39:18 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 12:40:00 - Initializing Chatbot...
+2026-03-14 12:40:02 - Use pytorch device_name: cpu
+2026-03-14 12:40:02 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-14 12:40:05 - Loading faiss with AVX512 support.
+2026-03-14 12:40:05 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-14 12:40:05 - Loading faiss with AVX2 support.
+2026-03-14 12:40:05 - Successfully loaded faiss with AVX2 support.
+2026-03-14 12:40:07 - Use pytorch device: cpu
+2026-03-14 12:40:08 - Chatbot initialized successfully.
+2026-03-14 12:40:09 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-03-14 12:40:09 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-03-14 12:40:09 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-14 12:40:09 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-14 12:40:09 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-14 12:40:09 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-14 12:40:10 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-14 12:40:29 - Normalized query: karma
+2026-03-14 12:40:30 - Re-ranked 12 docs \u2192 kept 5
+2026-03-14 12:40:31 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 12:40:32 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 12:40:32 - Normalized query: what is karma in context of karma
+2026-03-14 12:40:32 - Normalized query: karma types exist in context of karma
+2026-03-14 12:40:32 - Normalized query: reincarnation role in context of karma
+2026-03-14 12:40:32 - Normalized query: moksha relation in context of karma
+2026-03-14 12:40:32 - Re-ranked 10 docs \u2192 kept 5
+2026-03-14 12:40:32 - [Explorer] Prefetched: 'What is karma?'
+2026-03-14 12:40:32 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 12:40:32 - [Explorer] Prefetched: 'Moksha relation?'
+2026-03-14 12:40:32 - Re-ranked 10 docs \u2192 kept 5
+2026-03-14 12:40:32 - [Explorer] Prefetched: 'Reincarnation role?'
+2026-03-14 12:40:32 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 12:40:32 - [Explorer] Prefetched: 'Karma types exist?'
+2026-03-14 12:40:46 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 12:40:46 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 12:40:46 - Normalized query: what are karma types in context of karma karma types exist
+2026-03-14 12:40:46 - Normalized query: is karma reversible in context of karma karma types exist
+2026-03-14 12:40:46 - Normalized query: how karma affects rebirth in context of karma karma types exist
+2026-03-14 12:40:46 - Normalized query: what is sanchita karma in context of karma karma types exist
+2026-03-14 12:40:47 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 12:40:47 - [Explorer] Prefetched: 'What are karma types?'
+2026-03-14 12:40:47 - Re-ranked 10 docs \u2192 kept 5
+2026-03-14 12:40:47 - [Explorer] Prefetched: 'Is karma reversible?'
+2026-03-14 12:40:47 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 12:40:47 - [Explorer] Prefetched: 'How karma affects rebirth?'
+2026-03-14 12:40:47 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 12:40:47 - [Explorer] Prefetched: 'What is Sanchita karma?'
+2026-03-14 12:41:36 - Normalized query: who is krishna karma karma types exist
+2026-03-14 12:41:36 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 12:41:38 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 12:41:38 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 12:41:38 - Normalized query: what is krishnas role in context of karma karma types exist who is krishna
+2026-03-14 12:41:38 - Normalized query: is krishna god in context of karma karma types exist who is krishna
+2026-03-14 12:41:38 - Normalized query: who is radha in context of karma karma types exist who is krishna
+2026-03-14 12:41:38 - Normalized query: what is bhakti in context of karma karma types exist who is krishna
+2026-03-14 12:41:39 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 12:41:39 - [Explorer] Prefetched: 'What is Krishna's role?'
+2026-03-14 12:41:39 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 12:41:39 - [Explorer] Prefetched: 'What is Bhakti?'
+2026-03-14 12:41:39 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 12:41:39 - [Explorer] Prefetched: 'Is Krishna God?'
+2026-03-14 12:41:39 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 12:41:39 - [Explorer] Prefetched: 'Who is Radha?'
+2026-03-14 12:43:30 - Normalized query: who is supreme krishna or shiva karma karma types exist who is krishna
+2026-03-14 12:43:30 - Re-ranked 12 docs \u2192 kept 5
+2026-03-14 12:43:31 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 12:43:32 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 12:43:32 - Normalized query: is krishna shivas avatar in context of karma karma types exist who is krishna who is supreme krishna or shiva
+2026-03-14 12:43:32 - Normalized query: shivas role in vedas in context of karma karma types exist who is krishna who is supreme krishna or shiva
+2026-03-14 12:43:32 - Normalized query: krishnas divine powers in context of karma karma types exist who is krishna who is supreme krishna or shiva
+2026-03-14 12:43:32 - Normalized query: vishnu vs shiva in context of karma karma types exist who is krishna who is supreme krishna or shiva
+2026-03-14 12:43:32 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 12:43:32 - [Explorer] Prefetched: 'Krishna's divine powers'
+2026-03-14 12:43:32 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 12:43:32 - [Explorer] Prefetched: 'Vishnu vs Shiva'
+2026-03-14 12:43:32 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 12:43:32 - [Explorer] Prefetched: 'Is Krishna Shiva's avatar?'
+2026-03-14 12:43:33 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 12:43:33 - [Explorer] Prefetched: 'Shiva's role in Vedas'
+2026-03-14 12:44:06 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 12:44:06 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 12:44:06 - Normalized query: what scriptures say in context of karma karma types exist who is krishna who is supreme krishna or shiva is krishna shivas avatar
+2026-03-14 12:44:06 - Normalized query: is shiva supreme in context of karma karma types exist who is krishna who is supreme krishna or shiva is krishna shivas avatar
+2026-03-14 12:44:06 - Normalized query: vishnus role in context of karma karma types exist who is krishna who is supreme krishna or shiva is krishna shivas avatar
+2026-03-14 12:44:06 - Normalized query: avatar purpose in context of karma karma types exist who is krishna who is supreme krishna or shiva is krishna shivas avatar
+2026-03-14 12:44:07 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 12:44:07 - [Explorer] Prefetched: 'Is Shiva supreme?'
+2026-03-14 12:44:07 - Re-ranked 12 docs \u2192 kept 5
+2026-03-14 12:44:07 - [Explorer] Prefetched: 'Avatar purpose?'
+2026-03-14 12:44:07 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 12:44:07 - [Explorer] Prefetched: 'Vishnu's role?'
+2026-03-14 12:44:07 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 12:44:07 - [Explorer] Prefetched: 'What scriptures say?'
+2026-03-14 12:56:06 - Initializing Chatbot...
+2026-03-14 12:56:09 - Use pytorch device_name: cpu
+2026-03-14 12:56:09 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-14 12:56:12 - Loading faiss with AVX512 support.
+2026-03-14 12:56:12 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-14 12:56:12 - Loading faiss with AVX2 support.
+2026-03-14 12:56:12 - Successfully loaded faiss with AVX2 support.
+2026-03-14 12:56:13 - Use pytorch device: cpu
+2026-03-14 12:56:14 - Chatbot initialized successfully.
+2026-03-14 13:01:55 - Initializing Chatbot...
+2026-03-14 13:01:58 - Use pytorch device_name: cpu
+2026-03-14 13:01:58 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-14 13:02:01 - Loading faiss with AVX512 support.
+2026-03-14 13:02:01 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-14 13:02:01 - Loading faiss with AVX2 support.
+2026-03-14 13:02:01 - Successfully loaded faiss with AVX2 support.
+2026-03-14 13:02:03 - Use pytorch device: cpu
+2026-03-14 13:02:03 - Chatbot initialized successfully.
+2026-03-14 13:02:04 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-03-14 13:02:04 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-14 13:02:04 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-03-14 13:02:04 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-14 13:02:05 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-14 13:02:05 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-14 13:02:32 - User query: who is krishna?
+2026-03-14 13:02:32 - Normalized query: who is krishna
+2026-03-14 13:02:33 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 13:02:33 - Confidence score: 1.0
+2026-03-14 13:02:33 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv
+2026-03-14 13:02:34 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 13:02:53 - Normalized query: explain karma
+2026-03-14 13:02:53 - Re-ranked 11 docs \u2192 kept 5
+2026-03-14 13:02:55 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 13:02:55 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 13:02:55 - Normalized query: what is karmas purpose in context of explain karma
+2026-03-14 13:02:55 - Normalized query: is karma fair in context of explain karma
+2026-03-14 13:02:55 - Normalized query: how karma affects rebirth in context of explain karma
+2026-03-14 13:02:55 - Normalized query: karmas relation to dharma in context of explain karma
+2026-03-14 13:02:56 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 13:02:56 - [Explorer] Prefetched: 'What is karma's purpose?'
+2026-03-14 13:02:56 - Re-ranked 12 docs \u2192 kept 5
+2026-03-14 13:02:56 - [Explorer] Prefetched: 'Is karma fair?'
+2026-03-14 13:02:56 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 13:02:56 - [Explorer] Prefetched: 'How karma affects rebirth'
+2026-03-14 13:02:56 - Re-ranked 12 docs \u2192 kept 5
+2026-03-14 13:02:56 - [Explorer] Prefetched: 'Karma's relation to dharma'
+2026-03-14 13:45:57 - Initializing Chatbot...
+2026-03-14 13:46:00 - Use pytorch device_name: cpu
+2026-03-14 13:46:00 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-14 13:46:03 - Loading faiss with AVX512 support.
+2026-03-14 13:46:03 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-14 13:46:03 - Loading faiss with AVX2 support.
+2026-03-14 13:46:03 - Successfully loaded faiss with AVX2 support.
+2026-03-14 13:46:05 - Use pytorch device: cpu
+2026-03-14 13:46:05 - Chatbot initialized successfully.
+2026-03-14 13:46:06 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-03-14 13:46:06 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-03-14 13:46:06 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-14 13:46:06 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-14 13:46:07 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-14 13:46:07 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-14 13:46:07 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-14 13:46:58 - User query: what is meant by dharma?
+2026-03-14 13:46:58 - Normalized query: what is meant by dharma
+2026-03-14 13:46:58 - Re-ranked 12 docs \u2192 kept 5
+2026-03-14 13:46:58 - Confidence score: 0.333
+2026-03-14 13:46:58 - Retrieved sources: Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv
+2026-03-14 13:46:59 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 13:47:32 - Normalized query: what is karma
+2026-03-14 13:47:32 - Re-ranked 11 docs \u2192 kept 5
+2026-03-14 13:47:34 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 13:47:34 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 13:47:34 - Normalized query: karma types exist in context of what is karma
+2026-03-14 13:47:34 - Normalized query: is karma reversible in context of what is karma
+2026-03-14 13:47:34 - Normalized query: what causes karma in context of what is karma
+2026-03-14 13:47:34 - Normalized query: karma affects rebirth in context of what is karma
+2026-03-14 13:47:35 - Re-ranked 9 docs \u2192 kept 5
+2026-03-14 13:47:35 - [Explorer] Prefetched: 'Is karma reversible?'
+2026-03-14 13:47:35 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 13:47:35 - [Explorer] Prefetched: 'What causes karma?'
+2026-03-14 13:47:35 - Re-ranked 12 docs \u2192 kept 5
+2026-03-14 13:47:35 - [Explorer] Prefetched: 'Karma types exist?'
+2026-03-14 13:47:35 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 13:47:35 - [Explorer] Prefetched: 'Karma affects rebirth?'
+2026-03-14 13:47:46 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 13:47:47 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 13:47:47 - Normalized query: what are karma types in context of what is karma karma types exist
+2026-03-14 13:47:47 - Normalized query: is karma reversible in context of what is karma karma types exist
+2026-03-14 13:47:47 - Normalized query: how karma affects rebirth in context of what is karma karma types exist
+2026-03-14 13:47:47 - Normalized query: what is sanchita karma in context of what is karma karma types exist
+2026-03-14 13:47:47 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 13:47:47 - [Explorer] Prefetched: 'What is Sanchita karma?'
+2026-03-14 13:47:47 - Re-ranked 10 docs \u2192 kept 5
+2026-03-14 13:47:47 - [Explorer] Prefetched: 'Is karma reversible?'
+2026-03-14 13:47:47 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 13:47:47 - [Explorer] Prefetched: 'How karma affects rebirth?'
+2026-03-14 13:47:47 - Re-ranked 12 docs \u2192 kept 5
+2026-03-14 13:47:47 - [Explorer] Prefetched: 'What are karma types?'
+2026-03-14 13:47:57 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 13:47:57 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 13:47:57 - Normalized query: how to reverse karma in context of what is karma karma types exist is karma reversible
+2026-03-14 13:47:57 - Normalized query: role of rituals in context of what is karma karma types exist is karma reversible
+2026-03-14 13:47:57 - Normalized query: free will impact in context of what is karma karma types exist is karma reversible
+2026-03-14 13:47:57 - Normalized query: reincarnation effect in context of what is karma karma types exist is karma reversible
+2026-03-14 13:47:57 - Re-ranked 10 docs \u2192 kept 5
+2026-03-14 13:47:57 - [Explorer] Prefetched: 'How to reverse karma?'
+2026-03-14 13:47:58 - Re-ranked 12 docs \u2192 kept 5
+2026-03-14 13:47:58 - [Explorer] Prefetched: 'Role of rituals?'
+2026-03-14 13:47:58 - Re-ranked 11 docs \u2192 kept 5
+2026-03-14 13:47:58 - [Explorer] Prefetched: 'Free will impact?'
+2026-03-14 13:47:58 - Re-ranked 10 docs \u2192 kept 5
+2026-03-14 13:47:58 - [Explorer] Prefetched: 'Reincarnation effect?'
+2026-03-14 13:48:06 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 13:48:06 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 13:48:06 - Normalized query: what causes rebirth in context of what is karma karma types exist is karma reversible reincarnation effect
+2026-03-14 13:48:06 - Normalized query: role of karma in context of what is karma karma types exist is karma reversible reincarnation effect
+2026-03-14 13:48:06 - Normalized query: cycle end possible in context of what is karma karma types exist is karma reversible reincarnation effect
+2026-03-14 13:48:06 - Normalized query: soul transmigrates how in context of what is karma karma types exist is karma reversible reincarnation effect
+2026-03-14 13:48:07 - Re-ranked 11 docs \u2192 kept 5
+2026-03-14 13:48:07 - [Explorer] Prefetched: 'Cycle end possible?'
+2026-03-14 13:48:07 - Re-ranked 11 docs \u2192 kept 5
+2026-03-14 13:48:07 - [Explorer] Prefetched: 'Soul transmigrates how?'
+2026-03-14 13:48:07 - Re-ranked 12 docs \u2192 kept 5
+2026-03-14 13:48:07 - [Explorer] Prefetched: 'Role of karma?'
+2026-03-14 13:48:07 - Re-ranked 11 docs \u2192 kept 5
+2026-03-14 13:48:07 - [Explorer] Prefetched: 'What causes rebirth?'
+2026-03-14 13:52:38 - Initializing Chatbot...
+2026-03-14 13:52:41 - Use pytorch device_name: cpu
+2026-03-14 13:52:41 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-14 13:52:44 - Loading faiss with AVX512 support.
+2026-03-14 13:52:44 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-14 13:52:44 - Loading faiss with AVX2 support.
+2026-03-14 13:52:44 - Successfully loaded faiss with AVX2 support.
+2026-03-14 13:52:46 - Use pytorch device: cpu
+2026-03-14 13:52:46 - Chatbot initialized successfully.
+2026-03-14 13:52:47 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-03-14 13:52:47 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-03-14 13:52:47 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-14 13:52:47 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-14 13:52:48 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-14 13:52:48 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-14 13:52:48 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-14 13:53:00 - User query: What is the meaning of Dharma?
+2026-03-14 13:53:00 - Normalized query: what is the meaning of dharma
+2026-03-14 13:53:00 - Re-ranked 11 docs \u2192 kept 5
+2026-03-14 13:53:01 - Confidence score: 0.94
+2026-03-14 13:53:01 - Retrieved sources: Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv
+2026-03-14 13:53:02 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 13:53:24 - Normalized query: what is maya
+2026-03-14 13:53:24 - Re-ranked 12 docs \u2192 kept 5
+2026-03-14 13:53:26 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 13:53:26 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 13:53:26 - Normalized query: what is mayas purpose in context of what is maya
+2026-03-14 13:53:26 - Normalized query: is maya an illusion in context of what is maya
+2026-03-14 13:53:26 - Normalized query: maya in vedas in context of what is maya
+2026-03-14 13:53:26 - Normalized query: mayas role in karma in context of what is maya
+2026-03-14 13:53:27 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 13:53:27 - [Explorer] Prefetched: 'Maya's role in karma'
+2026-03-14 13:53:27 - Re-ranked 13 docs \u2192 kept 5
+2026-03-14 13:53:27 - [Explorer] Prefetched: 'What is Maya's purpose?'
+2026-03-14 13:53:27 - Re-ranked 10 docs \u2192 kept 5
+2026-03-14 13:53:27 - [Explorer] Prefetched: 'Maya in Vedas'
+2026-03-14 13:53:27 - Re-ranked 12 docs \u2192 kept 5
+2026-03-14 13:53:27 - [Explorer] Prefetched: 'Is Maya an illusion?'
+2026-03-14 13:56:43 - User query: Give me a mind map of the Bhagavad Gita
+2026-03-14 13:56:50 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 13:56:50 - Rewritten query: 'Give me a mind map of the Bhagavad Gita' -> 'What is a mind map of the Bhagavad Gita, a key Hindu scripture that explores the concept of Dharma and its application in everyday life?'
+2026-03-14 13:56:50 - Normalized query: what is a mind map of the bhagavad gita a key hindu scripture that explores the concept of dharma and its application in everyday life
+2026-03-14 13:56:50 - Re-ranked 11 docs \u2192 kept 5
+2026-03-14 13:56:50 - Confidence score: 0.28
+2026-03-14 13:56:50 - Low confidence — letting LLM attempt with general knowledge.
+2026-03-14 13:56:50 - Retrieved sources: Education_on_Sanatana_Dharma.csv, bhagavad_gita_from_GitaSociety.pdf
+2026-03-14 13:56:51 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 13:57:18 - User query: Teach me about karma step by step
+2026-03-14 13:57:18 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-14 13:57:18 - Rewritten query: 'Teach me about karma step by step' -> 'What is the concept of karma and how can it be understood and applied in a step-by-step manner?'
+2026-03-14 13:57:18 - Normalized query: what is the concept of karma and how can it be understood and applied in a stepbystep manner
+2026-03-14 13:57:19 - Re-ranked 12 docs \u2192 kept 5
+2026-03-14 13:57:19 - Confidence score: 0.344
+2026-03-14 13:57:19 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf
+2026-03-14 13:57:20 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-16 17:09:19 - Initializing Chatbot...
+2026-03-16 17:09:28 - Use pytorch device_name: cpu
+2026-03-16 17:09:28 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-16 17:09:31 - Loading faiss with AVX512 support.
+2026-03-16 17:09:31 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-16 17:09:31 - Loading faiss with AVX2 support.
+2026-03-16 17:09:32 - Successfully loaded faiss with AVX2 support.
+2026-03-16 17:09:34 - Use pytorch device: cpu
+2026-03-16 17:09:34 - Chatbot initialized successfully.
+2026-03-16 17:09:35 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-16 17:09:35 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-16 17:09:35 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-03-16 17:09:35 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-03-16 17:09:36 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-16 17:09:36 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-16 17:17:39 - Initializing Chatbot...
+2026-03-16 17:17:47 - Use pytorch device_name: cpu
+2026-03-16 17:17:47 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-16 17:17:50 - Loading faiss with AVX512 support.
+2026-03-16 17:17:50 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-16 17:17:50 - Loading faiss with AVX2 support.
+2026-03-16 17:17:50 - Successfully loaded faiss with AVX2 support.
+2026-03-16 17:17:52 - Use pytorch device: cpu
+2026-03-16 17:17:52 - Chatbot initialized successfully.
+2026-03-16 17:17:53 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-03-16 17:17:53 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-16 17:17:53 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-16 17:17:53 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-03-16 17:17:54 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-16 17:17:54 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-16 17:18:39 - Initializing Chatbot...
+2026-03-16 17:18:42 - Use pytorch device_name: cpu
+2026-03-16 17:18:42 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-16 17:18:45 - Loading faiss with AVX512 support.
+2026-03-16 17:18:45 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-16 17:18:45 - Loading faiss with AVX2 support.
+2026-03-16 17:18:45 - Successfully loaded faiss with AVX2 support.
+2026-03-16 17:18:46 - Use pytorch device: cpu
+2026-03-16 17:18:47 - Chatbot initialized successfully.
+2026-03-16 17:18:48 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-03-16 17:18:48 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-03-16 17:18:48 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-16 17:18:48 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-16 17:18:48 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-16 17:18:49 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-16 17:18:49 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-16 17:18:59 - User query: who is krishna?
+2026-03-16 17:18:59 - Normalized query: who is krishna
+2026-03-16 17:18:59 - Re-ranked 13 docs \u2192 kept 5
+2026-03-16 17:18:59 - Confidence score: 1.0
+2026-03-16 17:18:59 - Retrieved sources: Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-03-16 17:19:01 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-16 17:19:14 - Normalized query: explain the concept of karma
+2026-03-16 17:19:14 - Re-ranked 12 docs \u2192 kept 5
+2026-03-16 17:19:15 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-16 17:19:16 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-16 17:19:16 - Normalized query: what is karmas purpose in context of explain the concept of karma
+2026-03-16 17:19:16 - Normalized query: how karma affects rebirth in context of explain the concept of karma
+2026-03-16 17:19:16 - Normalized query: is karma fair in context of explain the concept of karma
+2026-03-16 17:19:16 - Normalized query: karmas role in moksha in context of explain the concept of karma
+2026-03-16 17:19:16 - Re-ranked 13 docs \u2192 kept 5
+2026-03-16 17:19:16 - [Explorer] Prefetched: 'What is karma's purpose?'
+2026-03-16 17:19:16 - Re-ranked 12 docs \u2192 kept 5
+2026-03-16 17:19:16 - [Explorer] Prefetched: 'Is karma fair?'
+2026-03-16 17:19:17 - Re-ranked 13 docs \u2192 kept 5
+2026-03-16 17:19:17 - [Explorer] Prefetched: 'How karma affects rebirth'
+2026-03-16 17:19:17 - Re-ranked 13 docs \u2192 kept 5
+2026-03-16 17:19:17 - [Explorer] Prefetched: 'Karma's role in moksha'
+2026-03-28 07:44:52 - Initializing Chatbot...
+2026-03-28 07:45:03 - Use pytorch device_name: cpu
+2026-03-28 07:45:03 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-28 07:45:06 - Loading faiss with AVX512 support.
+2026-03-28 07:45:06 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-28 07:45:06 - Loading faiss with AVX2 support.
+2026-03-28 07:45:06 - Successfully loaded faiss with AVX2 support.
+2026-03-28 07:45:08 - Use pytorch device: cpu
+2026-03-28 07:45:09 - Chatbot initialized successfully.
+2026-03-28 07:45:23 - User query: what is dharma?
+2026-03-28 07:45:23 - Normalized query: what is dharma
+2026-03-28 07:45:23 - Re-ranked 11 docs \u2192 kept 5
+2026-03-28 07:45:23 - Confidence score: 1.0
+2026-03-28 07:45:23 - Retrieved sources: Education_on_Sanatana_Dharma.csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv
+2026-03-28 07:45:25 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"

@@ -50,8 +50,8 @@ vedic_theme = gr.themes.Base(
     input_shadow_focus="0 0 0 3px rgba(232,100,12,0.18)",
     body_text_color="#2C1A0E",
     body_text_color_subdued="#6B4423",
-    color_accent_soft="#FBF0DC",
-    color_accent_soft_dark="#FBF0DC",
+    # color_accent_soft="#FBF0DC",
+    # color_accent_soft_dark="#FBF0DC",
     button_primary_background_fill="linear-gradient(135deg, #E8640C 0%, #C9973A 100%)",
     button_primary_background_fill_hover="linear-gradient(135deg, #CC4E00 0%, #A37A20 100%)",
     button_primary_text_color="#FFFFFF",
@@ -753,4 +753,4 @@ with gr.Blocks(
 
 
 if __name__ == "__main__":
-    demo.queue().launch()
+    demo.queue().launch(server_name="0.0.0.0", server_port=7860)

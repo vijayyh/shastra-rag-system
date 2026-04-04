@@ -8,34 +8,9 @@ chatbot = Chatbot()
 explorer = KnowledgeExplorer(chatbot)
 
 
-# ── Vedic Theme ───────────────────────────────────────────────────────────────
-vedic_theme = gr.themes.Soft().set(
-    background_fill_primary="#FDF3E3",
-    background_fill_secondary="#F5E6C8",
-    block_background_fill="#FBF0DC",
-    block_label_background_fill="#F5E6C8",
-    border_color_primary="#C9973A",
-    block_border_color="#D4A85A",
-    block_border_width="1px",
-    block_shadow="0 2px 10px rgba(139,90,20,0.10)",
-    input_background_fill="#FDF8F0",
-    input_border_color="#C9973A",
-    input_border_color_focus="#E8640C",
-    input_border_width="1.5px",
-    input_shadow_focus="0 0 0 3px rgba(232,100,12,0.18)",
-    body_text_color="#2C1A0E",
-    body_text_color_subdued="#6B4423",
-    button_primary_background_fill="linear-gradient(135deg, #E8640C 0%, #C9973A 100%)",
-    button_primary_background_fill_hover="linear-gradient(135deg, #CC4E00 0%, #A37A20 100%)",
-    button_primary_text_color="#FFFFFF",
-    button_primary_border_color="#C9973A",
-    button_secondary_background_fill="#FBF0DC",
-    button_secondary_background_fill_hover="#F5E6C8",
-    button_secondary_text_color="#5C1A00",
-    button_secondary_border_color="#C9973A",
-    button_cancel_background_fill="#FBF0DC",
-    button_cancel_text_color="#6B4423",
-)
+# ── CHANGE 1: Removed entire vedic_theme = gr.themes.Base(...) block
+# ── That was causing: TypeError: unhashable type: 'dict' on HuggingFace
+# ── All colors/fonts are already handled by VEDIC_CSS below — nothing is lost
 
 
 VEDIC_CSS = """
@@ -592,8 +567,8 @@ def _breadcrumb(path):
 
 
 # ── UI ────────────────────────────────────────────────────────────────────────
+# CHANGE 2: Removed theme=vedic_theme from gr.Blocks
 with gr.Blocks(
-    theme=vedic_theme,
     css=VEDIC_CSS,
     title="ShastraBot — Sacred Knowledge",
 ) as demo:
@@ -635,9 +610,7 @@ with gr.Blocks(
                     show_label=False,
                     bubble_full_width=False,
                     render=False,
-                    # Force Gradio to use light colours from the start
                     avatar_images=(None, None),
-                    
                 ),
                 examples=[
                     "What is the meaning of Dharma?",
@@ -725,5 +698,6 @@ with gr.Blocks(
                 btn.click(on_suggestion, [btn, path_state, history_state], _outputs)
 
 
+# CHANGE 3: Added server_name and server_port for HuggingFace Spaces
 if __name__ == "__main__":
-    demo.queue().launch(server_name="0.0.0.0", server_port=7860)
+    demo.queue().launch()

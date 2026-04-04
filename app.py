@@ -1,5 +1,22 @@
 import os
 import gradio as gr
+
+# Fix: Gradio 4.44.0 bug — theme dicts cause unhashable key crash in Jinja2 cache
+try:
+    from jinja2.utils import LRUCache
+    _orig_get = LRUCache.get
+    _orig_set = LRUCache.__setitem__
+    def _safe_get(self, key):
+        try: return _orig_get(self, key)
+        except TypeError: return None
+    def _safe_set(self, key, value):
+        try: _orig_set(self, key, value)
+        except TypeError: pass
+    LRUCache.get = _safe_get
+    LRUCache.__setitem__ = _safe_set
+except Exception:
+    pass
+
 from chatbot import Chatbot
 from explorer import KnowledgeExplorer
 

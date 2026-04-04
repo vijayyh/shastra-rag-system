@@ -9,32 +9,7 @@ explorer = KnowledgeExplorer(chatbot)
 
 
 # ── Vedic Theme ───────────────────────────────────────────────────────────────
-vedic_theme = gr.themes.Base(
-    primary_hue=gr.themes.Color(
-        c50="#FFF3E8",  c100="#FFE0BC", c200="#FFCC8A",
-        c300="#FFB347", c400="#FF9A1F", c500="#E8640C",
-        c600="#CC4E00", c700="#A33D00", c800="#7A2D00",
-        c900="#521E00", c950="#2E1000",
-    ),
-    secondary_hue=gr.themes.Color(
-        c50="#FDF8EC",  c100="#FAF0D0", c200="#F5E0A0",
-        c300="#EFD070", c400="#E8C040", c500="#C9973A",
-        c600="#A37A20", c700="#7A5C10", c800="#523D08",
-        c900="#2E2004", c950="#150E00",
-    ),
-    neutral_hue=gr.themes.Color(
-        c50="#FDF5EC",  c100="#F5E8D0", c200="#E8D0A8",
-        c300="#D4B880", c400="#B89860", c500="#9A7848",
-        c600="#7A5C32", c700="#5C4220", c800="#3D2C14",
-        c900="#1E1608", c950="#0F0B04",
-    ),
-    font=[
-        gr.themes.GoogleFont("EB Garamond"),
-        gr.themes.GoogleFont("Cinzel"),
-        "Georgia", "serif",
-    ],
-    font_mono=[gr.themes.GoogleFont("JetBrains Mono"), "monospace"],
-).set(
+vedic_theme = gr.themes.Soft().set(
     background_fill_primary="#FDF3E3",
     background_fill_secondary="#F5E6C8",
     block_background_fill="#FBF0DC",

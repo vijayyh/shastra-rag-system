@@ -700,4 +700,9 @@ with gr.Blocks(
 
 # CHANGE 3: Added server_name and server_port for HuggingFace Spaces
 if __name__ == "__main__":
-    demo.queue().launch()
+    import os
+    is_hf = os.environ.get("SPACE_ID") is not None
+    demo.queue().launch(
+        server_name="0.0.0.0" if is_hf else "127.0.0.1",
+        server_port=7860,
+    )

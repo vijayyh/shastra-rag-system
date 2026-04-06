@@ -538,20 +538,29 @@ with gr.Blocks(
 
         # ── Chat tab ──────────────────────────────────────────────────────────
         with gr.TabItem("💬 Chat"):
-            gr.ChatInterface(
-                fn=respond,
-                examples=[
-                    "What is the meaning of Dharma?",
-                    "Teach me about karma step by step",
-                    "Give me a mind map of the Bhagavad Gita",
-                    "Who is Krishna in the Mahabharata?",
-                ],
-                title="",
-                description=(
-                    "Ask anything about Hindu scriptures — "
-                    "Bhagavad Gita, Vedas, Upanishads, Mahabharata & Ramayana."
-                ),
-            )
+
+            chatbot_ui = gr.Chatbot(height=520)
+            msg = gr.Textbox(
+            placeholder="Ask anything about Hindu scriptures...",
+            container=False
+    )
+
+            with gr.Row():
+                send_btn = gr.Button("Send", variant="primary")
+                clear_btn = gr.Button("Clear", variant="secondary")
+
+            def chat_fn(user_message, history):
+                if history is None:
+                    history = []
+
+                bot_response = respond(user_message, history)
+                history.append((user_message, bot_response))
+
+                return "", history
+
+            msg.submit(chat_fn, [msg, chatbot_ui], [msg, chatbot_ui])
+            send_btn.click(chat_fn, [msg, chatbot_ui], [msg, chatbot_ui])
+            clear_btn.click(lambda: [], None, chatbot_ui, queue=False)
 
         # ── Explorer tab ──────────────────────────────────────────────────────
         with gr.TabItem("🌳 Knowledge Explorer"):
@@ -630,10 +639,7 @@ with gr.Blocks(
 import os
 
 if __name__ == "__main__":
-    is_hf = os.environ.get("SPACE_ID") is not None
-
     demo.queue().launch(
         server_name="0.0.0.0",
         server_port=7860,
-      # ONLY true locally if needed
     )

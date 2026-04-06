@@ -8,11 +8,6 @@ chatbot = Chatbot()
 explorer = KnowledgeExplorer(chatbot)
 
 
-# ── CHANGE 1: Removed entire vedic_theme = gr.themes.Base(...) block
-# ── That was causing: TypeError: unhashable type: 'dict' on HuggingFace
-# ── All colors/fonts are already handled by VEDIC_CSS below — nothing is lost
-
-
 VEDIC_CSS = """
 /* Force chatbot background — HF Spaces iframe safe */
 .svelte-byatnx, [class*="svelte-"],
@@ -25,9 +20,6 @@ VEDIC_CSS = """
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 
-/* ══════════════════════════════════════════════════════
-   ANIMATIONS
-══════════════════════════════════════════════════════ */
 @keyframes fadeSlideUp {
     from { opacity: 0; transform: translateY(16px); }
     to   { opacity: 1; transform: translateY(0);    }
@@ -53,9 +45,6 @@ VEDIC_CSS = """
     to   { opacity: 1; transform: scale(1);    }
 }
 
-/* ══════════════════════════════════════════════════════
-   BASE
-══════════════════════════════════════════════════════ */
 *, *::before, *::after { box-sizing: border-box; }
 
 body, .gradio-container {
@@ -64,9 +53,6 @@ body, .gradio-container {
     color: #2C1A0E !important;
 }
 
-/* ══════════════════════════════════════════════════════
-   TABS
-══════════════════════════════════════════════════════ */
 .tab-nav {
     background: #F5E6C8 !important;
     border-bottom: 2px solid #D4A85A !important;
@@ -96,9 +82,6 @@ body, .gradio-container {
     color: #8B1A1A !important;
 }
 
-/* ══════════════════════════════════════════════════════
-   CHATBOT CONTAINER
-══════════════════════════════════════════════════════ */
 .chatbot, #chatbot, [data-testid="chatbot"],
 div[class*="chatbot"], div[class*="Chatbot"] {
     background: #FDF3E3 !important;
@@ -107,18 +90,12 @@ div[class*="chatbot"], div[class*="Chatbot"] {
     min-height: 520px !important;
 }
 
-/* ══════════════════════════════════════════════════════
-   NUKE THE DARK BUBBLE BACKGROUND — every selector Gradio uses
-══════════════════════════════════════════════════════ */
-
-/* Target the actual rendered bubble wrappers */
 .message-wrap, .messages, .message-row,
 [class*="message-wrap"], [class*="messages"],
 [class*="message_wrap"] {
     background: transparent !important;
 }
 
-/* Bot bubble */
 .message.bot, .message.bot *,
 [data-testid="bot"], [data-testid="bot"] *,
 .bot .message, .bot .message *,
@@ -130,7 +107,6 @@ div[data-role="bot"], div[data-role="bot"] * {
     border-color: #D4A85A !important;
 }
 
-/* User bubble */
 .message.user,
 [data-testid="user"],
 .user .message,
@@ -147,13 +123,11 @@ div[data-role="user"] {
     background: transparent !important;
 }
 
-/* Gradio 4.x uses svelte-generated class names — catch with attribute */
 div[class^="svelte-"] > .message,
 div[class*="svelte-"] > .message {
     color: #2C1A0E !important;
 }
 
-/* The prose/markdown inside bubbles */
 .message .prose, .message .markdown-body,
 .message p, .message li, .message span,
 .message h1, .message h2, .message h3,
@@ -170,12 +144,10 @@ div[class*="svelte-"] > .message {
 .message em { color: #9A6820 !important; font-style: italic !important; }
 .message.user em { color: #FFE0B0 !important; }
 
-/* Slide-in animation per bubble */
 .message-wrap > div, .message-row {
     animation: fadeSlideUp 0.45s ease both !important;
 }
 
-/* Bot bubble border + shape */
 .message.bot, [data-testid="bot"], div[data-role="bot"] {
     border: 1px solid #D4A85A !important;
     border-radius: 18px 18px 18px 4px !important;
@@ -183,15 +155,11 @@ div[class*="svelte-"] > .message {
     box-shadow: 0 2px 8px rgba(139,90,20,0.09) !important;
 }
 
-/* User bubble shape */
 .message.user, [data-testid="user"], div[data-role="user"] {
     border-radius: 18px 18px 4px 18px !important;
     padding: 12px 16px !important;
 }
 
-/* ══════════════════════════════════════════════════════
-   EXAMPLE BUTTONS — force visible text
-══════════════════════════════════════════════════════ */
 .examples table td button,
 .examples-row button,
 .examples button,
@@ -228,9 +196,6 @@ button[class*="example"],
     letter-spacing: 0.06em !important;
 }
 
-/* ══════════════════════════════════════════════════════
-   PRIMARY BUTTONS — shiny shimmer hover
-══════════════════════════════════════════════════════ */
 button.primary, .primary,
 button[variant="primary"], [variant="primary"] {
     font-family: 'Cinzel', serif !important;
@@ -273,9 +238,6 @@ button.primary:active, .primary:active {
     box-shadow: 0 2px 6px rgba(232,100,12,0.3) !important;
 }
 
-/* ══════════════════════════════════════════════════════
-   SECONDARY BUTTONS — shiny gold shimmer
-══════════════════════════════════════════════════════ */
 button.secondary, .secondary,
 button[variant="secondary"], [variant="secondary"] {
     font-family: 'EB Garamond', serif !important;
@@ -317,7 +279,6 @@ button.secondary:active {
     transform: translateY(0) scale(0.97) !important;
 }
 
-/* Retry/Undo/Clear action buttons */
 button[aria-label*="Retry"], button[aria-label*="Undo"], button[aria-label*="Clear"],
 .stop-btn {
     background: #F5E6C8 !important;
@@ -335,9 +296,6 @@ button[aria-label*="Clear"]:hover {
     transform: translateY(-1px) !important;
 }
 
-/* ══════════════════════════════════════════════════════
-   TEXT INPUTS
-══════════════════════════════════════════════════════ */
 textarea, input[type="text"] {
     font-family: 'EB Garamond', serif !important;
     font-size: 17px !important;
@@ -358,9 +316,6 @@ textarea::placeholder, input::placeholder {
     font-style: italic !important;
 }
 
-/* ══════════════════════════════════════════════════════
-   PROSE / MARKDOWN — slightly bolder
-══════════════════════════════════════════════════════ */
 .prose, .markdown-body, .md, [class*="prose"] {
     font-family: 'EB Garamond', serif !important;
     font-size: 17px !important;
@@ -384,9 +339,6 @@ textarea::placeholder, input::placeholder {
 .prose em, .markdown-body em { color: #9A6820 !important; }
 .prose li::marker, .markdown-body li::marker { color: #C9973A !important; }
 
-/* ══════════════════════════════════════════════════════
-   EXPLORER ANSWER — force text visible
-══════════════════════════════════════════════════════ */
 #explorer-answer {
     background: #FBF0DC !important;
     border-left: 4px solid #E8640C !important;
@@ -431,9 +383,6 @@ textarea::placeholder, input::placeholder {
     margin: 1em 0 0.4em !important;
 }
 
-/* ══════════════════════════════════════════════════════
-   EXPLORER SUGGESTION BUTTONS — animated cascade
-══════════════════════════════════════════════════════ */
 #btn1, #btn2, #btn3, #btn4 {
     font-size: 16px !important;
     font-family: 'EB Garamond', serif !important;
@@ -450,16 +399,10 @@ textarea::placeholder, input::placeholder {
 #btn3 { animation: fadeSlideUp 0.4s 0.19s ease both; }
 #btn4 { animation: fadeSlideUp 0.4s 0.26s ease both; }
 
-/* ══════════════════════════════════════════════════════
-   BREADCRUMB
-══════════════════════════════════════════════════════ */
 #breadcrumb-html, [id*="breadcrumb"] {
     animation: fadeSlideUp 0.35s ease both !important;
 }
 
-/* ══════════════════════════════════════════════════════
-   BLOCKS / PANELS
-══════════════════════════════════════════════════════ */
 .block, .panel, .form {
     background: #FBF0DC !important;
     border: 1px solid #D4A85A !important;
@@ -467,9 +410,6 @@ textarea::placeholder, input::placeholder {
     box-shadow: 0 2px 8px rgba(139,90,20,0.07) !important;
 }
 
-/* ══════════════════════════════════════════════════════
-   LABELS
-══════════════════════════════════════════════════════ */
 label span, .label-wrap span {
     font-family: 'Cinzel', serif !important;
     font-size: 12px !important;
@@ -478,9 +418,6 @@ label span, .label-wrap span {
     text-transform: uppercase !important;
 }
 
-/* ══════════════════════════════════════════════════════
-   SCROLLBAR
-══════════════════════════════════════════════════════ */
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: #FDF3E3; }
 ::-webkit-scrollbar-thumb {
@@ -489,9 +426,6 @@ label span, .label-wrap span {
 }
 ::-webkit-scrollbar-thumb:hover { background: #CC4E00; }
 
-/* ══════════════════════════════════════════════════════
-   FOOTER
-══════════════════════════════════════════════════════ */
 footer { border-top: 1px solid #D4A85A !important; }
 footer a, footer span {
     color: #9A6820 !important;
@@ -504,7 +438,7 @@ footer a, footer span {
 def respond(message, history):
     session_history = [(h[0], h[1]) for h in history if h[0] and h[1]]
     answer, sources = chatbot.process_query(message, session_history=session_history)
-    print("DEBUG ANSWER TYPE:", type(answer))   # 👈 ADD THIS
+    print("DEBUG ANSWER TYPE:", type(answer))
     print("DEBUG ANSWER:", answer)
     if sources:
         citation_text = "\n\n📚 **Sources:**\n"
@@ -569,7 +503,6 @@ def _breadcrumb(path):
 
 
 # ── UI ────────────────────────────────────────────────────────────────────────
-# CHANGE 2: Removed theme=vedic_theme from gr.Blocks
 with gr.Blocks(
     css=VEDIC_CSS,
     title="ShastraBot — Sacred Knowledge",
@@ -700,11 +633,14 @@ with gr.Blocks(
                 btn.click(on_suggestion, [btn, path_state, history_state], _outputs)
 
 
-# CHANGE 3: Added server_name and server_port for HuggingFace Spaces
+# ── FIXED LAUNCH — works on HuggingFace Spaces ────────────────────────────────
+import os
+
 if __name__ == "__main__":
-    import os
     is_hf = os.environ.get("SPACE_ID") is not None
+
     demo.queue().launch(
         server_name="0.0.0.0" if is_hf else "127.0.0.1",
         server_port=7860,
+        share=False,
     )

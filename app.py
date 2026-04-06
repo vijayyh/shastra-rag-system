@@ -540,12 +540,6 @@ with gr.Blocks(
         with gr.TabItem("💬 Chat"):
             gr.ChatInterface(
                 fn=respond,
-                chatbot=gr.Chatbot(
-                    height=520,
-                    show_label=False,
-                    bubble_full_width=False,
-                    avatar_images=(None, None),
-                ),
                 examples=[
                     "What is the meaning of Dharma?",
                     "Teach me about karma step by step",

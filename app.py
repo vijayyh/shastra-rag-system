@@ -544,7 +544,6 @@ with gr.Blocks(
                     height=520,
                     show_label=False,
                     bubble_full_width=False,
-                    render=False,
                     avatar_images=(None, None),
                 ),
                 examples=[
@@ -640,7 +639,7 @@ if __name__ == "__main__":
     is_hf = os.environ.get("SPACE_ID") is not None
 
     demo.queue().launch(
-        server_name="0.0.0.0" if is_hf else "127.0.0.1",
+        server_name="0.0.0.0",
         server_port=7860,
-        share=False,
+        share=not is_hf,   # ONLY true locally if needed
     )

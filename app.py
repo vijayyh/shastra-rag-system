@@ -630,4 +630,4 @@ with gr.Blocks(
 # ── FIXED LAUNCH — works on HuggingFace Spaces ────────────────────────────────
 import os
 
-demo.queue().launch()
+demo.queue().launch(share=True)

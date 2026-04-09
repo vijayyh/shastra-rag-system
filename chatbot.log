@@ -3930,3 +3930,782 @@ ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
 2026-03-28 07:45:23 - Confidence score: 1.0
 2026-03-28 07:45:23 - Retrieved sources: Education_on_Sanatana_Dharma.csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv
 2026-03-28 07:45:25 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-28 07:49:56 - Initializing Chatbot...
+2026-03-28 07:49:58 - Use pytorch device_name: cpu
+2026-03-28 07:49:58 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-28 07:50:01 - Loading faiss with AVX512 support.
+2026-03-28 07:50:01 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-28 07:50:01 - Loading faiss with AVX2 support.
+2026-03-28 07:50:01 - Successfully loaded faiss with AVX2 support.
+2026-03-28 07:50:03 - Use pytorch device: cpu
+2026-03-28 07:50:03 - Chatbot initialized successfully.
+2026-03-28 07:50:04 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-03-28 07:50:04 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-28 07:50:04 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-28 07:50:04 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-03-28 07:50:05 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-28 07:50:05 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-28 07:50:20 - User query: What is the meaning of Dharma?
+2026-03-28 07:50:20 - Normalized query: what is the meaning of dharma
+2026-03-28 07:50:21 - Re-ranked 11 docs \u2192 kept 5
+2026-03-28 07:50:21 - Confidence score: 0.94
+2026-03-28 07:50:21 - Retrieved sources: Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv
+2026-03-28 07:50:22 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-28 07:50:51 - Normalized query: what is karma
+2026-03-28 07:50:51 - Re-ranked 11 docs \u2192 kept 5
+2026-03-28 07:50:53 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-28 07:50:53 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-28 07:50:53 - Normalized query: karma types exist in context of what is karma
+2026-03-28 07:50:53 - Normalized query: is karma reversible in context of what is karma
+2026-03-28 07:50:53 - Normalized query: what causes karma in context of what is karma
+2026-03-28 07:50:53 - Normalized query: karma affects rebirth in context of what is karma
+2026-03-28 07:50:54 - Re-ranked 12 docs \u2192 kept 5
+2026-03-28 07:50:54 - [Explorer] Prefetched: 'Karma types exist?'
+2026-03-28 07:50:54 - Re-ranked 9 docs \u2192 kept 5
+2026-03-28 07:50:54 - [Explorer] Prefetched: 'Is karma reversible?'
+2026-03-28 07:50:54 - Re-ranked 13 docs \u2192 kept 5
+2026-03-28 07:50:54 - [Explorer] Prefetched: 'Karma affects rebirth?'
+2026-03-28 07:50:54 - Re-ranked 13 docs \u2192 kept 5
+2026-03-28 07:50:54 - [Explorer] Prefetched: 'What causes karma?'
+2026-03-28 07:51:05 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-28 07:51:05 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-28 07:51:05 - Normalized query: what is rebirth in context of what is karma karma affects rebirth
+2026-03-28 07:51:05 - Normalized query: how karma works in context of what is karma karma affects rebirth
+2026-03-28 07:51:05 - Normalized query: reincarnation process in context of what is karma karma affects rebirth
+2026-03-28 07:51:05 - Normalized query: moksha role in context of what is karma karma affects rebirth
+2026-03-28 07:51:06 - Re-ranked 9 docs \u2192 kept 5
+2026-03-28 07:51:06 - [Explorer] Prefetched: 'Reincarnation process'
+2026-03-28 07:51:06 - Re-ranked 12 docs \u2192 kept 5
+2026-03-28 07:51:06 - [Explorer] Prefetched: 'How karma works'
+2026-03-28 07:51:06 - Re-ranked 13 docs \u2192 kept 5
+2026-03-28 07:51:06 - [Explorer] Prefetched: 'Moksha role'
+2026-03-28 07:51:06 - Re-ranked 12 docs \u2192 kept 5
+2026-03-28 07:51:06 - [Explorer] Prefetched: 'What is rebirth?'
+2026-03-28 07:51:10 - Normalized query: karma affects rebirth what is karma karma affects rebirth
+2026-03-28 07:51:11 - Re-ranked 12 docs \u2192 kept 5
+2026-03-28 07:51:12 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-28 07:51:12 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-28 07:51:12 - Normalized query: what is rebirth in context of what is karma karma affects rebirth karma affects rebirth
+2026-03-28 07:51:12 - Normalized query: how karma works in context of what is karma karma affects rebirth karma affects rebirth
+2026-03-28 07:51:12 - Normalized query: role of dharma in context of what is karma karma affects rebirth karma affects rebirth
+2026-03-28 07:51:12 - Normalized query: reincarnation cycle ends in context of what is karma karma affects rebirth karma affects rebirth
+2026-03-28 07:51:13 - Re-ranked 12 docs \u2192 kept 5
+2026-03-28 07:51:13 - [Explorer] Prefetched: 'What is rebirth?'
+2026-03-28 07:51:13 - Re-ranked 12 docs \u2192 kept 5
+2026-03-28 07:51:13 - [Explorer] Prefetched: 'How karma works'
+2026-03-28 07:51:13 - Re-ranked 11 docs \u2192 kept 5
+2026-03-28 07:51:13 - [Explorer] Prefetched: 'Reincarnation cycle ends'
+2026-03-28 07:51:13 - Re-ranked 13 docs \u2192 kept 5
+2026-03-28 07:51:13 - [Explorer] Prefetched: 'Role of dharma'
+2026-03-28 07:51:20 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-28 07:51:21 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-28 07:51:21 - Normalized query: what is moksha in context of what is karma karma affects rebirth karma affects rebirth reincarnation cycle ends
+2026-03-28 07:51:21 - Normalized query: how to attain liberation in context of what is karma karma affects rebirth karma affects rebirth reincarnation cycle ends
+2026-03-28 07:51:21 - Normalized query: role of yoga in context of what is karma karma affects rebirth karma affects rebirth reincarnation cycle ends
+2026-03-28 07:51:21 - Normalized query: is self realized in context of what is karma karma affects rebirth karma affects rebirth reincarnation cycle ends
+2026-03-28 07:51:21 - Re-ranked 12 docs \u2192 kept 5
+2026-03-28 07:51:21 - [Explorer] Prefetched: 'How to attain liberation?'
+2026-03-28 07:51:21 - Re-ranked 12 docs \u2192 kept 5
+2026-03-28 07:51:21 - [Explorer] Prefetched: 'Role of Yoga?'
+2026-03-28 07:51:21 - Re-ranked 11 docs \u2192 kept 5
+2026-03-28 07:51:21 - [Explorer] Prefetched: 'Is Self realized?'
+2026-03-28 07:51:21 - Re-ranked 12 docs \u2192 kept 5
+2026-03-28 07:51:21 - [Explorer] Prefetched: 'What is Moksha?'
+2026-03-28 09:49:52 - Initializing Chatbot...
+2026-03-28 09:50:00 - Use pytorch device_name: cpu
+2026-03-28 09:50:00 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-28 09:50:03 - Loading faiss with AVX512 support.
+2026-03-28 09:50:03 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-28 09:50:03 - Loading faiss with AVX2 support.
+2026-03-28 09:50:04 - Successfully loaded faiss with AVX2 support.
+2026-03-28 09:50:05 - Use pytorch device: cpu
+2026-03-28 09:50:06 - Chatbot initialized successfully.
+2026-03-28 09:50:07 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-03-28 09:50:07 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-28 09:50:07 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-28 09:50:07 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-03-28 09:50:08 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-28 09:50:08 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-28 10:00:40 - Initializing Chatbot...
+2026-03-28 10:00:43 - Use pytorch device_name: cpu
+2026-03-28 10:00:43 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-28 10:00:46 - Loading faiss with AVX512 support.
+2026-03-28 10:00:46 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-28 10:00:46 - Loading faiss with AVX2 support.
+2026-03-28 10:00:46 - Successfully loaded faiss with AVX2 support.
+2026-03-28 10:00:48 - Use pytorch device: cpu
+2026-03-28 10:00:48 - Chatbot initialized successfully.
+2026-03-28 10:00:49 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-28 10:00:49 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-28 10:00:50 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-28 10:00:50 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-28 10:00:51 - HTTP Request: GET http://localhost:7860/startup-events "HTTP/1.1 200 OK"
+2026-03-28 10:00:53 - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2026-03-28 10:01:42 - Initializing Chatbot...
+2026-03-28 10:01:45 - Use pytorch device_name: cpu
+2026-03-28 10:01:45 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-28 10:01:48 - Loading faiss with AVX512 support.
+2026-03-28 10:01:48 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-28 10:01:48 - Loading faiss with AVX2 support.
+2026-03-28 10:01:48 - Successfully loaded faiss with AVX2 support.
+2026-03-28 10:01:49 - Use pytorch device: cpu
+2026-03-28 10:01:50 - Chatbot initialized successfully.
+2026-03-28 10:01:50 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-03-28 10:01:50 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-03-28 10:01:50 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-28 10:01:50 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-28 10:01:51 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-28 10:01:51 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-28 10:01:51 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-28 10:02:03 - User query: who is shri krishna?
+2026-03-28 10:02:03 - Normalized query: who is shri krishna
+2026-03-28 10:02:03 - Re-ranked 13 docs \u2192 kept 5
+2026-03-28 10:02:03 - Confidence score: 1.0
+2026-03-28 10:02:03 - Retrieved sources: Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).csv, Jivanmukta_(\u091c\u0940\u0935\u0928\u094d\u092e\u0941\u0915\u094d\u0924\u0903).xlsx, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv
+2026-03-28 10:02:05 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-28 10:45:16 - Initializing Chatbot...
+2026-03-28 10:45:26 - Use pytorch device_name: cpu
+2026-03-28 10:45:26 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-03-28 10:45:29 - Loading faiss with AVX512 support.
+2026-03-28 10:45:29 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-03-28 10:45:29 - Loading faiss with AVX2 support.
+2026-03-28 10:45:29 - Successfully loaded faiss with AVX2 support.
+2026-03-28 10:45:31 - Use pytorch device: cpu
+2026-03-28 10:45:32 - Chatbot initialized successfully.
+2026-03-28 10:45:32 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-28 10:45:32 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-03-28 10:45:32 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-03-28 10:45:33 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-03-28 10:45:33 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-28 10:45:33 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-03-28 10:48:57 - User query: what is dharma?
+2026-03-28 10:48:57 - Normalized query: what is dharma
+2026-03-28 10:48:57 - Re-ranked 11 docs \u2192 kept 5
+2026-03-28 10:48:57 - Confidence score: 1.0
+2026-03-28 10:48:57 - Retrieved sources: Education_on_Sanatana_Dharma.csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv
+2026-03-28 10:48:59 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-28 10:56:14 - User query: What is suryanamaskar?
+2026-03-28 10:56:14 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-28 10:56:14 - Rewritten query: 'What is suryanamaskar?' -> 'What is the concept and significance of Suryanamaskar in Hindu scriptures or yoga practices?'
+2026-03-28 10:56:14 - Normalized query: what is the concept and significance of suryanamaskar in hindu scriptures or yoga practices
+2026-03-28 10:56:14 - Re-ranked 12 docs \u2192 kept 5
+2026-03-28 10:56:14 - Confidence score: 0.415
+2026-03-28 10:56:14 - Retrieved sources: Devalaya Vyavasthana.csv, bhagavad_gita_from_GitaSociety.pdf
+2026-03-28 10:56:16 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-28 10:56:28 - User query: 
+2026-03-28 10:56:28 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-28 10:56:28 - Rewritten query: '' -> 'What is the significance of Suryanamaskar in Hindu spirituality and yoga, and how does it relate to the concept of Dharma?'
+2026-03-28 10:56:28 - Normalized query: what is the significance of suryanamaskar in hindu spirituality and yoga and how does it relate to the concept of dharma
+2026-03-28 10:56:28 - Re-ranked 12 docs \u2192 kept 5
+2026-03-28 10:56:28 - Confidence score: 0.324
+2026-03-28 10:56:28 - Retrieved sources: Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv
+2026-03-28 10:56:30 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-28 10:56:51 - User query: what is the capital of italy?
+2026-03-28 10:56:51 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-28 10:56:51 - Rewritten query: 'what is the capital of italy?' -> 'What is the capital of Italy?'
+2026-03-28 10:56:51 - Normalized query: what is the capital of italy
+2026-03-28 10:56:52 - Re-ranked 13 docs \u2192 kept 0
+2026-03-28 10:56:52 - Context not relevant enough. Refusing to answer.
+2026-04-02 18:11:31 - Initializing Chatbot...
+2026-04-02 18:11:41 - Use pytorch device_name: cpu
+2026-04-02 18:11:41 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-02 18:11:45 - Loading faiss with AVX512 support.
+2026-04-02 18:11:45 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-02 18:11:45 - Loading faiss with AVX2 support.
+2026-04-02 18:11:45 - Successfully loaded faiss with AVX2 support.
+2026-04-02 18:11:47 - Use pytorch device: cpu
+2026-04-02 18:11:48 - Chatbot initialized successfully.
+2026-04-02 18:11:54 - User query: who is ashvathama?
+2026-04-02 18:11:54 - Normalized query: who is ashvathama
+2026-04-02 18:11:54 - Re-ranked 13 docs \u2192 kept 2
+2026-04-02 18:11:54 - Context not relevant enough. Refusing to answer.
+2026-04-02 18:12:03 - User query: who is arjuna?
+2026-04-02 18:12:03 - Normalized query: who is arjuna
+2026-04-02 18:12:03 - Re-ranked 13 docs \u2192 kept 5
+2026-04-02 18:12:03 - Confidence score: 1.0
+2026-04-02 18:12:03 - Retrieved sources: Arjuna Vishada Yoga.csv, bhagavad_gita_from_GitaSociety.pdf
+2026-04-02 18:12:06 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-02 18:32:39 - Initializing Chatbot...
+2026-04-02 18:32:44 - Use pytorch device_name: cpu
+2026-04-02 18:32:44 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-02 18:32:47 - Loading faiss with AVX512 support.
+2026-04-02 18:32:47 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-02 18:32:47 - Loading faiss with AVX2 support.
+2026-04-02 18:32:47 - Successfully loaded faiss with AVX2 support.
+2026-04-02 18:32:49 - Use pytorch device: cpu
+2026-04-02 18:32:50 - Chatbot initialized successfully.
+2026-04-04 19:30:27 - Initializing Chatbot...
+2026-04-04 19:30:36 - Use pytorch device_name: cpu
+2026-04-04 19:30:36 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-04 19:30:39 - Loading faiss with AVX512 support.
+2026-04-04 19:30:39 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-04 19:30:39 - Loading faiss with AVX2 support.
+2026-04-04 19:30:39 - Successfully loaded faiss with AVX2 support.
+2026-04-04 19:30:41 - Use pytorch device: cpu
+2026-04-04 19:30:42 - Chatbot initialized successfully.
+2026-04-04 19:30:42 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-04 19:30:42 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-04 19:30:43 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-04 19:30:43 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-04 19:30:44 - HTTP Request: GET http://localhost:7860/startup-events "HTTP/1.1 200 OK"
+2026-04-04 19:30:47 - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2026-04-04 19:33:27 - Initializing Chatbot...
+2026-04-04 19:33:30 - Use pytorch device_name: cpu
+2026-04-04 19:33:30 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-04 19:33:33 - Loading faiss with AVX512 support.
+2026-04-04 19:33:33 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-04 19:33:33 - Loading faiss with AVX2 support.
+2026-04-04 19:33:33 - Successfully loaded faiss with AVX2 support.
+2026-04-04 19:33:35 - Use pytorch device: cpu
+2026-04-04 19:33:35 - Chatbot initialized successfully.
+2026-04-04 19:33:36 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-04-04 19:33:36 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-04-04 19:33:36 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-04 19:33:36 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-04 19:33:37 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-04 19:33:37 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-04 19:33:37 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-04 19:35:01 - Initializing Chatbot...
+2026-04-04 19:35:04 - Use pytorch device_name: cpu
+2026-04-04 19:35:04 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-04 19:35:07 - Loading faiss with AVX512 support.
+2026-04-04 19:35:07 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-04 19:35:07 - Loading faiss with AVX2 support.
+2026-04-04 19:35:07 - Successfully loaded faiss with AVX2 support.
+2026-04-04 19:35:09 - Use pytorch device: cpu
+2026-04-04 19:35:10 - Chatbot initialized successfully.
+2026-04-04 19:35:10 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-04-04 19:35:10 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-04-04 19:35:10 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-04 19:35:10 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-04 19:35:11 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-04 19:35:11 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-04 19:35:11 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-04 19:35:29 - User query: who is krishna?
+2026-04-04 19:35:29 - Normalized query: who is krishna
+2026-04-04 19:35:30 - Re-ranked 13 docs \u2192 kept 5
+2026-04-04 19:35:30 - Confidence score: 1.0
+2026-04-04 19:35:30 - Retrieved sources: Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-04-04 19:35:36 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-04 19:35:50 - User query: what is dharma?
+2026-04-04 19:35:50 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-04 19:35:50 - Rewritten query: 'what is dharma?' -> 'What is the concept of dharma in Hinduism, as it relates to the teachings and principles embodied by Lord Krishna?'
+2026-04-04 19:35:50 - Normalized query: what is the concept of dharma in hinduism as it relates to the teachings and principles embodied by lord krishna
+2026-04-04 19:35:50 - Re-ranked 10 docs \u2192 kept 5
+2026-04-04 19:35:50 - Confidence score: 0.36
+2026-04-04 19:35:50 - Retrieved sources: Education_on_Sanatana_Dharma.csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv
+2026-04-04 19:35:52 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-04 19:36:12 - Normalized query: karma is bitch i know
+2026-04-04 19:36:12 - Re-ranked 13 docs \u2192 kept 5
+2026-04-04 19:36:14 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-04 19:36:14 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-04 19:36:14 - Normalized query: what is karma in context of karma is bitch i know
+2026-04-04 19:36:14 - Normalized query: is karma just in context of karma is bitch i know
+2026-04-04 19:36:14 - Normalized query: how does karma work in context of karma is bitch i know
+2026-04-04 19:36:14 - Normalized query: what is dharma in context of karma is bitch i know
+2026-04-04 19:36:14 - Re-ranked 10 docs \u2192 kept 5
+2026-04-04 19:36:14 - [Explorer] Prefetched: 'What is karma?'
+2026-04-04 19:36:14 - Re-ranked 11 docs \u2192 kept 5
+2026-04-04 19:36:14 - [Explorer] Prefetched: 'Is karma just?'
+2026-04-04 19:36:15 - Re-ranked 12 docs \u2192 kept 5
+2026-04-04 19:36:15 - [Explorer] Prefetched: 'How does karma work?'
+2026-04-04 19:36:15 - Re-ranked 13 docs \u2192 kept 5
+2026-04-04 19:36:15 - [Explorer] Prefetched: 'What is dharma?'
+2026-04-04 19:36:24 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-04 19:36:25 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-04 19:36:25 - Normalized query: what is karmas purpose in context of karma is bitch i know how does karma work
+2026-04-04 19:36:25 - Normalized query: is karma instant in context of karma is bitch i know how does karma work
+2026-04-04 19:36:25 - Normalized query: does karma transfer in context of karma is bitch i know how does karma work
+2026-04-04 19:36:25 - Normalized query: can karma end in context of karma is bitch i know how does karma work
+2026-04-04 19:36:25 - Re-ranked 12 docs \u2192 kept 5
+2026-04-04 19:36:25 - [Explorer] Prefetched: 'Is karma instant?'
+2026-04-04 19:36:25 - Re-ranked 13 docs \u2192 kept 5
+2026-04-04 19:36:25 - [Explorer] Prefetched: 'What is karma's purpose?'
+2026-04-04 19:36:25 - Re-ranked 11 docs \u2192 kept 5
+2026-04-04 19:36:25 - [Explorer] Prefetched: 'Can karma end?'
+2026-04-04 19:36:26 - Re-ranked 12 docs \u2192 kept 5
+2026-04-04 19:36:26 - [Explorer] Prefetched: 'Does karma transfer?'
+2026-04-04 19:54:39 - Initializing Chatbot...
+2026-04-04 19:54:42 - Use pytorch device_name: cpu
+2026-04-04 19:54:42 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-04 19:54:45 - Loading faiss with AVX512 support.
+2026-04-04 19:54:45 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-04 19:54:45 - Loading faiss with AVX2 support.
+2026-04-04 19:54:45 - Successfully loaded faiss with AVX2 support.
+2026-04-04 19:54:47 - Use pytorch device: cpu
+2026-04-04 19:54:47 - Chatbot initialized successfully.
+2026-04-04 19:54:48 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-04-04 19:54:48 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-04-04 19:54:48 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-04 19:54:48 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-04 19:54:48 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-04 19:54:49 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-04 19:54:49 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-04 19:55:00 - User query: woriking ewll rieght?
+2026-04-04 19:55:00 - Normalized query: woriking ewll rieght
+2026-04-04 19:55:00 - Re-ranked 13 docs \u2192 kept 0
+2026-04-04 19:55:00 - Context not relevant enough. Refusing to answer.
+2026-04-04 19:55:15 - User query: who is arjuna?
+2026-04-04 19:55:16 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-04 19:55:16 - Rewritten query: 'who is arjuna?' -> 'Who is Arjuna in mythology or literature, and what is his significance or role in the stories where he appears?'
+2026-04-04 19:55:29 - User query: who is arjuna in mahabharata?
+2026-04-04 19:55:30 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-04 19:55:30 - Rewritten query: 'who is arjuna in mahabharata?' -> 'Who is Arjuna in the context of the Mahabharata.'
+2026-04-04 19:55:30 - Normalized query: who is arjuna in the context of the mahabharata
+2026-04-04 19:55:30 - Re-ranked 13 docs \u2192 kept 5
+2026-04-04 19:55:30 - Confidence score: 0.76
+2026-04-04 19:55:30 - Retrieved sources: Arjuna Vishada Yoga.csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).xlsx, bhagavad_gita_from_GitaSociety.pdf, Acceptor_(\u092a\u094d\u0930\u0924\u093f\u0917\u094d\u0930\u0939\u0940\u0924\u093e).csv
+2026-04-04 19:55:32 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-04 20:04:08 - Initializing Chatbot...
+2026-04-04 20:04:11 - Use pytorch device_name: cpu
+2026-04-04 20:04:11 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-04 20:04:15 - Loading faiss with AVX512 support.
+2026-04-04 20:04:15 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-04 20:04:15 - Loading faiss with AVX2 support.
+2026-04-04 20:04:15 - Successfully loaded faiss with AVX2 support.
+2026-04-04 20:04:16 - Use pytorch device: cpu
+2026-04-04 20:04:17 - Chatbot initialized successfully.
+2026-04-04 20:04:18 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-04-04 20:04:18 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-04-04 20:04:18 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-04 20:04:18 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-04 20:04:18 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-04 20:04:18 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-04 20:04:19 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-04 20:04:28 - User query: visualisation thing is real
+2026-04-04 20:04:28 - Normalized query: visualisation thing is real
+2026-04-04 20:04:28 - Re-ranked 13 docs \u2192 kept 1
+2026-04-04 20:04:28 - Context not relevant enough. Refusing to answer.
+2026-04-04 20:04:33 - User query: krishna is who?
+2026-04-04 20:04:33 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-04 20:04:33 - Rewritten query: 'krishna is who?' -> 'Who is Krishna?'
+2026-04-04 20:04:33 - Normalized query: who is krishna
+2026-04-04 20:04:34 - Re-ranked 13 docs \u2192 kept 5
+2026-04-04 20:04:34 - Confidence score: 1.0
+2026-04-04 20:04:34 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv
+2026-04-04 20:04:35 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-04 20:20:35 - Initializing Chatbot...
+2026-04-04 20:20:37 - Use pytorch device_name: cpu
+2026-04-04 20:20:37 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-04 20:20:41 - Loading faiss with AVX512 support.
+2026-04-04 20:20:41 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-04 20:20:41 - Loading faiss with AVX2 support.
+2026-04-04 20:20:41 - Successfully loaded faiss with AVX2 support.
+2026-04-04 20:20:43 - Use pytorch device: cpu
+2026-04-04 20:20:43 - Chatbot initialized successfully.
+2026-04-04 20:20:44 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-04-04 20:20:44 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-04-04 20:20:44 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-04 20:20:44 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-04 20:20:44 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-04 20:20:45 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-04 20:20:45 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-04 20:21:11 - User query: who is krishna i may say again this time
+2026-04-04 20:21:17 - User query: who is krishna?
+2026-04-04 20:21:17 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-04 20:21:17 - Rewritten query: 'who is krishna?' -> 'Who is the Hindu deity Krishna and what is his significance in Hinduism?'
+2026-04-04 20:21:17 - Normalized query: who is the hindu deity krishna and what is his significance in hinduism
+2026-04-04 20:21:17 - Re-ranked 13 docs \u2192 kept 5
+2026-04-04 20:21:17 - Confidence score: 0.293
+2026-04-04 20:21:17 - Low confidence — letting LLM attempt with general knowledge.
+2026-04-04 20:21:17 - Retrieved sources: Devayana_Marga_and_Pitruyana_Marga_(\u0926\u0947\u0935\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u092a\u093f\u0924\u0943\u092f\u093e\u0928\u092e\u093e\u0930\u094d\u0917\u0903_\u091a\u0964).csv, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-04-04 20:21:19 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-04 21:40:01 - Initializing Chatbot...
+2026-04-04 21:40:03 - Use pytorch device_name: cpu
+2026-04-04 21:40:03 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-04 21:40:07 - Loading faiss with AVX512 support.
+2026-04-04 21:40:07 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-04 21:40:07 - Loading faiss with AVX2 support.
+2026-04-04 21:40:07 - Successfully loaded faiss with AVX2 support.
+2026-04-04 21:40:08 - Use pytorch device: cpu
+2026-04-04 21:40:09 - Chatbot initialized successfully.
+2026-04-04 21:40:10 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-04-04 21:40:10 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-04-04 21:40:10 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-04 21:40:10 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-04 21:40:10 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-04 21:40:11 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-04 21:40:11 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-04 21:40:29 - User query: who is krishna?
+2026-04-04 21:40:29 - Normalized query: who is krishna
+2026-04-04 21:40:30 - Re-ranked 13 docs \u2192 kept 5
+2026-04-04 21:40:30 - Confidence score: 1.0
+2026-04-04 21:40:30 - Retrieved sources: Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-04-04 21:40:32 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:46:34 - Initializing Chatbot...
+2026-04-06 22:46:46 - Use pytorch device_name: cpu
+2026-04-06 22:46:46 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-06 22:46:49 - Loading faiss with AVX512 support.
+2026-04-06 22:46:49 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-06 22:46:49 - Loading faiss with AVX2 support.
+2026-04-06 22:46:49 - Successfully loaded faiss with AVX2 support.
+2026-04-06 22:46:52 - Use pytorch device: cpu
+2026-04-06 22:46:52 - Chatbot initialized successfully.
+2026-04-06 22:48:06 - Initializing Chatbot...
+2026-04-06 22:48:08 - Use pytorch device_name: cpu
+2026-04-06 22:48:08 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-06 22:48:12 - Loading faiss with AVX512 support.
+2026-04-06 22:48:12 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-06 22:48:12 - Loading faiss with AVX2 support.
+2026-04-06 22:48:12 - Successfully loaded faiss with AVX2 support.
+2026-04-06 22:48:13 - Use pytorch device: cpu
+2026-04-06 22:48:14 - Chatbot initialized successfully.
+2026-04-06 22:48:15 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-04-06 22:48:15 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-06 22:48:15 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-06 22:48:15 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-04-06 22:48:16 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-06 22:48:16 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-06 22:48:54 - User query: this chatbot is actually working quit well you know?
+2026-04-06 22:49:04 - User query: who is the supreme lord?
+2026-04-06 22:49:04 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:49:04 - Rewritten query: 'who is the supreme lord?' -> 'Who is being referred to as the supreme lord in the context of our conversation or in general?'
+2026-04-06 22:49:04 - Normalized query: who is being referred to as the supreme lord in the context of our conversation or in general
+2026-04-06 22:49:05 - Re-ranked 13 docs \u2192 kept 5
+2026-04-06 22:49:05 - Confidence score: 0.504
+2026-04-06 22:49:05 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf
+2026-04-06 22:49:06 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 23:02:30 - Initializing Chatbot...
+2026-04-06 23:02:38 - Use pytorch device_name: cpu
+2026-04-06 23:02:38 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-06 23:02:42 - Loading faiss with AVX512 support.
+2026-04-06 23:02:42 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-06 23:02:42 - Loading faiss with AVX2 support.
+2026-04-06 23:02:42 - Successfully loaded faiss with AVX2 support.
+2026-04-06 23:02:43 - Use pytorch device: cpu
+2026-04-06 23:02:44 - Chatbot initialized successfully.
+2026-04-06 23:02:49 - User query: who is arjuna?
+2026-04-06 23:02:49 - Normalized query: who is arjuna
+2026-04-06 23:02:49 - Re-ranked 13 docs \u2192 kept 5
+2026-04-06 23:02:49 - Confidence score: 1.0
+2026-04-06 23:02:49 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Arjuna Vishada Yoga.csv
+2026-04-06 23:02:51 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 23:03:03 - User query: what is meant by dharma?
+2026-04-06 23:03:04 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 23:03:04 - Rewritten query: 'what is meant by dharma?' -> 'What is the concept of dharma in Hindu scriptures, particularly in the context of the Mahabharata and the character of Arjuna.'
+2026-04-06 23:03:04 - Normalized query: what is the concept of dharma in hindu scriptures particularly in the context of the mahabharata and the character of arjuna
+2026-04-06 23:03:04 - Re-ranked 12 docs \u2192 kept 5
+2026-04-06 23:03:04 - Confidence score: 0.369
+2026-04-06 23:03:04 - Retrieved sources: Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, bhagavad_gita_from_GitaSociety.pdf, Grhasthashrama_(\u0917\u0943\u0939\u0938\u094d\u0925\u093e\u0936\u094d\u0930\u092e\u0903).csv
+2026-04-06 23:03:06 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 23:03:23 - Initializing Chatbot...
+2026-04-06 23:03:25 - Use pytorch device_name: cpu
+2026-04-06 23:03:25 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-06 23:03:29 - Loading faiss with AVX512 support.
+2026-04-06 23:03:29 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-06 23:03:29 - Loading faiss with AVX2 support.
+2026-04-06 23:03:29 - Successfully loaded faiss with AVX2 support.
+2026-04-06 23:03:31 - Use pytorch device: cpu
+2026-04-06 23:03:32 - Chatbot initialized successfully.
+2026-04-06 23:03:32 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-06 23:03:32 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-06 23:03:33 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-06 23:03:33 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-06 23:06:09 - Initializing Chatbot...
+2026-04-06 23:06:12 - Use pytorch device_name: cpu
+2026-04-06 23:06:12 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-06 23:06:15 - Loading faiss with AVX512 support.
+2026-04-06 23:06:15 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-06 23:06:15 - Loading faiss with AVX2 support.
+2026-04-06 23:06:15 - Successfully loaded faiss with AVX2 support.
+2026-04-06 23:06:17 - Use pytorch device: cpu
+2026-04-06 23:06:18 - Chatbot initialized successfully.
+2026-04-06 23:06:27 - User query: who is the main hero in the science aagain
+2026-04-06 23:06:27 - Normalized query: who is the main hero in the science aagain
+2026-04-06 23:06:27 - Re-ranked 13 docs \u2192 kept 0
+2026-04-06 23:06:27 - Confidence score: 0.19
+2026-04-06 23:06:27 - Low confidence — letting LLM attempt with general knowledge.
+2026-04-06 23:06:27 - Retrieved sources: Agni_(\u0905\u0917\u094d\u0928\u093f\u0903).csv, Bhumavidya_(\u092d\u0942\u092e\u0935\u093f\u0926\u094d\u092f\u093e).csv, Dhaumya_(\u0927\u094c\u092e\u094d\u092f\u0903).csv, Indra_(\u0907\u0928\u094d\u0926\u094d\u0930\u0903).csv
+2026-04-06 23:06:29 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 23:06:44 - User query: who is krishna the lord?
+2026-04-06 23:06:45 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 23:06:45 - Rewritten query: 'who is krishna the lord?' -> 'Who is Krishna, the lord, in the context of ancient tales and mythology, and what is his significance and role in the relevant stories and legends?'
+2026-04-06 23:06:45 - Normalized query: who is krishna the lord in the context of ancient tales and mythology and what is his significance and role in the relevant stories and legends
+2026-04-06 23:06:45 - Re-ranked 11 docs \u2192 kept 5
+2026-04-06 23:06:45 - Confidence score: 0.283
+2026-04-06 23:06:45 - Low confidence — letting LLM attempt with general knowledge.
+2026-04-06 23:06:45 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv
+2026-04-06 23:06:47 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 23:07:06 - Initializing Chatbot...
+2026-04-06 23:07:09 - Use pytorch device_name: cpu
+2026-04-06 23:07:09 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-06 23:07:12 - Loading faiss with AVX512 support.
+2026-04-06 23:07:12 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-06 23:07:12 - Loading faiss with AVX2 support.
+2026-04-06 23:07:12 - Successfully loaded faiss with AVX2 support.
+2026-04-06 23:07:14 - Use pytorch device: cpu
+2026-04-06 23:07:14 - Chatbot initialized successfully.
+2026-04-06 23:07:15 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-06 23:07:15 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-06 23:07:16 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-06 23:07:16 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-06 23:07:17 - HTTP Request: GET http://localhost:7860/startup-events "HTTP/1.1 200 OK"
+2026-04-06 23:07:19 - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2026-04-06 23:09:44 - Initializing Chatbot...
+2026-04-06 23:09:47 - Use pytorch device_name: cpu
+2026-04-06 23:09:47 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-06 23:09:50 - Loading faiss with AVX512 support.
+2026-04-06 23:09:50 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-06 23:09:50 - Loading faiss with AVX2 support.
+2026-04-06 23:09:50 - Successfully loaded faiss with AVX2 support.
+2026-04-06 23:09:52 - Use pytorch device: cpu
+2026-04-06 23:09:53 - Chatbot initialized successfully.
+2026-04-06 23:10:00 - User query: who is arjuna and bhsima?
+2026-04-06 23:10:00 - Normalized query: who is arjuna and bhsima
+2026-04-06 23:10:00 - Re-ranked 13 docs \u2192 kept 5
+2026-04-06 23:10:00 - Confidence score: 0.5
+2026-04-06 23:10:00 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Arjuna Vishada Yoga.csv
+2026-04-06 23:10:03 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 23:10:22 - Initializing Chatbot...
+2026-04-06 23:10:24 - Use pytorch device_name: cpu
+2026-04-06 23:10:24 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-06 23:10:27 - Loading faiss with AVX512 support.
+2026-04-06 23:10:27 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-06 23:10:27 - Loading faiss with AVX2 support.
+2026-04-06 23:10:27 - Successfully loaded faiss with AVX2 support.
+2026-04-06 23:10:29 - Use pytorch device: cpu
+2026-04-06 23:10:30 - Chatbot initialized successfully.
+2026-04-06 23:10:30 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-04-06 23:10:30 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-04-06 23:10:30 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-06 23:10:31 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-06 23:10:31 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-06 23:10:31 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-06 23:10:31 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-06 23:10:47 - User query: whio is krihsna in real life?
+2026-04-06 23:10:47 - Normalized query: whio is krihsna in real life
+2026-04-06 23:10:48 - Re-ranked 13 docs \u2192 kept 0
+2026-04-06 23:10:48 - Confidence score: 0.13
+2026-04-06 23:10:48 - Low confidence — letting LLM attempt with general knowledge.
+2026-04-06 23:10:48 - Retrieved sources: Agnihotra_(\u0905\u0917\u094d\u0928\u093f\u0939\u094b\u0924\u094d\u0930\u092e\u094d).csv, Brahmacharyashrama_(\u092c\u094d\u0930\u0939\u094d\u092e\u091a\u0930\u094d\u092f\u093e\u0936\u094d\u0930\u092e\u0903).csv, Agnyadhana_(\u0905\u0917\u094d\u0928\u094d\u092f\u093e\u0927\u093e\u0928\u092e\u094d).csv
+2026-04-06 23:10:48 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 23:10:54 - User query: who is krishna?
+2026-04-06 23:10:54 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 23:10:54 - Rewritten query: 'who is krishna?' -> 'Who is Krishna in Hinduism or Indian mythology, and what role does he play in religious and cultural beliefs?'
+2026-04-06 23:11:00 - User query: who is krishna?
+2026-04-06 23:11:01 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 23:11:01 - Rewritten query: 'who is krishna?' -> 'Who is Krishna in Hindu mythology and what role does he play in Indian culture and religion?'
+2026-04-06 23:11:10 - User query: who is shree krishna?
+2026-04-06 23:11:11 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 23:11:11 - Rewritten query: 'who is shree krishna?' -> 'Who is Shree Krishna in Hindu mythology and what role does he play in Indian culture and religion?'
+2026-04-06 23:11:22 - User query: who is arjuna in mahabharat?
+2026-04-06 23:11:22 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 23:11:22 - Rewritten query: 'who is arjuna in mahabharat?' -> 'Who is Arjuna in the context of the Hindu epic, the Mahabharat?'
+2026-04-06 23:11:22 - Normalized query: who is arjuna in the context of the hindu epic the mahabharat
+2026-04-06 23:11:22 - Re-ranked 13 docs \u2192 kept 5
+2026-04-06 23:11:22 - Confidence score: 0.408
+2026-04-06 23:11:22 - Retrieved sources: Arjuna Vishada Yoga.csv, bhagavad_gita_from_GitaSociety.pdf
+2026-04-06 23:11:24 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 23:11:36 - User query: who is krishna in mahabharat?
+2026-04-06 23:11:36 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 23:11:36 - Rewritten query: 'who is krishna in mahabharat?' -> 'Who is Krishna in the context of the Hindu epic Mahabharat?'
+2026-04-06 23:11:36 - Normalized query: who is krishna in the context of the hindu epic mahabharat
+2026-04-06 23:11:37 - Re-ranked 13 docs \u2192 kept 5
+2026-04-06 23:11:37 - Confidence score: 0.2
+2026-04-06 23:11:37 - Low confidence — letting LLM attempt with general knowledge.
+2026-04-06 23:11:37 - Retrieved sources: Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-04-06 23:11:38 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 00:29:57 - Initializing Chatbot...
+2026-04-07 00:30:06 - Use pytorch device_name: cpu
+2026-04-07 00:30:06 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-07 00:30:12 - Loading faiss with AVX512 support.
+2026-04-07 00:30:12 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-07 00:30:12 - Loading faiss with AVX2 support.
+2026-04-07 00:30:12 - Successfully loaded faiss with AVX2 support.
+2026-04-07 00:30:14 - Use pytorch device: cpu
+2026-04-07 00:30:15 - Chatbot initialized successfully.
+2026-04-07 00:30:30 - User query: who is shree krishna?
+2026-04-07 00:30:30 - Normalized query: who is shree krishna
+2026-04-07 00:30:30 - Re-ranked 13 docs \u2192 kept 5
+2026-04-07 00:30:30 - Confidence score: 0.5
+2026-04-07 00:30:30 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Cow_in_Vedas_(\u0935\u0947\u0926\u0947\u0937\u0941_\u0917\u094c\u0903).csv, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, Atman_(\u0906\u0924\u094d\u092e\u0928\u094d).csv
+2026-04-07 00:30:33 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 20:26:27 - Initializing Chatbot...
+2026-04-09 20:26:38 - Use pytorch device_name: cpu
+2026-04-09 20:26:38 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-09 20:26:42 - Loading faiss with AVX512 support.
+2026-04-09 20:26:42 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-09 20:26:42 - Loading faiss with AVX2 support.
+2026-04-09 20:26:43 - Successfully loaded faiss with AVX2 support.
+2026-04-09 20:26:45 - Use pytorch device: cpu
+2026-04-09 20:26:45 - Chatbot initialized successfully.
+2026-04-09 20:27:05 - Initializing Chatbot...
+2026-04-09 20:27:09 - Use pytorch device_name: cpu
+2026-04-09 20:27:09 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-09 20:27:13 - Loading faiss with AVX512 support.
+2026-04-09 20:27:13 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-09 20:27:13 - Loading faiss with AVX2 support.
+2026-04-09 20:27:13 - Successfully loaded faiss with AVX2 support.
+2026-04-09 20:27:15 - Use pytorch device: cpu
+2026-04-09 20:27:15 - Chatbot initialized successfully.
+2026-04-09 20:27:16 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-09 20:27:16 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-09 20:27:17 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-09 20:27:17 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-09 20:27:18 - HTTP Request: GET http://localhost:7860/startup-events "HTTP/1.1 200 OK"
+2026-04-09 20:27:20 - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2026-04-09 20:28:07 - Initializing Chatbot...
+2026-04-09 20:28:11 - Use pytorch device_name: cpu
+2026-04-09 20:28:11 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-09 20:28:14 - Loading faiss with AVX512 support.
+2026-04-09 20:28:14 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-09 20:28:14 - Loading faiss with AVX2 support.
+2026-04-09 20:28:14 - Successfully loaded faiss with AVX2 support.
+2026-04-09 20:28:16 - Use pytorch device: cpu
+2026-04-09 20:28:17 - Chatbot initialized successfully.
+2026-04-09 20:28:17 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-09 20:28:17 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-09 20:28:18 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-09 20:28:18 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-09 20:29:34 - Initializing Chatbot...
+2026-04-09 20:29:38 - Use pytorch device_name: cpu
+2026-04-09 20:29:38 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-09 20:29:41 - Loading faiss with AVX512 support.
+2026-04-09 20:29:41 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-09 20:29:41 - Loading faiss with AVX2 support.
+2026-04-09 20:29:41 - Successfully loaded faiss with AVX2 support.
+2026-04-09 20:29:43 - Use pytorch device: cpu
+2026-04-09 20:29:44 - Chatbot initialized successfully.
+2026-04-09 20:29:44 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-04-09 20:29:44 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-04-09 20:29:44 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-09 20:29:44 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-09 20:29:45 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-09 20:29:45 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-09 20:29:45 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-09 20:30:09 - User query: who is krishna ?
+2026-04-09 20:30:09 - Normalized query: who is krishna
+2026-04-09 20:30:10 - Re-ranked 13 docs \u2192 kept 5
+2026-04-09 20:30:10 - Confidence score: 1.0
+2026-04-09 20:30:10 - Retrieved sources: Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv, bhagavad_gita_from_GitaSociety.pdf
+2026-04-09 20:30:12 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 20:43:21 - Initializing Chatbot...
+2026-04-09 20:43:25 - Use pytorch device_name: cpu
+2026-04-09 20:43:25 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-09 20:43:28 - Loading faiss with AVX512 support.
+2026-04-09 20:43:28 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-09 20:43:28 - Loading faiss with AVX2 support.
+2026-04-09 20:43:28 - Successfully loaded faiss with AVX2 support.
+2026-04-09 20:43:30 - Use pytorch device: cpu
+2026-04-09 20:43:31 - Chatbot initialized successfully.
+2026-04-09 20:43:31 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-04-09 20:43:31 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-04-09 20:43:31 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-09 20:43:31 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-09 20:43:32 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-09 20:43:32 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-09 20:43:32 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-09 20:44:16 - User query: who is krishna?
+2026-04-09 20:44:16 - Normalized query: who is krishna
+2026-04-09 20:44:16 - Re-ranked 13 docs \u2192 kept 5
+2026-04-09 20:44:16 - Confidence score: 1.0
+2026-04-09 20:44:16 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf, Guna_Traya_Vibhaga_Yoga_(\u0917\u0941\u0923\u0924\u094d\u0930\u092f\u0935\u093f\u092d\u093e\u0917\u092f\u094b\u0917\u0903).csv
+2026-04-09 20:44:18 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 22:05:48 - Initializing Chatbot...
+2026-04-09 22:05:53 - Use pytorch device_name: cpu
+2026-04-09 22:05:53 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-09 22:05:56 - Loading faiss with AVX512 support.
+2026-04-09 22:05:56 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-09 22:05:56 - Loading faiss with AVX2 support.
+2026-04-09 22:05:56 - Successfully loaded faiss with AVX2 support.
+2026-04-09 22:05:58 - Use pytorch device: cpu
+2026-04-09 22:05:59 - Chatbot initialized successfully.
+2026-04-09 22:06:00 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-04-09 22:06:00 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-04-09 22:06:00 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-09 22:06:00 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-09 22:06:00 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-09 22:06:01 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-09 22:06:01 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-09 22:06:43 - User query: what is dharma?
+2026-04-09 22:06:43 - Normalized query: what is dharma
+2026-04-09 22:06:43 - Re-ranked 11 docs \u2192 kept 5
+2026-04-09 22:06:43 - Confidence score: 1.0
+2026-04-09 22:06:43 - Retrieved sources: Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv, Education_on_Sanatana_Dharma.csv
+2026-04-09 22:06:45 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 22:10:26 - Initializing Chatbot...
+2026-04-09 22:10:30 - Use pytorch device_name: cpu
+2026-04-09 22:10:30 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-09 22:10:33 - Loading faiss with AVX512 support.
+2026-04-09 22:10:33 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-09 22:10:33 - Loading faiss with AVX2 support.
+2026-04-09 22:10:33 - Successfully loaded faiss with AVX2 support.
+2026-04-09 22:10:35 - Use pytorch device: cpu
+2026-04-09 22:10:36 - Chatbot initialized successfully.
+2026-04-09 22:10:36 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-04-09 22:10:36 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-04-09 22:10:36 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-09 22:10:37 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-09 22:10:37 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-09 22:10:37 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-09 22:10:37 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-09 22:11:38 - Initializing Chatbot...
+2026-04-09 22:11:42 - Use pytorch device_name: cpu
+2026-04-09 22:11:42 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-09 22:11:45 - Loading faiss with AVX512 support.
+2026-04-09 22:11:45 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-09 22:11:45 - Loading faiss with AVX2 support.
+2026-04-09 22:11:45 - Successfully loaded faiss with AVX2 support.
+2026-04-09 22:11:47 - Use pytorch device: cpu
+2026-04-09 22:11:48 - Chatbot initialized successfully.
+2026-04-09 22:11:48 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-04-09 22:11:48 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-04-09 22:11:48 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-09 22:11:48 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-09 22:11:49 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-09 22:11:49 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-09 22:11:49 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-09 22:13:19 - Initializing Chatbot...
+2026-04-09 22:13:23 - Use pytorch device_name: cpu
+2026-04-09 22:13:23 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-09 22:13:26 - Loading faiss with AVX512 support.
+2026-04-09 22:13:26 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-09 22:13:26 - Loading faiss with AVX2 support.
+2026-04-09 22:13:26 - Successfully loaded faiss with AVX2 support.
+2026-04-09 22:13:28 - Use pytorch device: cpu
+2026-04-09 22:13:29 - Chatbot initialized successfully.
+2026-04-09 22:13:29 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-04-09 22:13:29 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-04-09 22:13:29 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-09 22:13:29 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-09 22:13:30 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-09 22:13:30 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-09 22:13:30 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-09 22:14:18 - User query: What is dharma?
+2026-04-09 22:14:18 - Normalized query: what is dharma
+2026-04-09 22:14:18 - Re-ranked 11 docs \u2192 kept 5
+2026-04-09 22:14:18 - Confidence score: 1.0
+2026-04-09 22:14:18 - Retrieved sources: Education_on_Sanatana_Dharma.csv, Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv
+2026-04-09 22:14:20 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"

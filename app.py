@@ -442,6 +442,13 @@ footer a, footer span {
 def respond(message, history):
     session_history = [(h[0], h[1]) for h in history if h[0] and h[1]]
     answer, sources = chatbot.process_query(message, session_history=session_history)
+    # 🔥 FORCE CLEAN TYPES
+    if isinstance(answer, dict):
+        answer = str(answer)
+    if not isinstance(answer, str):
+        answer = str(answer)
+    if sources and isinstance(sources, dict):
+        sources = list(sources.values())
     print("DEBUG ANSWER TYPE:", type(answer))
     print("DEBUG ANSWER:", answer)
     if sources:
@@ -449,8 +456,7 @@ def respond(message, history):
         for i, src in enumerate(sources, 1):
             citation_text += f"{i}. {os.path.basename(src)}\n"
         answer = answer + citation_text
-    return answer if isinstance(answer, str) else str(answer)
-
+    return str(answer)
 
 # ── Explorer handlers ─────────────────────────────────────────────────────────
 def do_explore(topic, path, history):
@@ -640,4 +646,4 @@ with gr.Blocks(
 # ── FIXED LAUNCH — works on HuggingFace Spaces ────────────────────────────────
 import os
 
-demo.queue().launch()
+demo.launch()

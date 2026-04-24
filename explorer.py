@@ -122,18 +122,33 @@ Rules:
             if start >= 0 and end > start:
                 suggestions = json.loads(raw[start:end])
                 cleaned = []
+
                 for s in suggestions[:4]:
                     try:
+                        # 🔥 Handle dict safely
                         if isinstance(s, dict):
-                            s = next(iter(s.values()), "")
+                            s = list(s.values())[0] if s else ""
+
+                        # 🔥 Handle list safely
+                        if isinstance(s, list):
+                            s = s[0] if s else ""
+
+                        # Convert everything to string
                         s = str(s).strip()
+
+                        # Fallback if empty
                         if not s:
                             s = f"More about {topic}"
+
                     except Exception:
                         s = f"More about {topic}"
+
                     cleaned.append(s)
+
+                # Ensure exactly 4 items
                 while len(cleaned) < 4:
                     cleaned.append(f"More about {topic}")
+
                 return cleaned
         except Exception as e:
             logging.warning(f"[Explorer] Suggestion generation failed: {e}")

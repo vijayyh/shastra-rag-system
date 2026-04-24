@@ -8,3 +8,4 @@ vectorstore/
 *.pdf
 venv/
 __pycache__/
+*.log

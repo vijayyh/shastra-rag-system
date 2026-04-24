@@ -1,7 +1,10 @@
+
 import os
 import gradio as gr
 from chatbot import Chatbot
 from explorer import KnowledgeExplorer
+
+
 
 # ── Shared instances ──────────────────────────────────────────────────────────
 chatbot = Chatbot()
@@ -15,13 +18,14 @@ VEDIC_CSS = """
 .chatbot .wrap, .chatbot .wrap *,
 .message-wrap, .message-wrap * {
     background-color: #FDF3E3 !important;
-    color: #2C1A0E !important;
+    color: #2C1A0E !important;} 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 .chatbot, [data-testid="chatbot"] {
     min-height: 500px !important;
 }
-}
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+
 
 @keyframes fadeSlideUp {
     from { opacity: 0; transform: translateY(16px); }
@@ -630,4 +634,4 @@ with gr.Blocks(
 # ── FIXED LAUNCH — works on HuggingFace Spaces ────────────────────────────────
 import os
 
-demo.queue().launch(share=True)
+demo.queue().launch()

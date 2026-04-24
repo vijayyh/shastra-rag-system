@@ -9,6 +9,11 @@ from langchain_community.vectorstores import FAISS
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
 
+from huggingface_hub import login
+from dotenv import load_dotenv
+load_dotenv()
+login(token=os.environ.get("HF_TOKEN"))
+
 # DATA_DIR = "data"
 VECTORSTORE_DIR = "vectorstore"
 
@@ -104,40 +109,8 @@ def load_excel(file_path):
                 )
     return docs
 
-# def load_documents():
-    documents = []
-
-    for file in os.listdir(DATA_DIR):
-        file_path = os.path.join(DATA_DIR, file)
-
-        if file.lower().endswith(".pdf"):
-            documents.extend(load_pdf(file_path))
-
-        elif file.lower().endswith(".csv"):
-            documents.extend(load_csv(file_path))
-
-        elif file.lower().endswith((".xls", ".xlsx")):
-            documents.extend(load_excel(file_path))
-
-    return documents
 
 
-# def load_documents():
-    documents = []
-
-    for file in os.listdir(DATA_DIR):
-        file_path = os.path.join(DATA_DIR, file)
-
-        if file.lower().endswith(".pdf"):
-            documents.extend(load_pdf(file_path))
-
-        elif file.lower().endswith(".csv"):
-            documents.extend(load_csv(file_path))
-
-        elif file.lower().endswith((".xls", ".xlsx")):
-            documents.extend(load_excel(file_path))
-
-    return documents
 
 def load_documents_from_hf():
     documents = []

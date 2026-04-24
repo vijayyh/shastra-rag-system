@@ -129,8 +129,9 @@ def sanitize_query(query: str) -> str:
     # Enforce length limit
     max_length = 5000
     if len(query) > max_length:
+        original_len = len(query)
         query = query[:max_length]
-        logging.warning(f"Query truncated from {len(query)} to {max_length} chars")
+        logging.warning(f"Query truncated from {original_len} to {max_length} chars")
     
     # Block system prompt injection patterns
     blacklist = [
@@ -218,7 +219,7 @@ class Chatbot:
             self.chat_history = []
 
             self.last_entity = None
-            self.domain_vector = self.embeddings.embed_query(self.DOMAIN_CONCEPT)
+            
 
             
             logging.info("Chatbot initialized successfully.")
@@ -522,8 +523,10 @@ class Chatbot:
             # cosine similarity (dot product since vectors are normalized)
             similarity = sum(q * d for q, d in zip(query_vector, self.domain_vector))
 
-            # threshold determines domain relevance
-            return similarity >= 0.25
+            OFF_TOPIC_SIGNALS = ["modi", "trump", "hitler", "stock", "weather", "cricket", "football" ]
+            if any(sig in query.lower() for sig in OFF_TOPIC_SIGNALS):
+                return False
+            return similarity >= 0.35 # raised the threshold
 
         except Exception as e:
             logging.error(f"Domain detection error: {e}")
@@ -821,9 +824,10 @@ Answer:"""
                 self.last_entity = entity
 
             # 4. Update chat history
-            self.chat_history.append((query, answer))
-            if len(self.chat_history) > HISTORY_MAX_TURNS:
-                self.chat_history.pop(0)
+            if session_history is None:
+                self.chat_history.append((query, answer))
+                if len(self.chat_history) > HISTORY_MAX_TURNS:
+                    self.chat_history.pop(0)
 
             print("ENTITY:", self.last_entity)
 

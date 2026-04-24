@@ -5243,3 +5243,25 @@ ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
 2026-04-24 16:12:51 - HTTP Request: GET http://localhost:7860/startup-events "HTTP/1.1 200 OK"
 2026-04-24 16:12:53 - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
 2026-04-24 16:12:54 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-24 16:24:15 - Initializing Chatbot...
+2026-04-24 16:24:21 - Use pytorch device_name: cpu
+2026-04-24 16:24:21 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-24 16:24:24 - Loading faiss with AVX512 support.
+2026-04-24 16:24:24 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-24 16:24:24 - Loading faiss with AVX2 support.
+2026-04-24 16:24:24 - Successfully loaded faiss with AVX2 support.
+2026-04-24 16:24:26 - Use pytorch device: cpu
+2026-04-24 16:24:27 - Chatbot initialized successfully.
+2026-04-24 16:24:27 - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+2026-04-24 16:24:27 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-04-24 16:24:28 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-24 16:24:28 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-24 16:24:29 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-24 16:24:33 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-24 16:24:35 - User query: What is the meaning of Dharma?
+2026-04-24 16:24:35 - Normalized query: what is the meaning of dharma
+2026-04-24 16:24:36 - Re-ranked 11 docs \u2192 kept 5
+2026-04-24 16:24:36 - Confidence score: 0.94
+2026-04-24 16:24:36 - Retrieved sources: Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv
+2026-04-24 16:24:37 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"

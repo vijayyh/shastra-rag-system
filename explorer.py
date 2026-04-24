@@ -123,10 +123,15 @@ Rules:
                 suggestions = json.loads(raw[start:end])
                 cleaned = []
                 for s in suggestions[:4]:
-                    if isinstance(s, dict):
-                        # extract best possible string
-                        s = next(iter(s.values()), str(s))
-                    cleaned.append(str(s).strip())
+                    try:
+                        if isinstance(s, dict):
+                            s = next(iter(s.values()), "")
+                        s = str(s).strip()
+                        if not s:
+                            s = f"More about {topic}"
+                    except Exception:
+                        s = f"More about {topic}"
+                    cleaned.append(s)
                 while len(cleaned) < 4:
                     cleaned.append(f"More about {topic}")
                 return cleaned

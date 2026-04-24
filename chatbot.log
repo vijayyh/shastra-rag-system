@@ -5205,3 +5205,41 @@ ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
 2026-04-24 15:03:37 - Confidence score: 0.343
 2026-04-24 15:03:37 - Retrieved sources: bhagavad_gita_from_GitaSociety.pdf
 2026-04-24 15:03:39 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 16:08:34 - Initializing Chatbot...
+2026-04-24 16:08:45 - Use pytorch device_name: cpu
+2026-04-24 16:08:45 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-24 16:08:49 - Loading faiss with AVX512 support.
+2026-04-24 16:08:49 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-24 16:08:49 - Loading faiss with AVX2 support.
+2026-04-24 16:08:49 - Successfully loaded faiss with AVX2 support.
+2026-04-24 16:08:51 - Use pytorch device: cpu
+2026-04-24 16:08:52 - Chatbot initialized successfully.
+2026-04-24 16:08:53 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-24 16:08:53 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-24 16:08:53 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-24 16:08:54 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-24 16:08:54 - HTTP Request: GET http://localhost:7860/startup-events "HTTP/1.1 200 OK"
+2026-04-24 16:08:57 - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2026-04-24 16:10:42 - User query: What is the meaning of Dharma?
+2026-04-24 16:10:42 - Normalized query: what is the meaning of dharma
+2026-04-24 16:10:43 - Re-ranked 11 docs \u2192 kept 5
+2026-04-24 16:10:43 - Confidence score: 0.94
+2026-04-24 16:10:43 - Retrieved sources: Acharana_Dharma_(\u0906\u091a\u0930\u0923\u0927\u0930\u094d\u092e\u0903).csv
+2026-04-24 16:10:44 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 16:12:39 - Initializing Chatbot...
+2026-04-24 16:12:43 - Use pytorch device_name: cpu
+2026-04-24 16:12:43 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-04-24 16:12:46 - Loading faiss with AVX512 support.
+2026-04-24 16:12:46 - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2026-04-24 16:12:46 - Loading faiss with AVX2 support.
+2026-04-24 16:12:46 - Successfully loaded faiss with AVX2 support.
+2026-04-24 16:12:48 - Use pytorch device: cpu
+2026-04-24 16:12:49 - Chatbot initialized successfully.
+2026-04-24 16:12:50 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-24 16:12:50 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-24 16:12:51 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-24 16:12:51 - HTTP Request: GET http://localhost:7860/startup-events "HTTP/1.1 200 OK"
+2026-04-24 16:12:53 - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2026-04-24 16:12:54 - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "

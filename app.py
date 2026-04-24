@@ -449,7 +449,7 @@ def respond(message, history):
         for i, src in enumerate(sources, 1):
             citation_text += f"{i}. {os.path.basename(src)}\n"
         answer = answer + citation_text
-    return answer
+    return answer if isinstance(answer, str) else str(answer)
 
 
 # ── Explorer handlers ─────────────────────────────────────────────────────────
@@ -460,6 +460,12 @@ def do_explore(topic, path, history):
         return no_op, path, history, no_op, no_op, no_op, no_op, no_op, no_op
 
     answer, suggestions = explorer.explore(topic, path)
+    # 🔥 HARD SAFETY
+    if not isinstance(answer, str):
+        answer = str(answer)
+    if not isinstance(suggestions, list):
+        suggestions = []
+    suggestions = [str(s) for s in suggestions]
     new_path    = path + [topic]
     new_history = history + [{"topic": topic, "answer": answer}]
     suggestions = (suggestions + [""] * 4)[:4]
@@ -634,4 +640,4 @@ with gr.Blocks(
 # ── FIXED LAUNCH — works on HuggingFace Spaces ────────────────────────────────
 import os
 
-demo.queue().launch()
+demo.queue().launch(server_name="0.0.0.0", server_port=7860)

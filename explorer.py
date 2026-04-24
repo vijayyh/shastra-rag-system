@@ -54,7 +54,7 @@ class KnowledgeExplorer:
         full_path = " → ".join(path + [topic])
         self._prefetch_async(suggestions, full_path)
 
-        return answer, suggestions
+        return str(answer), [str(s) for s in suggestions]
 
     # ── Answer generation ─────────────────────────────────────────────────────
 
@@ -121,7 +121,12 @@ Rules:
             start, end = raw.find("["), raw.rfind("]") + 1
             if start >= 0 and end > start:
                 suggestions = json.loads(raw[start:end])
-                cleaned = [str(s).strip() for s in suggestions[:4]]
+                cleaned = []
+                for s in suggestions[:4]:
+                    if isinstance(s, dict):
+                        # extract best possible string
+                        s = next(iter(s.values()), str(s))
+                    cleaned.append(str(s).strip())
                 while len(cleaned) < 4:
                     cleaned.append(f"More about {topic}")
                 return cleaned
